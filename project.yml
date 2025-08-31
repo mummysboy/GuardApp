@@ -24,6 +24,12 @@ targets:
     deploymentTarget: "16.0"
     sources:
       - path: Sources/GuardApp
+      - path: Sources/GuardApp/src/models
+    dependencies:
+      - package: Amplify
+      - package: AWSCognitoAuthPlugin
+      - package: AWSAPIPlugin
+      - package: AWSDataStorePlugin
     settings:
       base:
         INFOPLIST_KEY_UIApplicationSceneManifest_Generation: YES
@@ -54,3 +60,17 @@ targets:
       - path: Tests/GuardAppTests
     dependencies:
       - target: GuardApp
+
+packages:
+  Amplify:
+    url: https://github.com/aws-amplify/amplify-swift
+    from: 1.0.0
+  AWSCognitoAuthPlugin:
+    url: https://github.com/aws-amplify/amplify-swift
+    from: 1.0.0
+  AWSAPIPlugin:
+    url: https://github.com/aws-amplify/amplify-swift
+    from: 1.0.0
+  AWSDataStorePlugin:
+    url: https://github.com/aws-amplify/amplify-swift
+    from: 1.0.0

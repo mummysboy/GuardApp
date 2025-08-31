@@ -3,6 +3,7 @@ import SwiftUI
 import Amplify
 import AWSAPIPlugin
 import AWSCognitoAuthPlugin
+import AWSDataStorePlugin
 
 @main
 struct GuardAppApp: App {
@@ -18,6 +19,7 @@ struct GuardAppApp: App {
         do {
             try await Amplify.add(plugin: AWSAPIPlugin())
             try await Amplify.add(plugin: AWSCognitoAuthPlugin())
+            try await Amplify.add(plugin: AWSDataStorePlugin(modelRegistration: AmplifyModels()))
             try await Amplify.configure()
             print("Amplify configured")
         } catch {
