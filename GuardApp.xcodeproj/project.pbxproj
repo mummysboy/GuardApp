@@ -8,63 +8,262 @@
 
 /* Begin PBXBuildFile section */
 		01966601EC31BD375717515B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67AB574C06377305E2309C06 /* User.swift */; };
+		01A2DCC7E12FED5DFC3AC758 /* Mutation.deleteShift.postAuth.1.req.vtl in Resources */ = {isa = PBXBuildFile; fileRef = 9D323C185D190FA80C503F9F /* Mutation.deleteShift.postAuth.1.req.vtl */; };
+		04B0C48AC9D801D0B0CD1633 /* Subscription.onCreateShift.auth.1.req.vtl in Resources */ = {isa = PBXBuildFile; fileRef = B2DDEFDAA9A3C6F1F5D8CA22 /* Subscription.onCreateShift.auth.1.req.vtl */; };
+		0516369DF5A6A44C067FF2DA /* Mutation.updateUser.postAuth.1.req.vtl in Resources */ = {isa = PBXBuildFile; fileRef = 17159878888DC136F496C928 /* Mutation.updateUser.postAuth.1.req.vtl */; };
 		07495EECDCBA9ACAAF5FF6A0 /* AmplifyModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7461EFCA2AEABAC2F3E1F751 /* AmplifyModels.swift */; };
+		08D60FA10E5B068980AC1105 /* Subscription.onCreateUser.auth.1.req.vtl in Resources */ = {isa = PBXBuildFile; fileRef = B9F066E97AD53CC65C985B1A /* Subscription.onCreateUser.auth.1.req.vtl */; };
+		08FB97A342AE08671EF2A53D /* Subscription.onUpdateUser.res.vtl in Resources */ = {isa = PBXBuildFile; fileRef = 71E309D2C2D406BAC687B420 /* Subscription.onUpdateUser.res.vtl */; };
+		0CE5FAA716F888F845D2A266 /* Subscription.onUpdateUser.auth.1.req.vtl in Resources */ = {isa = PBXBuildFile; fileRef = 395545DE76EE9DB1635C2182 /* Subscription.onUpdateUser.auth.1.req.vtl */; };
+		0E4EBB33A24033ECC81CC216 /* Subscription.onCreateShift.res.vtl in Resources */ = {isa = PBXBuildFile; fileRef = 8E6E0F28BAA0D137F2CC65DD /* Subscription.onCreateShift.res.vtl */; };
+		0ECCEDFBEEEDBF6AAEA0F815 /* Query.shiftsByUserId.auth.1.req.vtl in Resources */ = {isa = PBXBuildFile; fileRef = 9FA47F4AF6A493485748C8FD /* Query.shiftsByUserId.auth.1.req.vtl */; };
 		113742A6802A22DD0E858F30 /* aws-exports.js in Resources */ = {isa = PBXBuildFile; fileRef = B886418ADF9EA8E549AB3DF7 /* aws-exports.js */; };
+		11CB9097269C5266AC0C3212 /* cli-inputs.json in Resources */ = {isa = PBXBuildFile; fileRef = 3A13A1AF81303539088CCE92 /* cli-inputs.json */; };
+		128373B0DCB0BA6E39AC329C /* Subscription.onCreateShift.postAuth.1.req.vtl in Resources */ = {isa = PBXBuildFile; fileRef = 51624D0FA1ABAE29730CA347 /* Subscription.onCreateShift.postAuth.1.req.vtl */; };
+		13D538A62BB5B726ADE41FA6 /* Mutation.createShift.init.1.req.vtl in Resources */ = {isa = PBXBuildFile; fileRef = 838C058E4C6402AD6FBC752A /* Mutation.createShift.init.1.req.vtl */; };
+		1605139B5721B0F2A243974D /* Mutation.deleteShift.req.vtl in Resources */ = {isa = PBXBuildFile; fileRef = 01FBBFCB5698DF5233EAEF08 /* Mutation.deleteShift.req.vtl */; };
+		165A68B6135B1D0447D2E4AC /* Mutation.updateShift.req.vtl in Resources */ = {isa = PBXBuildFile; fileRef = AE5C2E680D2F98D00B168A24 /* Mutation.updateShift.req.vtl */; };
+		185E53ED9233825C037B1A0B /* Shift.json in Resources */ = {isa = PBXBuildFile; fileRef = 3A1C8D7DDB1DF53DB0AE0924 /* Shift.json */; };
 		1865C3DF4938BFF9D0780413 /* guardapp799df51d-cloudformation-template.json in Resources */ = {isa = PBXBuildFile; fileRef = EF37ED64C69053DCDA2697D3 /* guardapp799df51d-cloudformation-template.json */; };
+		18CED26559CFF261E42C245E /* Mutation.createShift.auth.1.req.vtl in Resources */ = {isa = PBXBuildFile; fileRef = 96DAA2A7E5CC540AF6B0AD41 /* Mutation.createShift.auth.1.req.vtl */; };
+		1AF5F006CFC39E9D486E1ABB /* Shift.user.auth.1.req.vtl in Resources */ = {isa = PBXBuildFile; fileRef = 040271A458C594B5C546E4FA /* Shift.user.auth.1.req.vtl */; };
+		1AFD7719E0677AE527A982D3 /* Query.shiftsByUserId.auth.1.req.vtl in Resources */ = {isa = PBXBuildFile; fileRef = FB907C0B7A239BD1B0663614 /* Query.shiftsByUserId.auth.1.req.vtl */; };
+		1C1B1BFACBC238BBECC2385B /* root-cloudformation-stack.json in Resources */ = {isa = PBXBuildFile; fileRef = FA1CB71D3A676AD05DD99EFA /* root-cloudformation-stack.json */; };
+		1DBB59EF6BF416A9AF178624 /* Mutation.updateShift.init.1.req.vtl in Resources */ = {isa = PBXBuildFile; fileRef = D44F8B2820D2E53DF3FAF7C2 /* Mutation.updateShift.init.1.req.vtl */; };
+		1EBFF5A07FD4605C69AA58C5 /* Query.getUser.auth.1.req.vtl in Resources */ = {isa = PBXBuildFile; fileRef = 4ABCCBFACA607064BC168EE2 /* Query.getUser.auth.1.req.vtl */; };
 		1EFEC51E14EAA576B638A78C /* amplify-meta.json in Resources */ = {isa = PBXBuildFile; fileRef = A2F623E1A536A4ACD7A063FD /* amplify-meta.json */; };
+		21A66C476B2A8DA246E25F70 /* Subscription.onDeleteUser.req.vtl in Resources */ = {isa = PBXBuildFile; fileRef = 9C6631FA9F630A4942D22FED /* Subscription.onDeleteUser.req.vtl */; };
+		21F3FE5254C186B3AA81F34C /* Query.listShifts.req.vtl in Resources */ = {isa = PBXBuildFile; fileRef = D3690E1A0E8CCA2983071D42 /* Query.listShifts.req.vtl */; };
+		22EAA4F5F649FCD174B7934A /* Mutation.updateUser.res.vtl in Resources */ = {isa = PBXBuildFile; fileRef = 358475A801EA5F78EAC47D87 /* Mutation.updateUser.res.vtl */; };
 		2318E31A7363E39542686C78 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = F494B6ADB491E3074420A93B /* README.md */; };
+		24CB18F49020AC4F16F5224F /* Query.listShifts.auth.1.req.vtl in Resources */ = {isa = PBXBuildFile; fileRef = 2A066CB4BCA88957723ABBF7 /* Query.listShifts.auth.1.req.vtl */; };
 		24D8E13A474F183D024722C5 /* AdminTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D57FAE46D782CE1AACEDCC0 /* AdminTabView.swift */; };
+		24DFADF819F88C656246B699 /* Mutation.deleteShift.postAuth.1.req.vtl in Resources */ = {isa = PBXBuildFile; fileRef = 440C217B288D91255EDB749A /* Mutation.deleteShift.postAuth.1.req.vtl */; };
+		255CEED54EB38DBB079327D8 /* Mutation.createUser.res.vtl in Resources */ = {isa = PBXBuildFile; fileRef = FA52E849EE34ED440E165BEF /* Mutation.createUser.res.vtl */; };
 		271AD8CEA9B0B8C41FA7696F /* parameters.json in Resources */ = {isa = PBXBuildFile; fileRef = 16BF1D4DAD31A22D34014534 /* parameters.json */; };
 		277E84E13A35FD4C5F6D5EEF /* cli-inputs.json in Resources */ = {isa = PBXBuildFile; fileRef = 17C007E9F62B72CD8F97EAAD /* cli-inputs.json */; };
+		285EB0FCD3EA4CE96FA40A17 /* Query.getUser.postAuth.1.req.vtl in Resources */ = {isa = PBXBuildFile; fileRef = DF27023C2CF730A5B0837218 /* Query.getUser.postAuth.1.req.vtl */; };
+		28EFE9E221DECF15CBED08D5 /* User.owner.res.vtl in Resources */ = {isa = PBXBuildFile; fileRef = EFEF34E9FD7385B4E3DCBFC2 /* User.owner.res.vtl */; };
+		29F2BEC13CECC9654E2AFAC1 /* Subscription.onCreateShift.postAuth.1.req.vtl in Resources */ = {isa = PBXBuildFile; fileRef = D113696302EDD4BC7AFC5F2B /* Subscription.onCreateShift.postAuth.1.req.vtl */; };
 		2A12BB53BC409F9E2ADC7B5F /* parameters.json in Resources */ = {isa = PBXBuildFile; fileRef = 31745B651C2BF41AF6C1D363 /* parameters.json */; };
+		2AC244ABE3D1913DAF52C83C /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = A563046A5D7AE28192B68355 /* README.md */; };
+		2CF02845C45C78EBD2D510FD /* Query.getShift.postAuth.1.req.vtl in Resources */ = {isa = PBXBuildFile; fileRef = EB8FFDB687471AB91F34C266 /* Query.getShift.postAuth.1.req.vtl */; };
+		2D2DC784D72C38967DA5CC3E /* Query.listUsers.postAuth.1.req.vtl in Resources */ = {isa = PBXBuildFile; fileRef = 9545649883B0C1D9F5A917B5 /* Query.listUsers.postAuth.1.req.vtl */; };
+		2D7BE8426DF4F3B5FB8A5159 /* Mutation.updateShift.init.1.req.vtl in Resources */ = {isa = PBXBuildFile; fileRef = 78A00EBE12F1F2E026DA8846 /* Mutation.updateShift.init.1.req.vtl */; };
+		2DF16EAE05149A2FB462F6F5 /* Mutation.deleteUser.auth.1.res.vtl in Resources */ = {isa = PBXBuildFile; fileRef = C0E8F5AFF14F81317141D1A3 /* Mutation.deleteUser.auth.1.res.vtl */; };
+		2E0FF430E83DA3E7B50344E8 /* cloudformation-template.json in Resources */ = {isa = PBXBuildFile; fileRef = 92558AF9973B175ED10DCBC8 /* cloudformation-template.json */; };
+		303740E0EFC7BE2EF5419E1A /* Mutation.updateUser.res.vtl in Resources */ = {isa = PBXBuildFile; fileRef = F88CFFA2E083954CA19023C2 /* Mutation.updateUser.res.vtl */; };
 		30464673472E1BE72A73849D /* amplify-meta.json in Resources */ = {isa = PBXBuildFile; fileRef = 05F962B3E02F5ABE3804AA39 /* amplify-meta.json */; };
+		304CA0923DBA0C0D7D86F64D /* Mutation.updateUser.postAuth.1.req.vtl in Resources */ = {isa = PBXBuildFile; fileRef = EDA132424A51025B14CA7A81 /* Mutation.updateUser.postAuth.1.req.vtl */; };
+		32E5021875690FBA5AF1E3E8 /* Mutation.updateShift.auth.1.res.vtl in Resources */ = {isa = PBXBuildFile; fileRef = 054A16D0C01072DCC6D01663 /* Mutation.updateShift.auth.1.res.vtl */; };
 		34C273814DEA79E59F7B9688 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7717AC99150BDC46916BEC01 /* AuthService.swift */; };
 		366A76ECF901D7A19F05F878 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9C6F40CF042E9DDF7B0D849 /* APIClient.swift */; };
+		38855056D8CC091C9A21A767 /* Query.shiftsByUserId.req.vtl in Resources */ = {isa = PBXBuildFile; fileRef = 76C540AE820A21E655FD4FE9 /* Query.shiftsByUserId.req.vtl */; };
 		390EB0A694BD1E1F35320015 /* local-env-info.json in Resources */ = {isa = PBXBuildFile; fileRef = 77D599AD997F827824A7710B /* local-env-info.json */; };
 		3AD0FFAB5BB1B48E1716CD36 /* amplify-dependent-resources-ref.d.ts in Resources */ = {isa = PBXBuildFile; fileRef = CE5B118B220A5C81E8033FF3 /* amplify-dependent-resources-ref.d.ts */; };
+		3B19A477874C86CA9ABA684B /* Mutation.updateShift.res.vtl in Resources */ = {isa = PBXBuildFile; fileRef = 9B2B3F4ED7A2AD1AD8713C3E /* Mutation.updateShift.res.vtl */; };
 		3B49E575064D07B1D54CE766 /* SessionStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03764D01622043CA86E02EBE /* SessionStore.swift */; };
 		3BB4B982A943C9DA8C187ABC /* team-provider-info.json in Resources */ = {isa = PBXBuildFile; fileRef = DE7A4341EE16014D8AE5EA05 /* team-provider-info.json */; };
+		3BE38ED6DB9C26AC9BE1FBD2 /* User.owner.req.vtl in Resources */ = {isa = PBXBuildFile; fileRef = 11C6C10B32A3AB4E24AA6DED /* User.owner.req.vtl */; };
+		3CFD1CE50059288640C167C9 /* Mutation.updateUser.auth.1.res.vtl in Resources */ = {isa = PBXBuildFile; fileRef = 8E489D858EE7DC3A9F08DA0A /* Mutation.updateUser.auth.1.res.vtl */; };
+		3E9E08AE49C53401FD721B60 /* Mutation.updateUser.auth.1.req.vtl in Resources */ = {isa = PBXBuildFile; fileRef = ED7BDB46661FCE21EF3CFD82 /* Mutation.updateUser.auth.1.req.vtl */; };
 		3F31B21AD09FAF60CB913D31 /* AppMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FBBB4DBE8FA71CA715B9E0A /* AppMain.swift */; };
 		3FBC722A392B1A9FF5470D2D /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE673402C884425E4E76E44 /* LoginView.swift */; };
+		3FD253BEBFD34BC85B1F55F7 /* Query.getShift.auth.1.req.vtl in Resources */ = {isa = PBXBuildFile; fileRef = 7FCCD3512264F7F40DA93C9B /* Query.getShift.auth.1.req.vtl */; };
+		40FF4AC882903F30549E0DB5 /* Shift.user.res.vtl in Resources */ = {isa = PBXBuildFile; fileRef = 4EDDF1E53E65686226B72F49 /* Shift.user.res.vtl */; };
 		43A1E0DEFD90FEE1840B2416 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03403C891526FC14DA535281 /* DashboardView.swift */; };
+		43B9F4F50D576ABD8059CA3B /* User.shifts.res.vtl in Resources */ = {isa = PBXBuildFile; fileRef = 237154C91F4E7A4B9CE9DEA6 /* User.shifts.res.vtl */; };
+		43E2A1C068039464E9512264 /* Subscription.onDeleteShift.req.vtl in Resources */ = {isa = PBXBuildFile; fileRef = ABCE0DF20312667064D45B9A /* Subscription.onDeleteShift.req.vtl */; };
+		44349C4A8163B199EA2AC258 /* Subscription.onDeleteUser.auth.1.req.vtl in Resources */ = {isa = PBXBuildFile; fileRef = A7E89B83ED7AFD3B6A6BBF71 /* Subscription.onDeleteUser.auth.1.req.vtl */; };
+		46F4BD5FDEB3635D27F266A8 /* Subscription.onDeleteUser.postAuth.1.req.vtl in Resources */ = {isa = PBXBuildFile; fileRef = D013BB36D339298A8211D07B /* Subscription.onDeleteUser.postAuth.1.req.vtl */; };
+		48D7BCBFEA99689AFF83C428 /* User.owner.res.vtl in Resources */ = {isa = PBXBuildFile; fileRef = D366DD2CAC752F568EB8765B /* User.owner.res.vtl */; };
+		48F662F1AEA4419D2923E70F /* Subscription.onCreateUser.res.vtl in Resources */ = {isa = PBXBuildFile; fileRef = 0FF5A5E0DDB555AA62BB121A /* Subscription.onCreateUser.res.vtl */; };
+		4A0227EDB614FA65C2971DE0 /* Subscription.onDeleteShift.postAuth.1.req.vtl in Resources */ = {isa = PBXBuildFile; fileRef = 5CBF8763EFC51D7DDD0EAC3B /* Subscription.onDeleteShift.postAuth.1.req.vtl */; };
+		4A2905890D181EBF4CB76C7F /* Query.shiftsByUserId.postAuth.1.res.vtl in Resources */ = {isa = PBXBuildFile; fileRef = D5568126222FF6556FE9C894 /* Query.shiftsByUserId.postAuth.1.res.vtl */; };
+		4E19A41CF21D68659FDD7E5E /* User.shifts.auth.1.req.vtl in Resources */ = {isa = PBXBuildFile; fileRef = 6D546002129F90827B4305EC /* User.shifts.auth.1.req.vtl */; };
+		4EC48312881395C86FAA1E2E /* Subscription.onDeleteUser.res.vtl in Resources */ = {isa = PBXBuildFile; fileRef = 5A8D67E9F88B3C4BC93DD1D0 /* Subscription.onDeleteUser.res.vtl */; };
 		4EFF2C58E3BAC69FD2D3F0E1 /* Shift+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0947A509B7179E3020618444 /* Shift+Schema.swift */; };
+		503E97CA2E4707BF24288514 /* Subscription.onUpdateUser.postAuth.1.req.vtl in Resources */ = {isa = PBXBuildFile; fileRef = FA935ECE9BD44429B9FA74A8 /* Subscription.onUpdateUser.postAuth.1.req.vtl */; };
+		50B1374297A835E6C52776B0 /* cli-inputs.json in Resources */ = {isa = PBXBuildFile; fileRef = A855E64BA4FC5D9F06C209CF /* cli-inputs.json */; };
+		51B331A6D00DE6E773C26B3E /* Subscription.onUpdateUser.req.vtl in Resources */ = {isa = PBXBuildFile; fileRef = 44BAEC4BC5E929452CD5111F /* Subscription.onUpdateUser.req.vtl */; };
+		524C98BF0BD007CDE8E6C08E /* Mutation.createShift.req.vtl in Resources */ = {isa = PBXBuildFile; fileRef = 82F8724CF935834A4E817313 /* Mutation.createShift.req.vtl */; };
+		560D84DEBECF24E97C09DDBF /* Mutation.createShift.res.vtl in Resources */ = {isa = PBXBuildFile; fileRef = 9F78741E01B09A7A4CBF46E0 /* Mutation.createShift.res.vtl */; };
+		56623BCEF9829E840DF02A66 /* Shift.owner.req.vtl in Resources */ = {isa = PBXBuildFile; fileRef = 7D9032FBD4BB31EB8762C6DB /* Shift.owner.req.vtl */; };
+		57065D908F9520C625789F97 /* Mutation.createUser.auth.1.req.vtl in Resources */ = {isa = PBXBuildFile; fileRef = 62B076E660BAD0A6457D1A55 /* Mutation.createUser.auth.1.req.vtl */; };
+		574B2F7F5F2BA2E197073D29 /* Query.listUsers.auth.1.req.vtl in Resources */ = {isa = PBXBuildFile; fileRef = EBB51A0DFC841A625E7FA453 /* Query.listUsers.auth.1.req.vtl */; };
+		57B577C2D17B5E39040A7E3B /* Mutation.deleteUser.auth.1.req.vtl in Resources */ = {isa = PBXBuildFile; fileRef = 31C1F05912845A60493276F4 /* Mutation.deleteUser.auth.1.req.vtl */; };
+		59FBF36DD1E9740982C74578 /* parameters.json in Resources */ = {isa = PBXBuildFile; fileRef = 1833FA012FDAD9F73F10FA23 /* parameters.json */; };
+		5C098D8CF6C978C7BAA3064B /* Subscription.onUpdateShift.res.vtl in Resources */ = {isa = PBXBuildFile; fileRef = DBED15BA5B5FAF2CF62E39FF /* Subscription.onUpdateShift.res.vtl */; };
+		5D17F6259E29722924F51555 /* cloudformation-template.json in Resources */ = {isa = PBXBuildFile; fileRef = A7EEDFC86CD1AA71B5B2739A /* cloudformation-template.json */; };
+		5D66546D881CDE680135CBE9 /* Query.getShift.auth.1.req.vtl in Resources */ = {isa = PBXBuildFile; fileRef = 74AAB7AB4C6D712EC9582A28 /* Query.getShift.auth.1.req.vtl */; };
+		5DF0CDB8076A83E724A53019 /* Mutation.updateShift.postAuth.1.req.vtl in Resources */ = {isa = PBXBuildFile; fileRef = 60DBBB831381688DF87EDB6C /* Mutation.updateShift.postAuth.1.req.vtl */; };
+		5E580F017E4A413C2B41C03E /* transform.conf.json in Resources */ = {isa = PBXBuildFile; fileRef = 54672590F47A9A4AFE4434B5 /* transform.conf.json */; };
+		5EE5A82630B2D27A737C84EC /* Subscription.onDeleteShift.auth.1.req.vtl in Resources */ = {isa = PBXBuildFile; fileRef = CA3883478BF7A55D1A3A830D /* Subscription.onDeleteShift.auth.1.req.vtl */; };
+		61D6B6A6497845F0690D5A3F /* Subscription.onCreateShift.res.vtl in Resources */ = {isa = PBXBuildFile; fileRef = F5F4A409FB06FC3AB85F3B33 /* Subscription.onCreateShift.res.vtl */; };
+		621300DD7E7607FE57AF3EFB /* User.shifts.auth.1.req.vtl in Resources */ = {isa = PBXBuildFile; fileRef = 69507DD56BFA14379E1F53AF /* User.shifts.auth.1.req.vtl */; };
+		624242676EB8E2293DE0F746 /* Shift.user.req.vtl in Resources */ = {isa = PBXBuildFile; fileRef = 3E7D35B45169B70A80DD47E3 /* Shift.user.req.vtl */; };
+		648591374E42D5D4AB1AF5B6 /* parameters.json in Resources */ = {isa = PBXBuildFile; fileRef = 330D0486F22AC2F5C0219532 /* parameters.json */; };
+		65E24A49AB89A26B0C55243F /* Mutation.deleteUser.postAuth.1.req.vtl in Resources */ = {isa = PBXBuildFile; fileRef = 087D479BE66B28803435CEA9 /* Mutation.deleteUser.postAuth.1.req.vtl */; };
+		66443A522E7F1894A6854A9A /* Query.shiftsByUserId.res.vtl in Resources */ = {isa = PBXBuildFile; fileRef = 1A355D65A3531756B6173397 /* Query.shiftsByUserId.res.vtl */; };
+		6780E9BD0E70F66F9F27D253 /* Subscription.onDeleteShift.req.vtl in Resources */ = {isa = PBXBuildFile; fileRef = 100A7F1EBF2BD4DB3A2E9C11 /* Subscription.onDeleteShift.req.vtl */; };
 		68255C261B1F0CEA847A46FE /* BusinessTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B4D0C54008D1E8BF31B754 /* BusinessTabView.swift */; };
+		68A633944355DCEAE579F749 /* Query.listShifts.postAuth.1.req.vtl in Resources */ = {isa = PBXBuildFile; fileRef = E71F88F6D1D1F64DEF961615 /* Query.listShifts.postAuth.1.req.vtl */; };
 		6944261F04FE8A8A6B1678CA /* User+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2FCF9FF972B894F729669E /* User+Schema.swift */; };
 		69718584A358CD186611995B /* tags.json in Resources */ = {isa = PBXBuildFile; fileRef = E31E51AC9A8C9D0F18F189F1 /* tags.json */; };
+		6A6279780F3A958EB697403F /* Query.listShifts.postAuth.1.req.vtl in Resources */ = {isa = PBXBuildFile; fileRef = 2F8B88FA4B07147FF97BC20F /* Query.listShifts.postAuth.1.req.vtl */; };
+		6B549CC14391A24351057E98 /* Mutation.deleteShift.auth.1.res.vtl in Resources */ = {isa = PBXBuildFile; fileRef = AA1B19AB6559D2EF0A61C6F3 /* Mutation.deleteShift.auth.1.res.vtl */; };
+		6B9382C924CBBC64FE966526 /* Mutation.deleteShift.res.vtl in Resources */ = {isa = PBXBuildFile; fileRef = 825E70F4F2BCC5570D7EFD4E /* Mutation.deleteShift.res.vtl */; };
+		6BCB4B6F2A33CCCAC106B744 /* User.shifts.req.vtl in Resources */ = {isa = PBXBuildFile; fileRef = DF8499FDB33D367C2A02B541 /* User.shifts.req.vtl */; };
+		6C740F01A2938B5B21AD934B /* Mutation.deleteShift.res.vtl in Resources */ = {isa = PBXBuildFile; fileRef = B66F6E3FE99096048EAA15A9 /* Mutation.deleteShift.res.vtl */; };
+		6DD88F3013AE7010030E739D /* Subscription.onDeleteShift.res.vtl in Resources */ = {isa = PBXBuildFile; fileRef = 02C57ACE761611A79A3EEAE7 /* Subscription.onDeleteShift.res.vtl */; };
 		6E56FCC5B1DEEE03DDA8128C /* AWSCognitoAuthPlugin in Frameworks */ = {isa = PBXBuildFile; productRef = FF55800D5667D1D349D4806E /* AWSCognitoAuthPlugin */; };
+		6E811AC2C239B334641B01A1 /* Subscription.onDeleteUser.res.vtl in Resources */ = {isa = PBXBuildFile; fileRef = 7E91635377FA401810B32335 /* Subscription.onDeleteUser.res.vtl */; };
 		6E9127E627D4FFF97AA27C5A /* Formatters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C839FA99A9B6AA224BF1F7 /* Formatters.swift */; };
+		6FF39EDF3B3421F37588E527 /* Query.getUser.req.vtl in Resources */ = {isa = PBXBuildFile; fileRef = 367649033B763CA1CBA28B09 /* Query.getUser.req.vtl */; };
+		71E8A7A35FC84821F0D3E943 /* Subscription.onDeleteUser.req.vtl in Resources */ = {isa = PBXBuildFile; fileRef = F9FF36B127BEEFAB8EE9924F /* Subscription.onDeleteUser.req.vtl */; };
+		7296F5B940594B623D7B274D /* Mutation.createShift.postAuth.1.req.vtl in Resources */ = {isa = PBXBuildFile; fileRef = EE0B6D4BC474607391EDD756 /* Mutation.createShift.postAuth.1.req.vtl */; };
+		73E5B02832AAB51972349C90 /* Mutation.updateShift.auth.1.req.vtl in Resources */ = {isa = PBXBuildFile; fileRef = 423BA0B1244FD81FD507CC7B /* Mutation.updateShift.auth.1.req.vtl */; };
+		74D12CC35AFBB89C2FA629D8 /* Mutation.updateShift.postAuth.1.req.vtl in Resources */ = {isa = PBXBuildFile; fileRef = AB2A26A67678A510E6E05199 /* Mutation.updateShift.postAuth.1.req.vtl */; };
+		7530EF9E5E1A160C2F9D86A7 /* Query.getUser.res.vtl in Resources */ = {isa = PBXBuildFile; fileRef = 55242EC4DDCDF4F3685325B6 /* Query.getUser.res.vtl */; };
+		7538B1FF62B92A5FAF13F87B /* Query.listShifts.req.vtl in Resources */ = {isa = PBXBuildFile; fileRef = 66605013A88F96E159780C8B /* Query.listShifts.req.vtl */; };
+		7552DBD29EAAE50637FB4D2B /* Shift.user.auth.1.req.vtl in Resources */ = {isa = PBXBuildFile; fileRef = 5D97ED240EC67E73BB14F60C /* Shift.user.auth.1.req.vtl */; };
+		76DF426C7244A780E4526C73 /* Shift.owner.res.vtl in Resources */ = {isa = PBXBuildFile; fileRef = 4A32BC65FB6A7DF1C6BFBF17 /* Shift.owner.res.vtl */; };
+		79481017867446A4639814C2 /* User.owner.req.vtl in Resources */ = {isa = PBXBuildFile; fileRef = 08F05C10E2C13EB674CCB303 /* User.owner.req.vtl */; };
+		79D42444482A3E191BDBAF85 /* User.json in Resources */ = {isa = PBXBuildFile; fileRef = 978137CE9769B760CEBE9F40 /* User.json */; };
+		7A5946A0B02FC8D51FADFF1F /* Subscription.onCreateUser.auth.1.req.vtl in Resources */ = {isa = PBXBuildFile; fileRef = 43CC10D5F173BBEFCD9283CC /* Subscription.onCreateUser.auth.1.req.vtl */; };
+		7A5CFF6E05CC9D190271B741 /* Shift.user.res.vtl in Resources */ = {isa = PBXBuildFile; fileRef = 17695C35A0F1E6703ABB12ED /* Shift.user.res.vtl */; };
 		7B08B69C9FAA627EE4FD2AA2 /* ShiftState.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC245E47C5BDED84F357EA15 /* ShiftState.swift */; };
 		7C359531812CB6F452852C7D /* root-cloudformation-stack.json in Resources */ = {isa = PBXBuildFile; fileRef = 7EE721A480098F7F77EA42AA /* root-cloudformation-stack.json */; };
+		7D6BBD54F59C2A94A51DFADC /* Subscription.onUpdateShift.res.vtl in Resources */ = {isa = PBXBuildFile; fileRef = 3E12C278B23E02A87DFEAB25 /* Subscription.onUpdateShift.res.vtl */; };
+		7E952AFD2E3425FFA05642EF /* Query.listShifts.auth.1.req.vtl in Resources */ = {isa = PBXBuildFile; fileRef = 483D2BB6120279CFD1EA9066 /* Query.listShifts.auth.1.req.vtl */; };
 		7F8764C2934C681FB3379560 /* AWSAPIPlugin in Frameworks */ = {isa = PBXBuildFile; productRef = B38CBD1970A3CEFB5D934B9B /* AWSAPIPlugin */; };
+		809B86600767EA51D6860AFD /* Subscription.onCreateUser.res.vtl in Resources */ = {isa = PBXBuildFile; fileRef = 9557F37085C5D5AD0C4FDA97 /* Subscription.onCreateUser.res.vtl */; };
+		80B23498817CCEA9AA1380D5 /* Mutation.createShift.auth.1.req.vtl in Resources */ = {isa = PBXBuildFile; fileRef = 69A70A414158A30883F46FD5 /* Mutation.createShift.auth.1.req.vtl */; };
 		80EE70BD23BEBDB6FF1AD2B8 /* AWSDataStorePlugin in Frameworks */ = {isa = PBXBuildFile; productRef = 7478EDA993BA34863A02D15F /* AWSDataStorePlugin */; };
+		810AFFBFEFB540108794A7A7 /* Subscription.onUpdateUser.auth.1.req.vtl in Resources */ = {isa = PBXBuildFile; fileRef = 99E26FE2975A38097AB54A29 /* Subscription.onUpdateUser.auth.1.req.vtl */; };
+		8487E07156E1ED43434D6D4D /* Mutation.deleteShift.auth.1.req.vtl in Resources */ = {isa = PBXBuildFile; fileRef = 46577069DE464FF7DD6DA45B /* Mutation.deleteShift.auth.1.req.vtl */; };
 		8518BEBF490FA6DAB6421B12 /* Idempotency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6675929BC83C45CCE8710778 /* Idempotency.swift */; };
+		8A4676EAE4C241AD04289EFA /* Query.getShift.req.vtl in Resources */ = {isa = PBXBuildFile; fileRef = BF8C49EABEA3F94068F26BE3 /* Query.getShift.req.vtl */; };
+		8CAC8201924BD20EDEC03C17 /* Query.getUser.res.vtl in Resources */ = {isa = PBXBuildFile; fileRef = E5363A95BA4BE41713706275 /* Query.getUser.res.vtl */; };
+		8D695DB863A4D999B7E23AD6 /* guardapp799df51d-cloudformation-template.json in Resources */ = {isa = PBXBuildFile; fileRef = FF84F90EEB33990845CC5E78 /* guardapp799df51d-cloudformation-template.json */; };
+		8DF427D937463A64E027B393 /* Query.getShift.res.vtl in Resources */ = {isa = PBXBuildFile; fileRef = 72359648030002A282396B76 /* Query.getShift.res.vtl */; };
 		8E5AE426D4D6E0D00C811717 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = B02CB79C78EB07D632800A85 /* README.md */; };
+		90A5DEBB11F5A264F73DE7F3 /* Subscription.onDeleteShift.auth.1.req.vtl in Resources */ = {isa = PBXBuildFile; fileRef = 5AC82456B108F695B48F05C4 /* Subscription.onDeleteShift.auth.1.req.vtl */; };
 		90CDEC020F83F5A1B4FD8DCB /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FECAC3A44B42936A27294EC /* Models.swift */; };
+		92F23071DE33B7FE3F1825D3 /* codegen.yml in Resources */ = {isa = PBXBuildFile; fileRef = CFF38BEC36FFC6865790F7CC /* codegen.yml */; };
+		943C9D72EE6DC41912485175 /* Query.shiftsByUserId.postAuth.1.res.vtl in Resources */ = {isa = PBXBuildFile; fileRef = A12A48C28D0634076DE3CA2E /* Query.shiftsByUserId.postAuth.1.res.vtl */; };
+		9479BC855D602FCEFCCE8F35 /* Mutation.updateShift.auth.1.req.vtl in Resources */ = {isa = PBXBuildFile; fileRef = 5F1D686EF81241E30A3C2C69 /* Mutation.updateShift.auth.1.req.vtl */; };
+		97166E4CF2563D134AA82EAA /* Subscription.onUpdateShift.req.vtl in Resources */ = {isa = PBXBuildFile; fileRef = A545C24D887F1F8901131B57 /* Subscription.onUpdateShift.req.vtl */; };
+		978B0CE717E7FFCD3A791A37 /* Subscription.onCreateShift.req.vtl in Resources */ = {isa = PBXBuildFile; fileRef = 2D7BE3F9FCAA0245F9676687 /* Subscription.onCreateShift.req.vtl */; };
+		97EF1AB5C83E0AAD9110738C /* Shift.owner.req.vtl in Resources */ = {isa = PBXBuildFile; fileRef = 7B2DC9460CE7BFF907280A3B /* Shift.owner.req.vtl */; };
+		993680AA96F171588E2FA1DB /* Query.getUser.auth.1.req.vtl in Resources */ = {isa = PBXBuildFile; fileRef = 13C9D5C341EC9AA9116D638A /* Query.getUser.auth.1.req.vtl */; };
+		99FC5E3F4746985BF84C34ED /* Subscription.onUpdateShift.auth.1.req.vtl in Resources */ = {isa = PBXBuildFile; fileRef = 4D5F6FE6EF08EA3CFDBEEC92 /* Subscription.onUpdateShift.auth.1.req.vtl */; };
+		9A903293163D4E46BD57B4F6 /* Subscription.onDeleteUser.postAuth.1.req.vtl in Resources */ = {isa = PBXBuildFile; fileRef = 51C03ED33606C8549FC25B72 /* Subscription.onDeleteUser.postAuth.1.req.vtl */; };
 		9AEA70FD96844E476BBDDFBE /* CustomResources.json in Resources */ = {isa = PBXBuildFile; fileRef = D6619F13F0DF23C47FA5B5F4 /* CustomResources.json */; };
+		9AEE8DE3D3B56213A7E3E556 /* schema.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 2E37213DFA787FC3606FDFC5 /* schema.graphql */; };
+		9B37DB665080E2AD564DA40D /* Mutation.createUser.req.vtl in Resources */ = {isa = PBXBuildFile; fileRef = BEF360740EB40B36A77D29B0 /* Mutation.createUser.req.vtl */; };
+		9BAFD23B583A4C3CCE2ACBE4 /* cloudformation-template.json in Resources */ = {isa = PBXBuildFile; fileRef = D381510B0ABE95EFFB208F36 /* cloudformation-template.json */; };
+		9BEC626D3FC00D665E46B381 /* Subscription.onCreateShift.req.vtl in Resources */ = {isa = PBXBuildFile; fileRef = 0FC0DEAFE008AE963B68BA17 /* Subscription.onCreateShift.req.vtl */; };
+		9DB7785C6CCD57A44E7AE613 /* Mutation.deleteUser.req.vtl in Resources */ = {isa = PBXBuildFile; fileRef = E5EECD1C545482C656F03436 /* Mutation.deleteUser.req.vtl */; };
+		9E3A3981FA2A34D560F6B516 /* Mutation.createUser.req.vtl in Resources */ = {isa = PBXBuildFile; fileRef = EB74A8CAD950895952BD4A41 /* Mutation.createUser.req.vtl */; };
+		9E70D8963E3A166440125751 /* guardapp799df51d-cloudformation-template.json in Resources */ = {isa = PBXBuildFile; fileRef = 10AB0A00964FC42B0A73D809 /* guardapp799df51d-cloudformation-template.json */; };
+		9E962E215DE6A789DB259725 /* Mutation.deleteUser.auth.1.req.vtl in Resources */ = {isa = PBXBuildFile; fileRef = 83DB44922E7C18C4FB719EBB /* Mutation.deleteUser.auth.1.req.vtl */; };
+		9EE6D3C09B4E0ECC2170600F /* Query.listShifts.res.vtl in Resources */ = {isa = PBXBuildFile; fileRef = F20B731A5B9D601F99B1F5D0 /* Query.listShifts.res.vtl */; };
+		A04748996B37D3E696DDA822 /* Subscription.onUpdateUser.postAuth.1.req.vtl in Resources */ = {isa = PBXBuildFile; fileRef = 011A8BDB7E921C7D6C5895DD /* Subscription.onUpdateUser.postAuth.1.req.vtl */; };
+		A05FB73E84CC0E64C5A81102 /* Mutation.updateShift.req.vtl in Resources */ = {isa = PBXBuildFile; fileRef = 86F400B5F3FA6FD7963EB0AE /* Mutation.updateShift.req.vtl */; };
+		A119FB98E53FBE351D32D21C /* User.json in Resources */ = {isa = PBXBuildFile; fileRef = 9C11BC328719248B05D8B255 /* User.json */; };
+		A141C97634E79860401FA1D6 /* Subscription.onUpdateUser.res.vtl in Resources */ = {isa = PBXBuildFile; fileRef = DFF5CFB13381C59F54FFBF7E /* Subscription.onUpdateUser.res.vtl */; };
+		A1D69DB76084160FEB493448 /* Mutation.deleteShift.auth.1.req.vtl in Resources */ = {isa = PBXBuildFile; fileRef = 09BEE181D52A821402BA5993 /* Mutation.deleteShift.auth.1.req.vtl */; };
 		A28303B8761646AE3F6DDE64 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 36F862EB29D5FD7AACA9BD59 /* README.md */; };
+		A4560E32EB0EBAD59FAC21A9 /* Mutation.deleteUser.postAuth.1.req.vtl in Resources */ = {isa = PBXBuildFile; fileRef = CAED1D0228544C696D130CF4 /* Mutation.deleteUser.postAuth.1.req.vtl */; };
+		A48DBEDF2FC06DEBAA9BBDEC /* Mutation.deleteShift.req.vtl in Resources */ = {isa = PBXBuildFile; fileRef = 43ED8B7F05CB8AA91AFFFBC1 /* Mutation.deleteShift.req.vtl */; };
+		A4AED2BF61A540046953A888 /* Query.getShift.res.vtl in Resources */ = {isa = PBXBuildFile; fileRef = 499CEC80C36ED5F589FBCDE7 /* Query.getShift.res.vtl */; };
+		A5A522F138E9F232B40B7235 /* Mutation.updateUser.req.vtl in Resources */ = {isa = PBXBuildFile; fileRef = 34CEC04AF6C345F4C3186EE6 /* Mutation.updateUser.req.vtl */; };
 		A5B1DA5ABB6DE1A8D474306C /* root-cloudformation-stack.json in Resources */ = {isa = PBXBuildFile; fileRef = BC3B5D9AA0AF925855593D23 /* root-cloudformation-stack.json */; };
+		A709803534FAA97508A42656 /* Mutation.createUser.res.vtl in Resources */ = {isa = PBXBuildFile; fileRef = 174193F74135834A99ECBE99 /* Mutation.createUser.res.vtl */; };
+		A7F252078252DBF6E3E2ACE3 /* Mutation.createShift.postAuth.1.req.vtl in Resources */ = {isa = PBXBuildFile; fileRef = F45AA25ED6AFA61BF734B71E /* Mutation.createShift.postAuth.1.req.vtl */; };
+		A87D983F8767DD85C749D118 /* Mutation.createShift.init.1.req.vtl in Resources */ = {isa = PBXBuildFile; fileRef = 46B8A18E6104A1D1A52D5D2F /* Mutation.createShift.init.1.req.vtl */; };
+		A9241DFF767FC757A58E05FE /* Subscription.onUpdateShift.postAuth.1.req.vtl in Resources */ = {isa = PBXBuildFile; fileRef = C3DCBC900E26A8500DA2D467 /* Subscription.onUpdateShift.postAuth.1.req.vtl */; };
+		AA3EC8BE27EA50CB8D109566 /* Mutation.createUser.postAuth.1.req.vtl in Resources */ = {isa = PBXBuildFile; fileRef = 5706EE937B337F72E424F6A6 /* Mutation.createUser.postAuth.1.req.vtl */; };
+		ACE6D13F732A73637EEB2D88 /* Mutation.createShift.req.vtl in Resources */ = {isa = PBXBuildFile; fileRef = 82AE1547FF0211006367247D /* Mutation.createShift.req.vtl */; };
 		AEA49AEB0CADE2F8313941F7 /* cloudformation-template.json in Resources */ = {isa = PBXBuildFile; fileRef = F7812B2EFD74F24D45195FDA /* cloudformation-template.json */; };
+		AEB519A5A9C04FE382797AFC /* Query.listUsers.req.vtl in Resources */ = {isa = PBXBuildFile; fileRef = 0B62F4129B028FB46631BA24 /* Query.listUsers.req.vtl */; };
+		AF3229358353611F354D3021 /* Subscription.onUpdateShift.req.vtl in Resources */ = {isa = PBXBuildFile; fileRef = E28A0B00065B654965F7BC32 /* Subscription.onUpdateShift.req.vtl */; };
+		AFDFE8DAADD01742528EEC63 /* Mutation.deleteShift.auth.1.res.vtl in Resources */ = {isa = PBXBuildFile; fileRef = E1405A7FBD65599096EEF459 /* Mutation.deleteShift.auth.1.res.vtl */; };
 		B2305440D5B777FCB0742D83 /* local-aws-info.json in Resources */ = {isa = PBXBuildFile; fileRef = 1A8C07FE3BE7C27BB3015DFC /* local-aws-info.json */; };
+		B4E250B6E0B87FFF648AF97B /* Mutation.createUser.init.1.req.vtl in Resources */ = {isa = PBXBuildFile; fileRef = D8253901C087055A8F8506B5 /* Mutation.createUser.init.1.req.vtl */; };
+		B603E7FE5DB53C63E9F45357 /* User.shifts.res.vtl in Resources */ = {isa = PBXBuildFile; fileRef = CAE3E86DA14DD4C4305A659E /* User.shifts.res.vtl */; };
+		B6DADA97D183807AC27F4A10 /* Subscription.onUpdateShift.auth.1.req.vtl in Resources */ = {isa = PBXBuildFile; fileRef = 2431DACD0B342CB46314021D /* Subscription.onUpdateShift.auth.1.req.vtl */; };
+		B9821D192964E0BE3FA540EC /* root-cloudformation-stack.json in Resources */ = {isa = PBXBuildFile; fileRef = 0215754F671FF7FC6E169835 /* root-cloudformation-stack.json */; };
+		BC5D8BAF6E881747DFA12C16 /* Mutation.updateUser.req.vtl in Resources */ = {isa = PBXBuildFile; fileRef = 70615EDDC39EC91E9548E8CE /* Mutation.updateUser.req.vtl */; };
+		BC8D014206DD6622CA921B03 /* Query.listShifts.res.vtl in Resources */ = {isa = PBXBuildFile; fileRef = 4D73A2266BBB3C74274D9B52 /* Query.listShifts.res.vtl */; };
+		BCA7EE8728FE71BE3DA5C6E9 /* Mutation.createUser.init.1.req.vtl in Resources */ = {isa = PBXBuildFile; fileRef = 13043B422BBE336716FD3755 /* Mutation.createUser.init.1.req.vtl */; };
+		BD59BFDDDF907AF79FE711A2 /* Mutation.updateShift.res.vtl in Resources */ = {isa = PBXBuildFile; fileRef = 8909159E6791550ED887CA19 /* Mutation.updateShift.res.vtl */; };
+		BEAF187542E9C55F2ED7824F /* Query.shiftsByUserId.req.vtl in Resources */ = {isa = PBXBuildFile; fileRef = 5BE6A388799A96FC33C8069D /* Query.shiftsByUserId.req.vtl */; };
 		BEB5031CF1E3F89F8DEB0E4B /* pre-push.js.sample in Resources */ = {isa = PBXBuildFile; fileRef = 7653A53D7B7CE16F1B685B54 /* pre-push.js.sample */; };
+		BEC09CE5CCB01D00EF325CC4 /* schema.graphql in Resources */ = {isa = PBXBuildFile; fileRef = E47510DCAF7841C53569F575 /* schema.graphql */; };
 		BEE004D68E79A68E4E92E2E8 /* Role.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299BCC6B3D7477BB73540598 /* Role.swift */; };
+		BF5068D8D188AE38847EE07C /* Mutation.deleteUser.res.vtl in Resources */ = {isa = PBXBuildFile; fileRef = 43E00EA2047FE07CF894373B /* Mutation.deleteUser.res.vtl */; };
+		C06401D8C195578DB6A613B9 /* Mutation.createUser.postAuth.1.req.vtl in Resources */ = {isa = PBXBuildFile; fileRef = 539B15179251EF70357B4D1F /* Mutation.createUser.postAuth.1.req.vtl */; };
 		C2215BDE413574E550E85271 /* CustomResources.json in Resources */ = {isa = PBXBuildFile; fileRef = 2297B173FFFE71C0EF32A2CD /* CustomResources.json */; };
+		C2475DFF8B764A3F2BFD49D7 /* Subscription.onUpdateUser.req.vtl in Resources */ = {isa = PBXBuildFile; fileRef = 2221714EEB7A1791E44AA878 /* Subscription.onUpdateUser.req.vtl */; };
 		C3441E971FC446254A3C3FA7 /* ShiftService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302CF094C4E1CB1EEC62CFC9 /* ShiftService.swift */; };
+		C39AB4989DFB800E91192AB3 /* Subscription.onCreateUser.req.vtl in Resources */ = {isa = PBXBuildFile; fileRef = 88909544A10C2847C7E45BA9 /* Subscription.onCreateUser.req.vtl */; };
 		C498CB81E314CB116A8D5D9C /* project-config.json in Resources */ = {isa = PBXBuildFile; fileRef = F7484FBA93BCC1F17D4CDE63 /* project-config.json */; };
+		C531161722C63BE451314E01 /* CustomResources.json in Resources */ = {isa = PBXBuildFile; fileRef = D132165E3691EFC2C335CF9C /* CustomResources.json */; };
+		C9FF6B17CC7CC7568CE0648F /* Query.listUsers.postAuth.1.req.vtl in Resources */ = {isa = PBXBuildFile; fileRef = 334BD1C64E508ED7ED3A786B /* Query.listUsers.postAuth.1.req.vtl */; };
+		CABFF27DB57F891C991AD3AE /* Subscription.onCreateUser.postAuth.1.req.vtl in Resources */ = {isa = PBXBuildFile; fileRef = F70061D53CED07A1756593EB /* Subscription.onCreateUser.postAuth.1.req.vtl */; };
+		CB37D876B39BB07BB5A0FE8D /* ConnectionStack.json in Resources */ = {isa = PBXBuildFile; fileRef = 3251DA7BAEEB6E5A413E70CA /* ConnectionStack.json */; };
+		CCA78229403BA76E7C254372 /* Query.listUsers.auth.1.req.vtl in Resources */ = {isa = PBXBuildFile; fileRef = A868A49FA77CB3CA0E0424A2 /* Query.listUsers.auth.1.req.vtl */; };
+		CD1A4981D95AE84DA58DE07E /* Subscription.onCreateUser.postAuth.1.req.vtl in Resources */ = {isa = PBXBuildFile; fileRef = F135AE496D1BDCCB7C5F1DC3 /* Subscription.onCreateUser.postAuth.1.req.vtl */; };
 		CDFF68B70D2D39E91167C5B3 /* schema.graphql in Resources */ = {isa = PBXBuildFile; fileRef = C424E480BBDB119BC255A407 /* schema.graphql */; };
+		CE1C0FD3DB0CE381088BDA6A /* Query.getShift.postAuth.1.req.vtl in Resources */ = {isa = PBXBuildFile; fileRef = 8637BA9EBFF9B7AA090F4F5C /* Query.getShift.postAuth.1.req.vtl */; };
+		CEC887F6C38FE49FF969BD4C /* Shift.json in Resources */ = {isa = PBXBuildFile; fileRef = 5869129EF896BC003099FADE /* Shift.json */; };
+		D1ED511689F00F92F0317F09 /* Query.getUser.postAuth.1.req.vtl in Resources */ = {isa = PBXBuildFile; fileRef = 2A5FA7C50F66245848CEB29F /* Query.getUser.postAuth.1.req.vtl */; };
+		D3B26AF0D5382C61FF7BF85F /* Subscription.onUpdateShift.postAuth.1.req.vtl in Resources */ = {isa = PBXBuildFile; fileRef = 07BB92BC7935FC43F85DBC27 /* Subscription.onUpdateShift.postAuth.1.req.vtl */; };
+		D3C4927D40D332BFC253D435 /* CustomResources.json in Resources */ = {isa = PBXBuildFile; fileRef = EB3416AFA9B2E5897EE52157 /* CustomResources.json */; };
+		D577A7A45F12599D6B7B056A /* Mutation.updateUser.init.1.req.vtl in Resources */ = {isa = PBXBuildFile; fileRef = 15D15F91AE9B25BD6C9A8212 /* Mutation.updateUser.init.1.req.vtl */; };
+		D64FC561B1259934C0518E5B /* Mutation.deleteUser.res.vtl in Resources */ = {isa = PBXBuildFile; fileRef = 4EFC5EFFF2F6FFBE6777E7CD /* Mutation.deleteUser.res.vtl */; };
+		D74FD14E6D3BEC6E6F57B81D /* Subscription.onDeleteUser.auth.1.req.vtl in Resources */ = {isa = PBXBuildFile; fileRef = EE4067DA0E9318D824B5CE7E /* Subscription.onDeleteUser.auth.1.req.vtl */; };
+		D7DA5E1EDD7E6EC685F3872D /* Mutation.createUser.auth.1.req.vtl in Resources */ = {isa = PBXBuildFile; fileRef = 25C2A402416775761A0E933C /* Mutation.createUser.auth.1.req.vtl */; };
+		D8C89DD334DE95299B24BE8F /* Query.listUsers.res.vtl in Resources */ = {isa = PBXBuildFile; fileRef = 1ACCF9137EE3E453572A045B /* Query.listUsers.res.vtl */; };
+		DB4449B23E94E57617B0D335 /* Query.shiftsByUserId.res.vtl in Resources */ = {isa = PBXBuildFile; fileRef = BB48B007519197F121ABA517 /* Query.shiftsByUserId.res.vtl */; };
+		DBA5ED3D5E1DC00BEF0FEDB1 /* parameters.json in Resources */ = {isa = PBXBuildFile; fileRef = 64401D525632B3C72088ECAD /* parameters.json */; };
 		DD667BC13D6748C381E6E6E1 /* backend-config.json in Resources */ = {isa = PBXBuildFile; fileRef = 53B5B5422A4D6E4C5B5A5CE0 /* backend-config.json */; };
+		DDF316A7CC14B004B7B2B918 /* ConnectionStack.json in Resources */ = {isa = PBXBuildFile; fileRef = 48F6227037691BEE5BEB2B6A /* ConnectionStack.json */; };
+		DE9866DA9DF7DF858CED83A0 /* Mutation.deleteUser.req.vtl in Resources */ = {isa = PBXBuildFile; fileRef = 77A591482142F4FCC7BC412F /* Mutation.deleteUser.req.vtl */; };
+		DF0D07D14DBB4186BD8FA813 /* Subscription.onDeleteShift.res.vtl in Resources */ = {isa = PBXBuildFile; fileRef = B14F8787DA7E94BD19E9165F /* Subscription.onDeleteShift.res.vtl */; };
+		DF8CD42A447780CEE8DCC9BE /* Mutation.createShift.res.vtl in Resources */ = {isa = PBXBuildFile; fileRef = B844D0626C26A7C6BA80714C /* Mutation.createShift.res.vtl */; };
 		DFF7C26E9B034F74143B4DAC /* parameters.json in Resources */ = {isa = PBXBuildFile; fileRef = 1CE1E46F46DB04D9FA62793C /* parameters.json */; };
+		E04F6F5E545C2AB1AA6163F5 /* User.shifts.req.vtl in Resources */ = {isa = PBXBuildFile; fileRef = D8193C46164E85E82FBBBAC7 /* User.shifts.req.vtl */; };
+		E0CEF4E486FB3445EA84BCFE /* Shift.user.req.vtl in Resources */ = {isa = PBXBuildFile; fileRef = 9CE290C90B2BC003A96D68FE /* Shift.user.req.vtl */; };
+		E170C73A61437D2DA7182F6B /* Shift.owner.res.vtl in Resources */ = {isa = PBXBuildFile; fileRef = A531A03F463D73D03A595C0B /* Shift.owner.res.vtl */; };
+		E1AF737A211B423CFB341CCA /* Query.getShift.req.vtl in Resources */ = {isa = PBXBuildFile; fileRef = B1DF2D1668F263D095FA9509 /* Query.getShift.req.vtl */; };
+		E401D1B3241791351F3E1976 /* Subscription.onCreateShift.auth.1.req.vtl in Resources */ = {isa = PBXBuildFile; fileRef = DD87245F5B36D002C7C06C5E /* Subscription.onCreateShift.auth.1.req.vtl */; };
 		E5CB7F1C491DA610342FAA1F /* schema.graphql in Resources */ = {isa = PBXBuildFile; fileRef = BD96C6B199ACB2735939D307 /* schema.graphql */; };
+		E74819DA1DC4D0BB4C286843 /* Mutation.deleteUser.auth.1.res.vtl in Resources */ = {isa = PBXBuildFile; fileRef = 3AA10353D90CF83CB47191EA /* Mutation.deleteUser.auth.1.res.vtl */; };
+		E7F3B1B4C3A8D1B0B1453200 /* guardapp799df51d-cloudformation-template.json in Resources */ = {isa = PBXBuildFile; fileRef = EBE71D811A6BAC7701EBDF2F /* guardapp799df51d-cloudformation-template.json */; };
 		E9667C36824BE5195B68A33C /* amplifyconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 49EBFE8BF0D2FC60D6B0452F /* amplifyconfiguration.json */; };
+		E9C1445ABA65BB07FF7A05A5 /* Mutation.updateUser.init.1.req.vtl in Resources */ = {isa = PBXBuildFile; fileRef = E4B69EA99A3F23271E41040C /* Mutation.updateUser.init.1.req.vtl */; };
+		EA669E4BFC5C61DE26A65191 /* Mutation.updateShift.auth.1.res.vtl in Resources */ = {isa = PBXBuildFile; fileRef = 22E3B073C03C7EABEE6F6C29 /* Mutation.updateShift.auth.1.res.vtl */; };
+		EAFC78391CE48FE67610ADD3 /* backend-config.json in Resources */ = {isa = PBXBuildFile; fileRef = 8D1E47A5109E53A35449D2AF /* backend-config.json */; };
 		EBF3BB627601962B845DDF34 /* GuardAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D07CAD7FD66D6D8D8C9A3D1 /* GuardAppTests.swift */; };
 		EEB9E0E0D89021F97FFC946F /* Amplify in Frameworks */ = {isa = PBXBuildFile; productRef = 549D380BDEA2E64182C3DB3E /* Amplify */; };
 		F221A3E482D23F196938AB86 /* codegen.yml in Resources */ = {isa = PBXBuildFile; fileRef = 82BF7A8BFEDEB4566E619AA1 /* codegen.yml */; };
 		F26783391F271BE6533862CD /* post-push.sh.sample in Resources */ = {isa = PBXBuildFile; fileRef = 21B795424D8DE9FDEA37D1D1 /* post-push.sh.sample */; };
 		F4D8A055C21E9978CC60AEA6 /* cli-inputs.json in Resources */ = {isa = PBXBuildFile; fileRef = 5B85466E44DDBEC9133861F2 /* cli-inputs.json */; };
+		F5E01C0B2F9D143285126B7D /* Query.listUsers.req.vtl in Resources */ = {isa = PBXBuildFile; fileRef = C0CE7D4E5723C2A4E10B1E24 /* Query.listUsers.req.vtl */; };
 		F5E2B8190A04950482DA3655 /* cli.json in Resources */ = {isa = PBXBuildFile; fileRef = 38D5B114F9FDFFE7B0D363BB /* cli.json */; };
+		F5FFEB3B01568E86854CC2CC /* Subscription.onDeleteShift.postAuth.1.req.vtl in Resources */ = {isa = PBXBuildFile; fileRef = B2D06A06130682DAC242312F /* Subscription.onDeleteShift.postAuth.1.req.vtl */; };
 		F69F4698C57E74A3F58E1C84 /* transform.conf.json in Resources */ = {isa = PBXBuildFile; fileRef = DE42242422B17D26DE431997 /* transform.conf.json */; };
+		F6D64BD0BE921F25F39663FC /* Mutation.updateUser.auth.1.res.vtl in Resources */ = {isa = PBXBuildFile; fileRef = 6D6D20B445FE49BFAF1FE4E2 /* Mutation.updateUser.auth.1.res.vtl */; };
 		F7F6E2670BFC196DCCD5045E /* WorkerTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEB0D6F63FA66071162BF55B /* WorkerTabView.swift */; };
+		F8B2E9D1889A57F33134319B /* Mutation.updateUser.auth.1.req.vtl in Resources */ = {isa = PBXBuildFile; fileRef = 73F281F8B16CFF77DB3B4DD1 /* Mutation.updateUser.auth.1.req.vtl */; };
+		F8DE8CBFB63431F2DA9505E8 /* Subscription.onCreateUser.req.vtl in Resources */ = {isa = PBXBuildFile; fileRef = 23F8E4EF8DBCD70B7D67A356 /* Subscription.onCreateUser.req.vtl */; };
 		FBCC23DB9FD6814321BC0B61 /* Shift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F034FD47D3321E7CDFDFF47 /* Shift.swift */; };
+		FE5A639706B3EB30AC1FEF90 /* Query.listUsers.res.vtl in Resources */ = {isa = PBXBuildFile; fileRef = 134DB84FE4D9CF24B2CD13A0 /* Query.listUsers.res.vtl */; };
 		FE95B1DD27670A1F83390B47 /* tags.json in Resources */ = {isa = PBXBuildFile; fileRef = 5D8FDB42BD6189799553EC25 /* tags.json */; };
+		FFDFC6E84F697BFC5DD35796 /* Query.getUser.req.vtl in Resources */ = {isa = PBXBuildFile; fileRef = 08EEC98EF7EB344B5F99007D /* Query.getUser.req.vtl */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,64 +277,263 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		011A8BDB7E921C7D6C5895DD /* Subscription.onUpdateUser.postAuth.1.req.vtl */ = {isa = PBXFileReference; path = Subscription.onUpdateUser.postAuth.1.req.vtl; sourceTree = "<group>"; };
+		01FBBFCB5698DF5233EAEF08 /* Mutation.deleteShift.req.vtl */ = {isa = PBXFileReference; path = Mutation.deleteShift.req.vtl; sourceTree = "<group>"; };
+		0215754F671FF7FC6E169835 /* root-cloudformation-stack.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "root-cloudformation-stack.json"; sourceTree = "<group>"; };
+		02C57ACE761611A79A3EEAE7 /* Subscription.onDeleteShift.res.vtl */ = {isa = PBXFileReference; path = Subscription.onDeleteShift.res.vtl; sourceTree = "<group>"; };
 		03403C891526FC14DA535281 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
 		03764D01622043CA86E02EBE /* SessionStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionStore.swift; sourceTree = "<group>"; };
+		040271A458C594B5C546E4FA /* Shift.user.auth.1.req.vtl */ = {isa = PBXFileReference; path = Shift.user.auth.1.req.vtl; sourceTree = "<group>"; };
+		054A16D0C01072DCC6D01663 /* Mutation.updateShift.auth.1.res.vtl */ = {isa = PBXFileReference; path = Mutation.updateShift.auth.1.res.vtl; sourceTree = "<group>"; };
 		05F962B3E02F5ABE3804AA39 /* amplify-meta.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "amplify-meta.json"; sourceTree = "<group>"; };
+		07BB92BC7935FC43F85DBC27 /* Subscription.onUpdateShift.postAuth.1.req.vtl */ = {isa = PBXFileReference; path = Subscription.onUpdateShift.postAuth.1.req.vtl; sourceTree = "<group>"; };
+		087D479BE66B28803435CEA9 /* Mutation.deleteUser.postAuth.1.req.vtl */ = {isa = PBXFileReference; path = Mutation.deleteUser.postAuth.1.req.vtl; sourceTree = "<group>"; };
+		08EEC98EF7EB344B5F99007D /* Query.getUser.req.vtl */ = {isa = PBXFileReference; path = Query.getUser.req.vtl; sourceTree = "<group>"; };
+		08F05C10E2C13EB674CCB303 /* User.owner.req.vtl */ = {isa = PBXFileReference; path = User.owner.req.vtl; sourceTree = "<group>"; };
 		0947A509B7179E3020618444 /* Shift+Schema.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Shift+Schema.swift"; sourceTree = "<group>"; };
+		09BEE181D52A821402BA5993 /* Mutation.deleteShift.auth.1.req.vtl */ = {isa = PBXFileReference; path = Mutation.deleteShift.auth.1.req.vtl; sourceTree = "<group>"; };
+		0B62F4129B028FB46631BA24 /* Query.listUsers.req.vtl */ = {isa = PBXFileReference; path = Query.listUsers.req.vtl; sourceTree = "<group>"; };
+		0FC0DEAFE008AE963B68BA17 /* Subscription.onCreateShift.req.vtl */ = {isa = PBXFileReference; path = Subscription.onCreateShift.req.vtl; sourceTree = "<group>"; };
+		0FF5A5E0DDB555AA62BB121A /* Subscription.onCreateUser.res.vtl */ = {isa = PBXFileReference; path = Subscription.onCreateUser.res.vtl; sourceTree = "<group>"; };
+		100A7F1EBF2BD4DB3A2E9C11 /* Subscription.onDeleteShift.req.vtl */ = {isa = PBXFileReference; path = Subscription.onDeleteShift.req.vtl; sourceTree = "<group>"; };
+		10AB0A00964FC42B0A73D809 /* guardapp799df51d-cloudformation-template.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "guardapp799df51d-cloudformation-template.json"; sourceTree = "<group>"; };
+		11C6C10B32A3AB4E24AA6DED /* User.owner.req.vtl */ = {isa = PBXFileReference; path = User.owner.req.vtl; sourceTree = "<group>"; };
+		13043B422BBE336716FD3755 /* Mutation.createUser.init.1.req.vtl */ = {isa = PBXFileReference; path = Mutation.createUser.init.1.req.vtl; sourceTree = "<group>"; };
+		134DB84FE4D9CF24B2CD13A0 /* Query.listUsers.res.vtl */ = {isa = PBXFileReference; path = Query.listUsers.res.vtl; sourceTree = "<group>"; };
+		13C9D5C341EC9AA9116D638A /* Query.getUser.auth.1.req.vtl */ = {isa = PBXFileReference; path = Query.getUser.auth.1.req.vtl; sourceTree = "<group>"; };
+		15D15F91AE9B25BD6C9A8212 /* Mutation.updateUser.init.1.req.vtl */ = {isa = PBXFileReference; path = Mutation.updateUser.init.1.req.vtl; sourceTree = "<group>"; };
 		16BF1D4DAD31A22D34014534 /* parameters.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = parameters.json; sourceTree = "<group>"; };
+		17159878888DC136F496C928 /* Mutation.updateUser.postAuth.1.req.vtl */ = {isa = PBXFileReference; path = Mutation.updateUser.postAuth.1.req.vtl; sourceTree = "<group>"; };
+		174193F74135834A99ECBE99 /* Mutation.createUser.res.vtl */ = {isa = PBXFileReference; path = Mutation.createUser.res.vtl; sourceTree = "<group>"; };
+		17695C35A0F1E6703ABB12ED /* Shift.user.res.vtl */ = {isa = PBXFileReference; path = Shift.user.res.vtl; sourceTree = "<group>"; };
 		17C007E9F62B72CD8F97EAAD /* cli-inputs.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "cli-inputs.json"; sourceTree = "<group>"; };
+		1833FA012FDAD9F73F10FA23 /* parameters.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = parameters.json; sourceTree = "<group>"; };
+		1A355D65A3531756B6173397 /* Query.shiftsByUserId.res.vtl */ = {isa = PBXFileReference; path = Query.shiftsByUserId.res.vtl; sourceTree = "<group>"; };
 		1A8C07FE3BE7C27BB3015DFC /* local-aws-info.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "local-aws-info.json"; sourceTree = "<group>"; };
+		1ACCF9137EE3E453572A045B /* Query.listUsers.res.vtl */ = {isa = PBXFileReference; path = Query.listUsers.res.vtl; sourceTree = "<group>"; };
 		1CE1E46F46DB04D9FA62793C /* parameters.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = parameters.json; sourceTree = "<group>"; };
 		21B795424D8DE9FDEA37D1D1 /* post-push.sh.sample */ = {isa = PBXFileReference; path = "post-push.sh.sample"; sourceTree = "<group>"; };
+		2221714EEB7A1791E44AA878 /* Subscription.onUpdateUser.req.vtl */ = {isa = PBXFileReference; path = Subscription.onUpdateUser.req.vtl; sourceTree = "<group>"; };
 		2297B173FFFE71C0EF32A2CD /* CustomResources.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CustomResources.json; sourceTree = "<group>"; };
+		22E3B073C03C7EABEE6F6C29 /* Mutation.updateShift.auth.1.res.vtl */ = {isa = PBXFileReference; path = Mutation.updateShift.auth.1.res.vtl; sourceTree = "<group>"; };
+		237154C91F4E7A4B9CE9DEA6 /* User.shifts.res.vtl */ = {isa = PBXFileReference; path = User.shifts.res.vtl; sourceTree = "<group>"; };
+		23F8E4EF8DBCD70B7D67A356 /* Subscription.onCreateUser.req.vtl */ = {isa = PBXFileReference; path = Subscription.onCreateUser.req.vtl; sourceTree = "<group>"; };
+		2431DACD0B342CB46314021D /* Subscription.onUpdateShift.auth.1.req.vtl */ = {isa = PBXFileReference; path = Subscription.onUpdateShift.auth.1.req.vtl; sourceTree = "<group>"; };
+		25C2A402416775761A0E933C /* Mutation.createUser.auth.1.req.vtl */ = {isa = PBXFileReference; path = Mutation.createUser.auth.1.req.vtl; sourceTree = "<group>"; };
 		299BCC6B3D7477BB73540598 /* Role.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Role.swift; sourceTree = "<group>"; };
+		2A066CB4BCA88957723ABBF7 /* Query.listShifts.auth.1.req.vtl */ = {isa = PBXFileReference; path = Query.listShifts.auth.1.req.vtl; sourceTree = "<group>"; };
+		2A5FA7C50F66245848CEB29F /* Query.getUser.postAuth.1.req.vtl */ = {isa = PBXFileReference; path = Query.getUser.postAuth.1.req.vtl; sourceTree = "<group>"; };
+		2D7BE3F9FCAA0245F9676687 /* Subscription.onCreateShift.req.vtl */ = {isa = PBXFileReference; path = Subscription.onCreateShift.req.vtl; sourceTree = "<group>"; };
+		2E37213DFA787FC3606FDFC5 /* schema.graphql */ = {isa = PBXFileReference; path = schema.graphql; sourceTree = "<group>"; };
+		2F8B88FA4B07147FF97BC20F /* Query.listShifts.postAuth.1.req.vtl */ = {isa = PBXFileReference; path = Query.listShifts.postAuth.1.req.vtl; sourceTree = "<group>"; };
 		2FBBB4DBE8FA71CA715B9E0A /* AppMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppMain.swift; sourceTree = "<group>"; };
 		302CF094C4E1CB1EEC62CFC9 /* ShiftService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShiftService.swift; sourceTree = "<group>"; };
 		31745B651C2BF41AF6C1D363 /* parameters.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = parameters.json; sourceTree = "<group>"; };
+		31C1F05912845A60493276F4 /* Mutation.deleteUser.auth.1.req.vtl */ = {isa = PBXFileReference; path = Mutation.deleteUser.auth.1.req.vtl; sourceTree = "<group>"; };
+		3251DA7BAEEB6E5A413E70CA /* ConnectionStack.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ConnectionStack.json; sourceTree = "<group>"; };
+		330D0486F22AC2F5C0219532 /* parameters.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = parameters.json; sourceTree = "<group>"; };
+		334BD1C64E508ED7ED3A786B /* Query.listUsers.postAuth.1.req.vtl */ = {isa = PBXFileReference; path = Query.listUsers.postAuth.1.req.vtl; sourceTree = "<group>"; };
+		34CEC04AF6C345F4C3186EE6 /* Mutation.updateUser.req.vtl */ = {isa = PBXFileReference; path = Mutation.updateUser.req.vtl; sourceTree = "<group>"; };
+		358475A801EA5F78EAC47D87 /* Mutation.updateUser.res.vtl */ = {isa = PBXFileReference; path = Mutation.updateUser.res.vtl; sourceTree = "<group>"; };
+		367649033B763CA1CBA28B09 /* Query.getUser.req.vtl */ = {isa = PBXFileReference; path = Query.getUser.req.vtl; sourceTree = "<group>"; };
 		36BDA48B2AF30EF7D5363BF0 /* .eslintignore */ = {isa = PBXFileReference; path = .eslintignore; sourceTree = "<group>"; };
 		36F862EB29D5FD7AACA9BD59 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		38D5B114F9FDFFE7B0D363BB /* cli.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = cli.json; sourceTree = "<group>"; };
+		395545DE76EE9DB1635C2182 /* Subscription.onUpdateUser.auth.1.req.vtl */ = {isa = PBXFileReference; path = Subscription.onUpdateUser.auth.1.req.vtl; sourceTree = "<group>"; };
+		3A13A1AF81303539088CCE92 /* cli-inputs.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "cli-inputs.json"; sourceTree = "<group>"; };
+		3A1C8D7DDB1DF53DB0AE0924 /* Shift.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Shift.json; sourceTree = "<group>"; };
+		3AA10353D90CF83CB47191EA /* Mutation.deleteUser.auth.1.res.vtl */ = {isa = PBXFileReference; path = Mutation.deleteUser.auth.1.res.vtl; sourceTree = "<group>"; };
 		3D07CAD7FD66D6D8D8C9A3D1 /* GuardAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuardAppTests.swift; sourceTree = "<group>"; };
+		3E12C278B23E02A87DFEAB25 /* Subscription.onUpdateShift.res.vtl */ = {isa = PBXFileReference; path = Subscription.onUpdateShift.res.vtl; sourceTree = "<group>"; };
+		3E7D35B45169B70A80DD47E3 /* Shift.user.req.vtl */ = {isa = PBXFileReference; path = Shift.user.req.vtl; sourceTree = "<group>"; };
+		423BA0B1244FD81FD507CC7B /* Mutation.updateShift.auth.1.req.vtl */ = {isa = PBXFileReference; path = Mutation.updateShift.auth.1.req.vtl; sourceTree = "<group>"; };
+		43CC10D5F173BBEFCD9283CC /* Subscription.onCreateUser.auth.1.req.vtl */ = {isa = PBXFileReference; path = Subscription.onCreateUser.auth.1.req.vtl; sourceTree = "<group>"; };
+		43E00EA2047FE07CF894373B /* Mutation.deleteUser.res.vtl */ = {isa = PBXFileReference; path = Mutation.deleteUser.res.vtl; sourceTree = "<group>"; };
+		43ED8B7F05CB8AA91AFFFBC1 /* Mutation.deleteShift.req.vtl */ = {isa = PBXFileReference; path = Mutation.deleteShift.req.vtl; sourceTree = "<group>"; };
+		440C217B288D91255EDB749A /* Mutation.deleteShift.postAuth.1.req.vtl */ = {isa = PBXFileReference; path = Mutation.deleteShift.postAuth.1.req.vtl; sourceTree = "<group>"; };
+		44BAEC4BC5E929452CD5111F /* Subscription.onUpdateUser.req.vtl */ = {isa = PBXFileReference; path = Subscription.onUpdateUser.req.vtl; sourceTree = "<group>"; };
+		46577069DE464FF7DD6DA45B /* Mutation.deleteShift.auth.1.req.vtl */ = {isa = PBXFileReference; path = Mutation.deleteShift.auth.1.req.vtl; sourceTree = "<group>"; };
+		46B8A18E6104A1D1A52D5D2F /* Mutation.createShift.init.1.req.vtl */ = {isa = PBXFileReference; path = Mutation.createShift.init.1.req.vtl; sourceTree = "<group>"; };
+		483D2BB6120279CFD1EA9066 /* Query.listShifts.auth.1.req.vtl */ = {isa = PBXFileReference; path = Query.listShifts.auth.1.req.vtl; sourceTree = "<group>"; };
+		48F6227037691BEE5BEB2B6A /* ConnectionStack.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ConnectionStack.json; sourceTree = "<group>"; };
+		499CEC80C36ED5F589FBCDE7 /* Query.getShift.res.vtl */ = {isa = PBXFileReference; path = Query.getShift.res.vtl; sourceTree = "<group>"; };
 		49EBFE8BF0D2FC60D6B0452F /* amplifyconfiguration.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = amplifyconfiguration.json; sourceTree = "<group>"; };
+		4A32BC65FB6A7DF1C6BFBF17 /* Shift.owner.res.vtl */ = {isa = PBXFileReference; path = Shift.owner.res.vtl; sourceTree = "<group>"; };
+		4ABCCBFACA607064BC168EE2 /* Query.getUser.auth.1.req.vtl */ = {isa = PBXFileReference; path = Query.getUser.auth.1.req.vtl; sourceTree = "<group>"; };
+		4D5F6FE6EF08EA3CFDBEEC92 /* Subscription.onUpdateShift.auth.1.req.vtl */ = {isa = PBXFileReference; path = Subscription.onUpdateShift.auth.1.req.vtl; sourceTree = "<group>"; };
+		4D73A2266BBB3C74274D9B52 /* Query.listShifts.res.vtl */ = {isa = PBXFileReference; path = Query.listShifts.res.vtl; sourceTree = "<group>"; };
+		4EDDF1E53E65686226B72F49 /* Shift.user.res.vtl */ = {isa = PBXFileReference; path = Shift.user.res.vtl; sourceTree = "<group>"; };
+		4EFC5EFFF2F6FFBE6777E7CD /* Mutation.deleteUser.res.vtl */ = {isa = PBXFileReference; path = Mutation.deleteUser.res.vtl; sourceTree = "<group>"; };
 		4FE673402C884425E4E76E44 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		4FECAC3A44B42936A27294EC /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		51624D0FA1ABAE29730CA347 /* Subscription.onCreateShift.postAuth.1.req.vtl */ = {isa = PBXFileReference; path = Subscription.onCreateShift.postAuth.1.req.vtl; sourceTree = "<group>"; };
+		51C03ED33606C8549FC25B72 /* Subscription.onDeleteUser.postAuth.1.req.vtl */ = {isa = PBXFileReference; path = Subscription.onDeleteUser.postAuth.1.req.vtl; sourceTree = "<group>"; };
+		539B15179251EF70357B4D1F /* Mutation.createUser.postAuth.1.req.vtl */ = {isa = PBXFileReference; path = Mutation.createUser.postAuth.1.req.vtl; sourceTree = "<group>"; };
 		53B5B5422A4D6E4C5B5A5CE0 /* backend-config.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "backend-config.json"; sourceTree = "<group>"; };
+		54672590F47A9A4AFE4434B5 /* transform.conf.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = transform.conf.json; sourceTree = "<group>"; };
+		55242EC4DDCDF4F3685325B6 /* Query.getUser.res.vtl */ = {isa = PBXFileReference; path = Query.getUser.res.vtl; sourceTree = "<group>"; };
 		56EEE683DE8A6327BE090645 /* GuardApp.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = GuardApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5706EE937B337F72E424F6A6 /* Mutation.createUser.postAuth.1.req.vtl */ = {isa = PBXFileReference; path = Mutation.createUser.postAuth.1.req.vtl; sourceTree = "<group>"; };
+		5869129EF896BC003099FADE /* Shift.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Shift.json; sourceTree = "<group>"; };
+		5A8D67E9F88B3C4BC93DD1D0 /* Subscription.onDeleteUser.res.vtl */ = {isa = PBXFileReference; path = Subscription.onDeleteUser.res.vtl; sourceTree = "<group>"; };
+		5AC82456B108F695B48F05C4 /* Subscription.onDeleteShift.auth.1.req.vtl */ = {isa = PBXFileReference; path = Subscription.onDeleteShift.auth.1.req.vtl; sourceTree = "<group>"; };
 		5B85466E44DDBEC9133861F2 /* cli-inputs.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "cli-inputs.json"; sourceTree = "<group>"; };
+		5BE6A388799A96FC33C8069D /* Query.shiftsByUserId.req.vtl */ = {isa = PBXFileReference; path = Query.shiftsByUserId.req.vtl; sourceTree = "<group>"; };
+		5CBF8763EFC51D7DDD0EAC3B /* Subscription.onDeleteShift.postAuth.1.req.vtl */ = {isa = PBXFileReference; path = Subscription.onDeleteShift.postAuth.1.req.vtl; sourceTree = "<group>"; };
 		5D8FDB42BD6189799553EC25 /* tags.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = tags.json; sourceTree = "<group>"; };
+		5D97ED240EC67E73BB14F60C /* Shift.user.auth.1.req.vtl */ = {isa = PBXFileReference; path = Shift.user.auth.1.req.vtl; sourceTree = "<group>"; };
+		5F1D686EF81241E30A3C2C69 /* Mutation.updateShift.auth.1.req.vtl */ = {isa = PBXFileReference; path = Mutation.updateShift.auth.1.req.vtl; sourceTree = "<group>"; };
+		60DBBB831381688DF87EDB6C /* Mutation.updateShift.postAuth.1.req.vtl */ = {isa = PBXFileReference; path = Mutation.updateShift.postAuth.1.req.vtl; sourceTree = "<group>"; };
+		62B076E660BAD0A6457D1A55 /* Mutation.createUser.auth.1.req.vtl */ = {isa = PBXFileReference; path = Mutation.createUser.auth.1.req.vtl; sourceTree = "<group>"; };
+		64401D525632B3C72088ECAD /* parameters.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = parameters.json; sourceTree = "<group>"; };
+		66605013A88F96E159780C8B /* Query.listShifts.req.vtl */ = {isa = PBXFileReference; path = Query.listShifts.req.vtl; sourceTree = "<group>"; };
 		6675929BC83C45CCE8710778 /* Idempotency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Idempotency.swift; sourceTree = "<group>"; };
 		67AB574C06377305E2309C06 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		69507DD56BFA14379E1F53AF /* User.shifts.auth.1.req.vtl */ = {isa = PBXFileReference; path = User.shifts.auth.1.req.vtl; sourceTree = "<group>"; };
+		69A70A414158A30883F46FD5 /* Mutation.createShift.auth.1.req.vtl */ = {isa = PBXFileReference; path = Mutation.createShift.auth.1.req.vtl; sourceTree = "<group>"; };
+		6D546002129F90827B4305EC /* User.shifts.auth.1.req.vtl */ = {isa = PBXFileReference; path = User.shifts.auth.1.req.vtl; sourceTree = "<group>"; };
 		6D57FAE46D782CE1AACEDCC0 /* AdminTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminTabView.swift; sourceTree = "<group>"; };
+		6D6D20B445FE49BFAF1FE4E2 /* Mutation.updateUser.auth.1.res.vtl */ = {isa = PBXFileReference; path = Mutation.updateUser.auth.1.res.vtl; sourceTree = "<group>"; };
+		70615EDDC39EC91E9548E8CE /* Mutation.updateUser.req.vtl */ = {isa = PBXFileReference; path = Mutation.updateUser.req.vtl; sourceTree = "<group>"; };
+		71E309D2C2D406BAC687B420 /* Subscription.onUpdateUser.res.vtl */ = {isa = PBXFileReference; path = Subscription.onUpdateUser.res.vtl; sourceTree = "<group>"; };
+		72359648030002A282396B76 /* Query.getShift.res.vtl */ = {isa = PBXFileReference; path = Query.getShift.res.vtl; sourceTree = "<group>"; };
+		73F281F8B16CFF77DB3B4DD1 /* Mutation.updateUser.auth.1.req.vtl */ = {isa = PBXFileReference; path = Mutation.updateUser.auth.1.req.vtl; sourceTree = "<group>"; };
 		7461EFCA2AEABAC2F3E1F751 /* AmplifyModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmplifyModels.swift; sourceTree = "<group>"; };
+		74AAB7AB4C6D712EC9582A28 /* Query.getShift.auth.1.req.vtl */ = {isa = PBXFileReference; path = Query.getShift.auth.1.req.vtl; sourceTree = "<group>"; };
 		7653A53D7B7CE16F1B685B54 /* pre-push.js.sample */ = {isa = PBXFileReference; path = "pre-push.js.sample"; sourceTree = "<group>"; };
+		76C540AE820A21E655FD4FE9 /* Query.shiftsByUserId.req.vtl */ = {isa = PBXFileReference; path = Query.shiftsByUserId.req.vtl; sourceTree = "<group>"; };
 		7717AC99150BDC46916BEC01 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		77A591482142F4FCC7BC412F /* Mutation.deleteUser.req.vtl */ = {isa = PBXFileReference; path = Mutation.deleteUser.req.vtl; sourceTree = "<group>"; };
 		77D599AD997F827824A7710B /* local-env-info.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "local-env-info.json"; sourceTree = "<group>"; };
+		78A00EBE12F1F2E026DA8846 /* Mutation.updateShift.init.1.req.vtl */ = {isa = PBXFileReference; path = Mutation.updateShift.init.1.req.vtl; sourceTree = "<group>"; };
+		7B2DC9460CE7BFF907280A3B /* Shift.owner.req.vtl */ = {isa = PBXFileReference; path = Shift.owner.req.vtl; sourceTree = "<group>"; };
+		7D9032FBD4BB31EB8762C6DB /* Shift.owner.req.vtl */ = {isa = PBXFileReference; path = Shift.owner.req.vtl; sourceTree = "<group>"; };
+		7E91635377FA401810B32335 /* Subscription.onDeleteUser.res.vtl */ = {isa = PBXFileReference; path = Subscription.onDeleteUser.res.vtl; sourceTree = "<group>"; };
 		7EE721A480098F7F77EA42AA /* root-cloudformation-stack.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "root-cloudformation-stack.json"; sourceTree = "<group>"; };
+		7FCCD3512264F7F40DA93C9B /* Query.getShift.auth.1.req.vtl */ = {isa = PBXFileReference; path = Query.getShift.auth.1.req.vtl; sourceTree = "<group>"; };
+		825E70F4F2BCC5570D7EFD4E /* Mutation.deleteShift.res.vtl */ = {isa = PBXFileReference; path = Mutation.deleteShift.res.vtl; sourceTree = "<group>"; };
+		82AE1547FF0211006367247D /* Mutation.createShift.req.vtl */ = {isa = PBXFileReference; path = Mutation.createShift.req.vtl; sourceTree = "<group>"; };
 		82BF7A8BFEDEB4566E619AA1 /* codegen.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = codegen.yml; sourceTree = "<group>"; };
+		82F8724CF935834A4E817313 /* Mutation.createShift.req.vtl */ = {isa = PBXFileReference; path = Mutation.createShift.req.vtl; sourceTree = "<group>"; };
+		838C058E4C6402AD6FBC752A /* Mutation.createShift.init.1.req.vtl */ = {isa = PBXFileReference; path = Mutation.createShift.init.1.req.vtl; sourceTree = "<group>"; };
+		83DB44922E7C18C4FB719EBB /* Mutation.deleteUser.auth.1.req.vtl */ = {isa = PBXFileReference; path = Mutation.deleteUser.auth.1.req.vtl; sourceTree = "<group>"; };
+		8637BA9EBFF9B7AA090F4F5C /* Query.getShift.postAuth.1.req.vtl */ = {isa = PBXFileReference; path = Query.getShift.postAuth.1.req.vtl; sourceTree = "<group>"; };
+		86F400B5F3FA6FD7963EB0AE /* Mutation.updateShift.req.vtl */ = {isa = PBXFileReference; path = Mutation.updateShift.req.vtl; sourceTree = "<group>"; };
+		88909544A10C2847C7E45BA9 /* Subscription.onCreateUser.req.vtl */ = {isa = PBXFileReference; path = Subscription.onCreateUser.req.vtl; sourceTree = "<group>"; };
+		8909159E6791550ED887CA19 /* Mutation.updateShift.res.vtl */ = {isa = PBXFileReference; path = Mutation.updateShift.res.vtl; sourceTree = "<group>"; };
+		8D1E47A5109E53A35449D2AF /* backend-config.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "backend-config.json"; sourceTree = "<group>"; };
+		8E489D858EE7DC3A9F08DA0A /* Mutation.updateUser.auth.1.res.vtl */ = {isa = PBXFileReference; path = Mutation.updateUser.auth.1.res.vtl; sourceTree = "<group>"; };
+		8E6E0F28BAA0D137F2CC65DD /* Subscription.onCreateShift.res.vtl */ = {isa = PBXFileReference; path = Subscription.onCreateShift.res.vtl; sourceTree = "<group>"; };
 		8F034FD47D3321E7CDFDFF47 /* Shift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shift.swift; sourceTree = "<group>"; };
+		92558AF9973B175ED10DCBC8 /* cloudformation-template.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "cloudformation-template.json"; sourceTree = "<group>"; };
 		93C839FA99A9B6AA224BF1F7 /* Formatters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Formatters.swift; sourceTree = "<group>"; };
+		9545649883B0C1D9F5A917B5 /* Query.listUsers.postAuth.1.req.vtl */ = {isa = PBXFileReference; path = Query.listUsers.postAuth.1.req.vtl; sourceTree = "<group>"; };
+		9557F37085C5D5AD0C4FDA97 /* Subscription.onCreateUser.res.vtl */ = {isa = PBXFileReference; path = Subscription.onCreateUser.res.vtl; sourceTree = "<group>"; };
+		96DAA2A7E5CC540AF6B0AD41 /* Mutation.createShift.auth.1.req.vtl */ = {isa = PBXFileReference; path = Mutation.createShift.auth.1.req.vtl; sourceTree = "<group>"; };
+		978137CE9769B760CEBE9F40 /* User.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = User.json; sourceTree = "<group>"; };
+		99E26FE2975A38097AB54A29 /* Subscription.onUpdateUser.auth.1.req.vtl */ = {isa = PBXFileReference; path = Subscription.onUpdateUser.auth.1.req.vtl; sourceTree = "<group>"; };
 		9A3D234CE9C2C560107880D5 /* GuardAppTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = GuardAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B2B3F4ED7A2AD1AD8713C3E /* Mutation.updateShift.res.vtl */ = {isa = PBXFileReference; path = Mutation.updateShift.res.vtl; sourceTree = "<group>"; };
+		9C11BC328719248B05D8B255 /* User.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = User.json; sourceTree = "<group>"; };
+		9C6631FA9F630A4942D22FED /* Subscription.onDeleteUser.req.vtl */ = {isa = PBXFileReference; path = Subscription.onDeleteUser.req.vtl; sourceTree = "<group>"; };
+		9CE290C90B2BC003A96D68FE /* Shift.user.req.vtl */ = {isa = PBXFileReference; path = Shift.user.req.vtl; sourceTree = "<group>"; };
+		9D323C185D190FA80C503F9F /* Mutation.deleteShift.postAuth.1.req.vtl */ = {isa = PBXFileReference; path = Mutation.deleteShift.postAuth.1.req.vtl; sourceTree = "<group>"; };
+		9F78741E01B09A7A4CBF46E0 /* Mutation.createShift.res.vtl */ = {isa = PBXFileReference; path = Mutation.createShift.res.vtl; sourceTree = "<group>"; };
+		9FA47F4AF6A493485748C8FD /* Query.shiftsByUserId.auth.1.req.vtl */ = {isa = PBXFileReference; path = Query.shiftsByUserId.auth.1.req.vtl; sourceTree = "<group>"; };
+		A12A48C28D0634076DE3CA2E /* Query.shiftsByUserId.postAuth.1.res.vtl */ = {isa = PBXFileReference; path = Query.shiftsByUserId.postAuth.1.res.vtl; sourceTree = "<group>"; };
 		A2F623E1A536A4ACD7A063FD /* amplify-meta.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "amplify-meta.json"; sourceTree = "<group>"; };
+		A531A03F463D73D03A595C0B /* Shift.owner.res.vtl */ = {isa = PBXFileReference; path = Shift.owner.res.vtl; sourceTree = "<group>"; };
+		A545C24D887F1F8901131B57 /* Subscription.onUpdateShift.req.vtl */ = {isa = PBXFileReference; path = Subscription.onUpdateShift.req.vtl; sourceTree = "<group>"; };
+		A563046A5D7AE28192B68355 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		A7E89B83ED7AFD3B6A6BBF71 /* Subscription.onDeleteUser.auth.1.req.vtl */ = {isa = PBXFileReference; path = Subscription.onDeleteUser.auth.1.req.vtl; sourceTree = "<group>"; };
+		A7EEDFC86CD1AA71B5B2739A /* cloudformation-template.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "cloudformation-template.json"; sourceTree = "<group>"; };
+		A855E64BA4FC5D9F06C209CF /* cli-inputs.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "cli-inputs.json"; sourceTree = "<group>"; };
+		A868A49FA77CB3CA0E0424A2 /* Query.listUsers.auth.1.req.vtl */ = {isa = PBXFileReference; path = Query.listUsers.auth.1.req.vtl; sourceTree = "<group>"; };
+		AA1B19AB6559D2EF0A61C6F3 /* Mutation.deleteShift.auth.1.res.vtl */ = {isa = PBXFileReference; path = Mutation.deleteShift.auth.1.res.vtl; sourceTree = "<group>"; };
+		AB2A26A67678A510E6E05199 /* Mutation.updateShift.postAuth.1.req.vtl */ = {isa = PBXFileReference; path = Mutation.updateShift.postAuth.1.req.vtl; sourceTree = "<group>"; };
+		ABCE0DF20312667064D45B9A /* Subscription.onDeleteShift.req.vtl */ = {isa = PBXFileReference; path = Subscription.onDeleteShift.req.vtl; sourceTree = "<group>"; };
+		AE5C2E680D2F98D00B168A24 /* Mutation.updateShift.req.vtl */ = {isa = PBXFileReference; path = Mutation.updateShift.req.vtl; sourceTree = "<group>"; };
 		B02CB79C78EB07D632800A85 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		B14F8787DA7E94BD19E9165F /* Subscription.onDeleteShift.res.vtl */ = {isa = PBXFileReference; path = Subscription.onDeleteShift.res.vtl; sourceTree = "<group>"; };
+		B1DF2D1668F263D095FA9509 /* Query.getShift.req.vtl */ = {isa = PBXFileReference; path = Query.getShift.req.vtl; sourceTree = "<group>"; };
+		B2D06A06130682DAC242312F /* Subscription.onDeleteShift.postAuth.1.req.vtl */ = {isa = PBXFileReference; path = Subscription.onDeleteShift.postAuth.1.req.vtl; sourceTree = "<group>"; };
+		B2DDEFDAA9A3C6F1F5D8CA22 /* Subscription.onCreateShift.auth.1.req.vtl */ = {isa = PBXFileReference; path = Subscription.onCreateShift.auth.1.req.vtl; sourceTree = "<group>"; };
+		B66F6E3FE99096048EAA15A9 /* Mutation.deleteShift.res.vtl */ = {isa = PBXFileReference; path = Mutation.deleteShift.res.vtl; sourceTree = "<group>"; };
+		B844D0626C26A7C6BA80714C /* Mutation.createShift.res.vtl */ = {isa = PBXFileReference; path = Mutation.createShift.res.vtl; sourceTree = "<group>"; };
 		B886418ADF9EA8E549AB3DF7 /* aws-exports.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "aws-exports.js"; sourceTree = "<group>"; };
+		B9F066E97AD53CC65C985B1A /* Subscription.onCreateUser.auth.1.req.vtl */ = {isa = PBXFileReference; path = Subscription.onCreateUser.auth.1.req.vtl; sourceTree = "<group>"; };
+		BB48B007519197F121ABA517 /* Query.shiftsByUserId.res.vtl */ = {isa = PBXFileReference; path = Query.shiftsByUserId.res.vtl; sourceTree = "<group>"; };
 		BC3B5D9AA0AF925855593D23 /* root-cloudformation-stack.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "root-cloudformation-stack.json"; sourceTree = "<group>"; };
 		BD96C6B199ACB2735939D307 /* schema.graphql */ = {isa = PBXFileReference; path = schema.graphql; sourceTree = "<group>"; };
+		BEF360740EB40B36A77D29B0 /* Mutation.createUser.req.vtl */ = {isa = PBXFileReference; path = Mutation.createUser.req.vtl; sourceTree = "<group>"; };
+		BF8C49EABEA3F94068F26BE3 /* Query.getShift.req.vtl */ = {isa = PBXFileReference; path = Query.getShift.req.vtl; sourceTree = "<group>"; };
+		C0CE7D4E5723C2A4E10B1E24 /* Query.listUsers.req.vtl */ = {isa = PBXFileReference; path = Query.listUsers.req.vtl; sourceTree = "<group>"; };
+		C0E8F5AFF14F81317141D1A3 /* Mutation.deleteUser.auth.1.res.vtl */ = {isa = PBXFileReference; path = Mutation.deleteUser.auth.1.res.vtl; sourceTree = "<group>"; };
+		C3DCBC900E26A8500DA2D467 /* Subscription.onUpdateShift.postAuth.1.req.vtl */ = {isa = PBXFileReference; path = Subscription.onUpdateShift.postAuth.1.req.vtl; sourceTree = "<group>"; };
 		C424E480BBDB119BC255A407 /* schema.graphql */ = {isa = PBXFileReference; path = schema.graphql; sourceTree = "<group>"; };
 		C4B4D0C54008D1E8BF31B754 /* BusinessTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessTabView.swift; sourceTree = "<group>"; };
+		CA3883478BF7A55D1A3A830D /* Subscription.onDeleteShift.auth.1.req.vtl */ = {isa = PBXFileReference; path = Subscription.onDeleteShift.auth.1.req.vtl; sourceTree = "<group>"; };
+		CAE3E86DA14DD4C4305A659E /* User.shifts.res.vtl */ = {isa = PBXFileReference; path = User.shifts.res.vtl; sourceTree = "<group>"; };
+		CAED1D0228544C696D130CF4 /* Mutation.deleteUser.postAuth.1.req.vtl */ = {isa = PBXFileReference; path = Mutation.deleteUser.postAuth.1.req.vtl; sourceTree = "<group>"; };
 		CE5B118B220A5C81E8033FF3 /* amplify-dependent-resources-ref.d.ts */ = {isa = PBXFileReference; path = "amplify-dependent-resources-ref.d.ts"; sourceTree = "<group>"; };
+		CFF38BEC36FFC6865790F7CC /* codegen.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = codegen.yml; sourceTree = "<group>"; };
+		D013BB36D339298A8211D07B /* Subscription.onDeleteUser.postAuth.1.req.vtl */ = {isa = PBXFileReference; path = Subscription.onDeleteUser.postAuth.1.req.vtl; sourceTree = "<group>"; };
+		D113696302EDD4BC7AFC5F2B /* Subscription.onCreateShift.postAuth.1.req.vtl */ = {isa = PBXFileReference; path = Subscription.onCreateShift.postAuth.1.req.vtl; sourceTree = "<group>"; };
+		D132165E3691EFC2C335CF9C /* CustomResources.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CustomResources.json; sourceTree = "<group>"; };
+		D366DD2CAC752F568EB8765B /* User.owner.res.vtl */ = {isa = PBXFileReference; path = User.owner.res.vtl; sourceTree = "<group>"; };
+		D3690E1A0E8CCA2983071D42 /* Query.listShifts.req.vtl */ = {isa = PBXFileReference; path = Query.listShifts.req.vtl; sourceTree = "<group>"; };
+		D381510B0ABE95EFFB208F36 /* cloudformation-template.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "cloudformation-template.json"; sourceTree = "<group>"; };
+		D44F8B2820D2E53DF3FAF7C2 /* Mutation.updateShift.init.1.req.vtl */ = {isa = PBXFileReference; path = Mutation.updateShift.init.1.req.vtl; sourceTree = "<group>"; };
+		D5568126222FF6556FE9C894 /* Query.shiftsByUserId.postAuth.1.res.vtl */ = {isa = PBXFileReference; path = Query.shiftsByUserId.postAuth.1.res.vtl; sourceTree = "<group>"; };
 		D6619F13F0DF23C47FA5B5F4 /* CustomResources.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CustomResources.json; sourceTree = "<group>"; };
+		D8193C46164E85E82FBBBAC7 /* User.shifts.req.vtl */ = {isa = PBXFileReference; path = User.shifts.req.vtl; sourceTree = "<group>"; };
+		D8253901C087055A8F8506B5 /* Mutation.createUser.init.1.req.vtl */ = {isa = PBXFileReference; path = Mutation.createUser.init.1.req.vtl; sourceTree = "<group>"; };
 		D9C6F40CF042E9DDF7B0D849 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 		DA2FCF9FF972B894F729669E /* User+Schema.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+Schema.swift"; sourceTree = "<group>"; };
+		DBED15BA5B5FAF2CF62E39FF /* Subscription.onUpdateShift.res.vtl */ = {isa = PBXFileReference; path = Subscription.onUpdateShift.res.vtl; sourceTree = "<group>"; };
+		DD87245F5B36D002C7C06C5E /* Subscription.onCreateShift.auth.1.req.vtl */ = {isa = PBXFileReference; path = Subscription.onCreateShift.auth.1.req.vtl; sourceTree = "<group>"; };
 		DE42242422B17D26DE431997 /* transform.conf.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = transform.conf.json; sourceTree = "<group>"; };
 		DE7A4341EE16014D8AE5EA05 /* team-provider-info.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "team-provider-info.json"; sourceTree = "<group>"; };
+		DF27023C2CF730A5B0837218 /* Query.getUser.postAuth.1.req.vtl */ = {isa = PBXFileReference; path = Query.getUser.postAuth.1.req.vtl; sourceTree = "<group>"; };
+		DF8499FDB33D367C2A02B541 /* User.shifts.req.vtl */ = {isa = PBXFileReference; path = User.shifts.req.vtl; sourceTree = "<group>"; };
+		DFF5CFB13381C59F54FFBF7E /* Subscription.onUpdateUser.res.vtl */ = {isa = PBXFileReference; path = Subscription.onUpdateUser.res.vtl; sourceTree = "<group>"; };
+		E1405A7FBD65599096EEF459 /* Mutation.deleteShift.auth.1.res.vtl */ = {isa = PBXFileReference; path = Mutation.deleteShift.auth.1.res.vtl; sourceTree = "<group>"; };
+		E28A0B00065B654965F7BC32 /* Subscription.onUpdateShift.req.vtl */ = {isa = PBXFileReference; path = Subscription.onUpdateShift.req.vtl; sourceTree = "<group>"; };
 		E31E51AC9A8C9D0F18F189F1 /* tags.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = tags.json; sourceTree = "<group>"; };
+		E47510DCAF7841C53569F575 /* schema.graphql */ = {isa = PBXFileReference; path = schema.graphql; sourceTree = "<group>"; };
+		E4B69EA99A3F23271E41040C /* Mutation.updateUser.init.1.req.vtl */ = {isa = PBXFileReference; path = Mutation.updateUser.init.1.req.vtl; sourceTree = "<group>"; };
+		E5363A95BA4BE41713706275 /* Query.getUser.res.vtl */ = {isa = PBXFileReference; path = Query.getUser.res.vtl; sourceTree = "<group>"; };
+		E5EECD1C545482C656F03436 /* Mutation.deleteUser.req.vtl */ = {isa = PBXFileReference; path = Mutation.deleteUser.req.vtl; sourceTree = "<group>"; };
+		E71F88F6D1D1F64DEF961615 /* Query.listShifts.postAuth.1.req.vtl */ = {isa = PBXFileReference; path = Query.listShifts.postAuth.1.req.vtl; sourceTree = "<group>"; };
+		EB3416AFA9B2E5897EE52157 /* CustomResources.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CustomResources.json; sourceTree = "<group>"; };
+		EB74A8CAD950895952BD4A41 /* Mutation.createUser.req.vtl */ = {isa = PBXFileReference; path = Mutation.createUser.req.vtl; sourceTree = "<group>"; };
+		EB8FFDB687471AB91F34C266 /* Query.getShift.postAuth.1.req.vtl */ = {isa = PBXFileReference; path = Query.getShift.postAuth.1.req.vtl; sourceTree = "<group>"; };
+		EBB51A0DFC841A625E7FA453 /* Query.listUsers.auth.1.req.vtl */ = {isa = PBXFileReference; path = Query.listUsers.auth.1.req.vtl; sourceTree = "<group>"; };
+		EBE71D811A6BAC7701EBDF2F /* guardapp799df51d-cloudformation-template.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "guardapp799df51d-cloudformation-template.json"; sourceTree = "<group>"; };
 		EC245E47C5BDED84F357EA15 /* ShiftState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShiftState.swift; sourceTree = "<group>"; };
+		ED7BDB46661FCE21EF3CFD82 /* Mutation.updateUser.auth.1.req.vtl */ = {isa = PBXFileReference; path = Mutation.updateUser.auth.1.req.vtl; sourceTree = "<group>"; };
+		EDA132424A51025B14CA7A81 /* Mutation.updateUser.postAuth.1.req.vtl */ = {isa = PBXFileReference; path = Mutation.updateUser.postAuth.1.req.vtl; sourceTree = "<group>"; };
+		EE0B6D4BC474607391EDD756 /* Mutation.createShift.postAuth.1.req.vtl */ = {isa = PBXFileReference; path = Mutation.createShift.postAuth.1.req.vtl; sourceTree = "<group>"; };
+		EE4067DA0E9318D824B5CE7E /* Subscription.onDeleteUser.auth.1.req.vtl */ = {isa = PBXFileReference; path = Subscription.onDeleteUser.auth.1.req.vtl; sourceTree = "<group>"; };
 		EF37ED64C69053DCDA2697D3 /* guardapp799df51d-cloudformation-template.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "guardapp799df51d-cloudformation-template.json"; sourceTree = "<group>"; };
+		EFEF34E9FD7385B4E3DCBFC2 /* User.owner.res.vtl */ = {isa = PBXFileReference; path = User.owner.res.vtl; sourceTree = "<group>"; };
+		F135AE496D1BDCCB7C5F1DC3 /* Subscription.onCreateUser.postAuth.1.req.vtl */ = {isa = PBXFileReference; path = Subscription.onCreateUser.postAuth.1.req.vtl; sourceTree = "<group>"; };
+		F20B731A5B9D601F99B1F5D0 /* Query.listShifts.res.vtl */ = {isa = PBXFileReference; path = Query.listShifts.res.vtl; sourceTree = "<group>"; };
+		F45AA25ED6AFA61BF734B71E /* Mutation.createShift.postAuth.1.req.vtl */ = {isa = PBXFileReference; path = Mutation.createShift.postAuth.1.req.vtl; sourceTree = "<group>"; };
 		F462974A16F24DDD2D2B6FA6 /* .gitignore */ = {isa = PBXFileReference; path = .gitignore; sourceTree = "<group>"; };
 		F494B6ADB491E3074420A93B /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		F5F4A409FB06FC3AB85F3B33 /* Subscription.onCreateShift.res.vtl */ = {isa = PBXFileReference; path = Subscription.onCreateShift.res.vtl; sourceTree = "<group>"; };
+		F70061D53CED07A1756593EB /* Subscription.onCreateUser.postAuth.1.req.vtl */ = {isa = PBXFileReference; path = Subscription.onCreateUser.postAuth.1.req.vtl; sourceTree = "<group>"; };
 		F7484FBA93BCC1F17D4CDE63 /* project-config.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "project-config.json"; sourceTree = "<group>"; };
 		F7812B2EFD74F24D45195FDA /* cloudformation-template.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "cloudformation-template.json"; sourceTree = "<group>"; };
+		F88CFFA2E083954CA19023C2 /* Mutation.updateUser.res.vtl */ = {isa = PBXFileReference; path = Mutation.updateUser.res.vtl; sourceTree = "<group>"; };
+		F9FF36B127BEEFAB8EE9924F /* Subscription.onDeleteUser.req.vtl */ = {isa = PBXFileReference; path = Subscription.onDeleteUser.req.vtl; sourceTree = "<group>"; };
+		FA1CB71D3A676AD05DD99EFA /* root-cloudformation-stack.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "root-cloudformation-stack.json"; sourceTree = "<group>"; };
+		FA52E849EE34ED440E165BEF /* Mutation.createUser.res.vtl */ = {isa = PBXFileReference; path = Mutation.createUser.res.vtl; sourceTree = "<group>"; };
+		FA935ECE9BD44429B9FA74A8 /* Subscription.onUpdateUser.postAuth.1.req.vtl */ = {isa = PBXFileReference; path = Subscription.onUpdateUser.postAuth.1.req.vtl; sourceTree = "<group>"; };
+		FB907C0B7A239BD1B0663614 /* Query.shiftsByUserId.auth.1.req.vtl */ = {isa = PBXFileReference; path = Query.shiftsByUserId.auth.1.req.vtl; sourceTree = "<group>"; };
 		FEB0D6F63FA66071162BF55B /* WorkerTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkerTabView.swift; sourceTree = "<group>"; };
+		FF84F90EEB33990845CC5E78 /* guardapp799df51d-cloudformation-template.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "guardapp799df51d-cloudformation-template.json"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +561,23 @@
 			path = hooks;
 			sourceTree = "<group>";
 		};
+		02B7B73D97FC9CBC964A268B /* guardapp799df51d */ = {
+			isa = PBXGroup;
+			children = (
+				48AF7DAF1DCB56E8A46E0297 /* build */,
+			);
+			path = guardapp799df51d;
+			sourceTree = "<group>";
+		};
+		0489C99493D3557090750CC8 /* guardapp799df51d */ = {
+			isa = PBXGroup;
+			children = (
+				3A13A1AF81303539088CCE92 /* cli-inputs.json */,
+				89086E8BAE95B49433477912 /* build */,
+			);
+			path = guardapp799df51d;
+			sourceTree = "<group>";
+		};
 		07C220E69685982B886EF0D4 /* src */ = {
 			isa = PBXGroup;
 			children = (
@@ -171,6 +586,107 @@
 				1476DDE235FE902FA9E479E6 /* models */,
 			);
 			path = src;
+			sourceTree = "<group>";
+		};
+		0A9ABDAB34358117FBD494FD /* resolvers */ = {
+			isa = PBXGroup;
+			children = (
+				69A70A414158A30883F46FD5 /* Mutation.createShift.auth.1.req.vtl */,
+				838C058E4C6402AD6FBC752A /* Mutation.createShift.init.1.req.vtl */,
+				F45AA25ED6AFA61BF734B71E /* Mutation.createShift.postAuth.1.req.vtl */,
+				82F8724CF935834A4E817313 /* Mutation.createShift.req.vtl */,
+				9F78741E01B09A7A4CBF46E0 /* Mutation.createShift.res.vtl */,
+				25C2A402416775761A0E933C /* Mutation.createUser.auth.1.req.vtl */,
+				D8253901C087055A8F8506B5 /* Mutation.createUser.init.1.req.vtl */,
+				5706EE937B337F72E424F6A6 /* Mutation.createUser.postAuth.1.req.vtl */,
+				EB74A8CAD950895952BD4A41 /* Mutation.createUser.req.vtl */,
+				174193F74135834A99ECBE99 /* Mutation.createUser.res.vtl */,
+				46577069DE464FF7DD6DA45B /* Mutation.deleteShift.auth.1.req.vtl */,
+				E1405A7FBD65599096EEF459 /* Mutation.deleteShift.auth.1.res.vtl */,
+				9D323C185D190FA80C503F9F /* Mutation.deleteShift.postAuth.1.req.vtl */,
+				43ED8B7F05CB8AA91AFFFBC1 /* Mutation.deleteShift.req.vtl */,
+				B66F6E3FE99096048EAA15A9 /* Mutation.deleteShift.res.vtl */,
+				83DB44922E7C18C4FB719EBB /* Mutation.deleteUser.auth.1.req.vtl */,
+				3AA10353D90CF83CB47191EA /* Mutation.deleteUser.auth.1.res.vtl */,
+				087D479BE66B28803435CEA9 /* Mutation.deleteUser.postAuth.1.req.vtl */,
+				E5EECD1C545482C656F03436 /* Mutation.deleteUser.req.vtl */,
+				4EFC5EFFF2F6FFBE6777E7CD /* Mutation.deleteUser.res.vtl */,
+				5F1D686EF81241E30A3C2C69 /* Mutation.updateShift.auth.1.req.vtl */,
+				22E3B073C03C7EABEE6F6C29 /* Mutation.updateShift.auth.1.res.vtl */,
+				78A00EBE12F1F2E026DA8846 /* Mutation.updateShift.init.1.req.vtl */,
+				AB2A26A67678A510E6E05199 /* Mutation.updateShift.postAuth.1.req.vtl */,
+				86F400B5F3FA6FD7963EB0AE /* Mutation.updateShift.req.vtl */,
+				9B2B3F4ED7A2AD1AD8713C3E /* Mutation.updateShift.res.vtl */,
+				ED7BDB46661FCE21EF3CFD82 /* Mutation.updateUser.auth.1.req.vtl */,
+				8E489D858EE7DC3A9F08DA0A /* Mutation.updateUser.auth.1.res.vtl */,
+				E4B69EA99A3F23271E41040C /* Mutation.updateUser.init.1.req.vtl */,
+				17159878888DC136F496C928 /* Mutation.updateUser.postAuth.1.req.vtl */,
+				34CEC04AF6C345F4C3186EE6 /* Mutation.updateUser.req.vtl */,
+				358475A801EA5F78EAC47D87 /* Mutation.updateUser.res.vtl */,
+				74AAB7AB4C6D712EC9582A28 /* Query.getShift.auth.1.req.vtl */,
+				8637BA9EBFF9B7AA090F4F5C /* Query.getShift.postAuth.1.req.vtl */,
+				BF8C49EABEA3F94068F26BE3 /* Query.getShift.req.vtl */,
+				499CEC80C36ED5F589FBCDE7 /* Query.getShift.res.vtl */,
+				4ABCCBFACA607064BC168EE2 /* Query.getUser.auth.1.req.vtl */,
+				DF27023C2CF730A5B0837218 /* Query.getUser.postAuth.1.req.vtl */,
+				367649033B763CA1CBA28B09 /* Query.getUser.req.vtl */,
+				55242EC4DDCDF4F3685325B6 /* Query.getUser.res.vtl */,
+				483D2BB6120279CFD1EA9066 /* Query.listShifts.auth.1.req.vtl */,
+				2F8B88FA4B07147FF97BC20F /* Query.listShifts.postAuth.1.req.vtl */,
+				66605013A88F96E159780C8B /* Query.listShifts.req.vtl */,
+				F20B731A5B9D601F99B1F5D0 /* Query.listShifts.res.vtl */,
+				A868A49FA77CB3CA0E0424A2 /* Query.listUsers.auth.1.req.vtl */,
+				9545649883B0C1D9F5A917B5 /* Query.listUsers.postAuth.1.req.vtl */,
+				C0CE7D4E5723C2A4E10B1E24 /* Query.listUsers.req.vtl */,
+				134DB84FE4D9CF24B2CD13A0 /* Query.listUsers.res.vtl */,
+				9FA47F4AF6A493485748C8FD /* Query.shiftsByUserId.auth.1.req.vtl */,
+				D5568126222FF6556FE9C894 /* Query.shiftsByUserId.postAuth.1.res.vtl */,
+				5BE6A388799A96FC33C8069D /* Query.shiftsByUserId.req.vtl */,
+				BB48B007519197F121ABA517 /* Query.shiftsByUserId.res.vtl */,
+				7D9032FBD4BB31EB8762C6DB /* Shift.owner.req.vtl */,
+				A531A03F463D73D03A595C0B /* Shift.owner.res.vtl */,
+				040271A458C594B5C546E4FA /* Shift.user.auth.1.req.vtl */,
+				3E7D35B45169B70A80DD47E3 /* Shift.user.req.vtl */,
+				4EDDF1E53E65686226B72F49 /* Shift.user.res.vtl */,
+				B2DDEFDAA9A3C6F1F5D8CA22 /* Subscription.onCreateShift.auth.1.req.vtl */,
+				D113696302EDD4BC7AFC5F2B /* Subscription.onCreateShift.postAuth.1.req.vtl */,
+				0FC0DEAFE008AE963B68BA17 /* Subscription.onCreateShift.req.vtl */,
+				8E6E0F28BAA0D137F2CC65DD /* Subscription.onCreateShift.res.vtl */,
+				B9F066E97AD53CC65C985B1A /* Subscription.onCreateUser.auth.1.req.vtl */,
+				F70061D53CED07A1756593EB /* Subscription.onCreateUser.postAuth.1.req.vtl */,
+				23F8E4EF8DBCD70B7D67A356 /* Subscription.onCreateUser.req.vtl */,
+				9557F37085C5D5AD0C4FDA97 /* Subscription.onCreateUser.res.vtl */,
+				CA3883478BF7A55D1A3A830D /* Subscription.onDeleteShift.auth.1.req.vtl */,
+				B2D06A06130682DAC242312F /* Subscription.onDeleteShift.postAuth.1.req.vtl */,
+				ABCE0DF20312667064D45B9A /* Subscription.onDeleteShift.req.vtl */,
+				B14F8787DA7E94BD19E9165F /* Subscription.onDeleteShift.res.vtl */,
+				EE4067DA0E9318D824B5CE7E /* Subscription.onDeleteUser.auth.1.req.vtl */,
+				D013BB36D339298A8211D07B /* Subscription.onDeleteUser.postAuth.1.req.vtl */,
+				F9FF36B127BEEFAB8EE9924F /* Subscription.onDeleteUser.req.vtl */,
+				5A8D67E9F88B3C4BC93DD1D0 /* Subscription.onDeleteUser.res.vtl */,
+				4D5F6FE6EF08EA3CFDBEEC92 /* Subscription.onUpdateShift.auth.1.req.vtl */,
+				C3DCBC900E26A8500DA2D467 /* Subscription.onUpdateShift.postAuth.1.req.vtl */,
+				E28A0B00065B654965F7BC32 /* Subscription.onUpdateShift.req.vtl */,
+				3E12C278B23E02A87DFEAB25 /* Subscription.onUpdateShift.res.vtl */,
+				99E26FE2975A38097AB54A29 /* Subscription.onUpdateUser.auth.1.req.vtl */,
+				011A8BDB7E921C7D6C5895DD /* Subscription.onUpdateUser.postAuth.1.req.vtl */,
+				2221714EEB7A1791E44AA878 /* Subscription.onUpdateUser.req.vtl */,
+				DFF5CFB13381C59F54FFBF7E /* Subscription.onUpdateUser.res.vtl */,
+				11C6C10B32A3AB4E24AA6DED /* User.owner.req.vtl */,
+				EFEF34E9FD7385B4E3DCBFC2 /* User.owner.res.vtl */,
+				69507DD56BFA14379E1F53AF /* User.shifts.auth.1.req.vtl */,
+				DF8499FDB33D367C2A02B541 /* User.shifts.req.vtl */,
+				237154C91F4E7A4B9CE9DEA6 /* User.shifts.res.vtl */,
+			);
+			path = resolvers;
+			sourceTree = "<group>";
+		};
+		0C0B4C0F0AD956BF938A509E /* resolvers */ = {
+			isa = PBXGroup;
+			children = (
+				A563046A5D7AE28192B68355 /* README.md */,
+			);
+			path = resolvers;
 			sourceTree = "<group>";
 		};
 		1476DDE235FE902FA9E479E6 /* models */ = {
@@ -195,6 +711,22 @@
 			path = Auth;
 			sourceTree = "<group>";
 		};
+		221A6FF937BC8E19B890CEB1 /* build */ = {
+			isa = PBXGroup;
+			children = (
+				EBE71D811A6BAC7701EBDF2F /* guardapp799df51d-cloudformation-template.json */,
+			);
+			path = build;
+			sourceTree = "<group>";
+		};
+		27300399ED3AEBF57FEDF158 /* auth */ = {
+			isa = PBXGroup;
+			children = (
+				92A1916E1AFEF8C6B680D6EE /* guardapp799df51d */,
+			);
+			path = auth;
+			sourceTree = "<group>";
+		};
 		2C6499A5F9E618FDEAE564FB /* guardapp799df51d */ = {
 			isa = PBXGroup;
 			children = (
@@ -202,6 +734,17 @@
 				96C21E79C6D6316200FD574E /* build */,
 			);
 			path = guardapp799df51d;
+			sourceTree = "<group>";
+		};
+		322BE9E922E3B5898A26E914 /* stacks */ = {
+			isa = PBXGroup;
+			children = (
+				3251DA7BAEEB6E5A413E70CA /* ConnectionStack.json */,
+				D132165E3691EFC2C335CF9C /* CustomResources.json */,
+				3A1C8D7DDB1DF53DB0AE0924 /* Shift.json */,
+				9C11BC328719248B05D8B255 /* User.json */,
+			);
+			path = stacks;
 			sourceTree = "<group>";
 		};
 		35496BED26C6A8D68CF4BF77 /* stacks */ = {
@@ -238,6 +781,14 @@
 			path = resolvers;
 			sourceTree = "<group>";
 		};
+		48AF7DAF1DCB56E8A46E0297 /* build */ = {
+			isa = PBXGroup;
+			children = (
+				FF84F90EEB33990845CC5E78 /* guardapp799df51d-cloudformation-template.json */,
+			);
+			path = build;
+			sourceTree = "<group>";
+		};
 		4A3B7464352525036D8BDA14 /* types */ = {
 			isa = PBXGroup;
 			children = (
@@ -253,6 +804,22 @@
 				6675929BC83C45CCE8710778 /* Idempotency.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		5417B4F4436EA8B0BFF4CF69 /* auth */ = {
+			isa = PBXGroup;
+			children = (
+				0489C99493D3557090750CC8 /* guardapp799df51d */,
+			);
+			path = auth;
+			sourceTree = "<group>";
+		};
+		56F41B85EDFE618E40CE2029 /* api */ = {
+			isa = PBXGroup;
+			children = (
+				956E0967833141F329CD7170 /* guardapp */,
+			);
+			path = api;
 			sourceTree = "<group>";
 		};
 		5A7EE867069D5E2231A52522 /* Worker */ = {
@@ -280,6 +847,14 @@
 			path = App;
 			sourceTree = "<group>";
 		};
+		64E2DF30ABFCBEB2C6EC3A0F /* api */ = {
+			isa = PBXGroup;
+			children = (
+				77A01BE5B065E85C30AD072D /* guardapp */,
+			);
+			path = api;
+			sourceTree = "<group>";
+		};
 		659556DEE35DA9E84FEF80B9 /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -292,13 +867,131 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		662A48C8EA297E928ED54E9C /* auth */ = {
+			isa = PBXGroup;
+			children = (
+				02B7B73D97FC9CBC964A268B /* guardapp799df51d */,
+			);
+			path = auth;
+			sourceTree = "<group>";
+		};
+		676FE99CCF940C893397FE1E /* resolvers */ = {
+			isa = PBXGroup;
+			children = (
+				96DAA2A7E5CC540AF6B0AD41 /* Mutation.createShift.auth.1.req.vtl */,
+				46B8A18E6104A1D1A52D5D2F /* Mutation.createShift.init.1.req.vtl */,
+				EE0B6D4BC474607391EDD756 /* Mutation.createShift.postAuth.1.req.vtl */,
+				82AE1547FF0211006367247D /* Mutation.createShift.req.vtl */,
+				B844D0626C26A7C6BA80714C /* Mutation.createShift.res.vtl */,
+				62B076E660BAD0A6457D1A55 /* Mutation.createUser.auth.1.req.vtl */,
+				13043B422BBE336716FD3755 /* Mutation.createUser.init.1.req.vtl */,
+				539B15179251EF70357B4D1F /* Mutation.createUser.postAuth.1.req.vtl */,
+				BEF360740EB40B36A77D29B0 /* Mutation.createUser.req.vtl */,
+				FA52E849EE34ED440E165BEF /* Mutation.createUser.res.vtl */,
+				09BEE181D52A821402BA5993 /* Mutation.deleteShift.auth.1.req.vtl */,
+				AA1B19AB6559D2EF0A61C6F3 /* Mutation.deleteShift.auth.1.res.vtl */,
+				440C217B288D91255EDB749A /* Mutation.deleteShift.postAuth.1.req.vtl */,
+				01FBBFCB5698DF5233EAEF08 /* Mutation.deleteShift.req.vtl */,
+				825E70F4F2BCC5570D7EFD4E /* Mutation.deleteShift.res.vtl */,
+				31C1F05912845A60493276F4 /* Mutation.deleteUser.auth.1.req.vtl */,
+				C0E8F5AFF14F81317141D1A3 /* Mutation.deleteUser.auth.1.res.vtl */,
+				CAED1D0228544C696D130CF4 /* Mutation.deleteUser.postAuth.1.req.vtl */,
+				77A591482142F4FCC7BC412F /* Mutation.deleteUser.req.vtl */,
+				43E00EA2047FE07CF894373B /* Mutation.deleteUser.res.vtl */,
+				423BA0B1244FD81FD507CC7B /* Mutation.updateShift.auth.1.req.vtl */,
+				054A16D0C01072DCC6D01663 /* Mutation.updateShift.auth.1.res.vtl */,
+				D44F8B2820D2E53DF3FAF7C2 /* Mutation.updateShift.init.1.req.vtl */,
+				60DBBB831381688DF87EDB6C /* Mutation.updateShift.postAuth.1.req.vtl */,
+				AE5C2E680D2F98D00B168A24 /* Mutation.updateShift.req.vtl */,
+				8909159E6791550ED887CA19 /* Mutation.updateShift.res.vtl */,
+				73F281F8B16CFF77DB3B4DD1 /* Mutation.updateUser.auth.1.req.vtl */,
+				6D6D20B445FE49BFAF1FE4E2 /* Mutation.updateUser.auth.1.res.vtl */,
+				15D15F91AE9B25BD6C9A8212 /* Mutation.updateUser.init.1.req.vtl */,
+				EDA132424A51025B14CA7A81 /* Mutation.updateUser.postAuth.1.req.vtl */,
+				70615EDDC39EC91E9548E8CE /* Mutation.updateUser.req.vtl */,
+				F88CFFA2E083954CA19023C2 /* Mutation.updateUser.res.vtl */,
+				7FCCD3512264F7F40DA93C9B /* Query.getShift.auth.1.req.vtl */,
+				EB8FFDB687471AB91F34C266 /* Query.getShift.postAuth.1.req.vtl */,
+				B1DF2D1668F263D095FA9509 /* Query.getShift.req.vtl */,
+				72359648030002A282396B76 /* Query.getShift.res.vtl */,
+				13C9D5C341EC9AA9116D638A /* Query.getUser.auth.1.req.vtl */,
+				2A5FA7C50F66245848CEB29F /* Query.getUser.postAuth.1.req.vtl */,
+				08EEC98EF7EB344B5F99007D /* Query.getUser.req.vtl */,
+				E5363A95BA4BE41713706275 /* Query.getUser.res.vtl */,
+				2A066CB4BCA88957723ABBF7 /* Query.listShifts.auth.1.req.vtl */,
+				E71F88F6D1D1F64DEF961615 /* Query.listShifts.postAuth.1.req.vtl */,
+				D3690E1A0E8CCA2983071D42 /* Query.listShifts.req.vtl */,
+				4D73A2266BBB3C74274D9B52 /* Query.listShifts.res.vtl */,
+				EBB51A0DFC841A625E7FA453 /* Query.listUsers.auth.1.req.vtl */,
+				334BD1C64E508ED7ED3A786B /* Query.listUsers.postAuth.1.req.vtl */,
+				0B62F4129B028FB46631BA24 /* Query.listUsers.req.vtl */,
+				1ACCF9137EE3E453572A045B /* Query.listUsers.res.vtl */,
+				FB907C0B7A239BD1B0663614 /* Query.shiftsByUserId.auth.1.req.vtl */,
+				A12A48C28D0634076DE3CA2E /* Query.shiftsByUserId.postAuth.1.res.vtl */,
+				76C540AE820A21E655FD4FE9 /* Query.shiftsByUserId.req.vtl */,
+				1A355D65A3531756B6173397 /* Query.shiftsByUserId.res.vtl */,
+				7B2DC9460CE7BFF907280A3B /* Shift.owner.req.vtl */,
+				4A32BC65FB6A7DF1C6BFBF17 /* Shift.owner.res.vtl */,
+				5D97ED240EC67E73BB14F60C /* Shift.user.auth.1.req.vtl */,
+				9CE290C90B2BC003A96D68FE /* Shift.user.req.vtl */,
+				17695C35A0F1E6703ABB12ED /* Shift.user.res.vtl */,
+				DD87245F5B36D002C7C06C5E /* Subscription.onCreateShift.auth.1.req.vtl */,
+				51624D0FA1ABAE29730CA347 /* Subscription.onCreateShift.postAuth.1.req.vtl */,
+				2D7BE3F9FCAA0245F9676687 /* Subscription.onCreateShift.req.vtl */,
+				F5F4A409FB06FC3AB85F3B33 /* Subscription.onCreateShift.res.vtl */,
+				43CC10D5F173BBEFCD9283CC /* Subscription.onCreateUser.auth.1.req.vtl */,
+				F135AE496D1BDCCB7C5F1DC3 /* Subscription.onCreateUser.postAuth.1.req.vtl */,
+				88909544A10C2847C7E45BA9 /* Subscription.onCreateUser.req.vtl */,
+				0FF5A5E0DDB555AA62BB121A /* Subscription.onCreateUser.res.vtl */,
+				5AC82456B108F695B48F05C4 /* Subscription.onDeleteShift.auth.1.req.vtl */,
+				5CBF8763EFC51D7DDD0EAC3B /* Subscription.onDeleteShift.postAuth.1.req.vtl */,
+				100A7F1EBF2BD4DB3A2E9C11 /* Subscription.onDeleteShift.req.vtl */,
+				02C57ACE761611A79A3EEAE7 /* Subscription.onDeleteShift.res.vtl */,
+				A7E89B83ED7AFD3B6A6BBF71 /* Subscription.onDeleteUser.auth.1.req.vtl */,
+				51C03ED33606C8549FC25B72 /* Subscription.onDeleteUser.postAuth.1.req.vtl */,
+				9C6631FA9F630A4942D22FED /* Subscription.onDeleteUser.req.vtl */,
+				7E91635377FA401810B32335 /* Subscription.onDeleteUser.res.vtl */,
+				2431DACD0B342CB46314021D /* Subscription.onUpdateShift.auth.1.req.vtl */,
+				07BB92BC7935FC43F85DBC27 /* Subscription.onUpdateShift.postAuth.1.req.vtl */,
+				A545C24D887F1F8901131B57 /* Subscription.onUpdateShift.req.vtl */,
+				DBED15BA5B5FAF2CF62E39FF /* Subscription.onUpdateShift.res.vtl */,
+				395545DE76EE9DB1635C2182 /* Subscription.onUpdateUser.auth.1.req.vtl */,
+				FA935ECE9BD44429B9FA74A8 /* Subscription.onUpdateUser.postAuth.1.req.vtl */,
+				44BAEC4BC5E929452CD5111F /* Subscription.onUpdateUser.req.vtl */,
+				71E309D2C2D406BAC687B420 /* Subscription.onUpdateUser.res.vtl */,
+				08F05C10E2C13EB674CCB303 /* User.owner.req.vtl */,
+				D366DD2CAC752F568EB8765B /* User.owner.res.vtl */,
+				6D546002129F90827B4305EC /* User.shifts.auth.1.req.vtl */,
+				D8193C46164E85E82FBBBAC7 /* User.shifts.req.vtl */,
+				CAE3E86DA14DD4C4305A659E /* User.shifts.res.vtl */,
+			);
+			path = resolvers;
+			sourceTree = "<group>";
+		};
 		6A2E69663148CA7A863CAF2A /* build */ = {
 			isa = PBXGroup;
 			children = (
 				F7812B2EFD74F24D45195FDA /* cloudformation-template.json */,
 				1CE1E46F46DB04D9FA62793C /* parameters.json */,
 				BD96C6B199ACB2735939D307 /* schema.graphql */,
+				676FE99CCF940C893397FE1E /* resolvers */,
 				F590CE46B7284228F9D40F59 /* stacks */,
+			);
+			path = build;
+			sourceTree = "<group>";
+		};
+		77A01BE5B065E85C30AD072D /* guardapp */ = {
+			isa = PBXGroup;
+			children = (
+				787A879CFC23C579359AD41F /* build */,
+			);
+			path = guardapp;
+			sourceTree = "<group>";
+		};
+		787A879CFC23C579359AD41F /* build */ = {
+			isa = PBXGroup;
+			children = (
+				92558AF9973B175ED10DCBC8 /* cloudformation-template.json */,
 			);
 			path = build;
 			sourceTree = "<group>";
@@ -325,6 +1018,38 @@
 			path = amplify;
 			sourceTree = "<group>";
 		};
+		856920C805AD5CD2E4707C06 /* guardapp */ = {
+			isa = PBXGroup;
+			children = (
+				A855E64BA4FC5D9F06C209CF /* cli-inputs.json */,
+				CFF38BEC36FFC6865790F7CC /* codegen.yml */,
+				64401D525632B3C72088ECAD /* parameters.json */,
+				E47510DCAF7841C53569F575 /* schema.graphql */,
+				54672590F47A9A4AFE4434B5 /* transform.conf.json */,
+				B6E09FD43560F6594EF90A94 /* build */,
+				0C0B4C0F0AD956BF938A509E /* resolvers */,
+				876603A5E62834050D5EBAC0 /* stacks */,
+			);
+			path = guardapp;
+			sourceTree = "<group>";
+		};
+		876603A5E62834050D5EBAC0 /* stacks */ = {
+			isa = PBXGroup;
+			children = (
+				EB3416AFA9B2E5897EE52157 /* CustomResources.json */,
+			);
+			path = stacks;
+			sourceTree = "<group>";
+		};
+		89086E8BAE95B49433477912 /* build */ = {
+			isa = PBXGroup;
+			children = (
+				10AB0A00964FC42B0A73D809 /* guardapp799df51d-cloudformation-template.json */,
+				330D0486F22AC2F5C0219532 /* parameters.json */,
+			);
+			path = build;
+			sourceTree = "<group>";
+		};
 		89F1D7AF615BE78655CDC134 /* Business */ = {
 			isa = PBXGroup;
 			children = (
@@ -347,11 +1072,35 @@
 			path = backend;
 			sourceTree = "<group>";
 		};
+		92A1916E1AFEF8C6B680D6EE /* guardapp799df51d */ = {
+			isa = PBXGroup;
+			children = (
+				221A6FF937BC8E19B890CEB1 /* build */,
+			);
+			path = guardapp799df51d;
+			sourceTree = "<group>";
+		};
+		956E0967833141F329CD7170 /* guardapp */ = {
+			isa = PBXGroup;
+			children = (
+				C92047521AE530E1AD00EC48 /* build */,
+			);
+			path = guardapp;
+			sourceTree = "<group>";
+		};
 		96C21E79C6D6316200FD574E /* build */ = {
 			isa = PBXGroup;
 			children = (
 				EF37ED64C69053DCDA2697D3 /* guardapp799df51d-cloudformation-template.json */,
 				16BF1D4DAD31A22D34014534 /* parameters.json */,
+			);
+			path = build;
+			sourceTree = "<group>";
+		};
+		A0F07BD9E5C60E94A85E1EA3 /* build */ = {
+			isa = PBXGroup;
+			children = (
+				FA1CB71D3A676AD05DD99EFA /* root-cloudformation-stack.json */,
 			);
 			path = build;
 			sourceTree = "<group>";
@@ -388,6 +1137,14 @@
 			path = Networking;
 			sourceTree = "<group>";
 		};
+		B201B298888F01DF34B75D0E /* awscloudformation */ = {
+			isa = PBXGroup;
+			children = (
+				FEEF54B71DF7AF209E8FA74A /* build */,
+			);
+			path = awscloudformation;
+			sourceTree = "<group>";
+		};
 		B59455B3A9EE738F9A063C4E /* api */ = {
 			isa = PBXGroup;
 			children = (
@@ -396,10 +1153,25 @@
 			path = api;
 			sourceTree = "<group>";
 		};
+		B6E09FD43560F6594EF90A94 /* build */ = {
+			isa = PBXGroup;
+			children = (
+				A7EEDFC86CD1AA71B5B2739A /* cloudformation-template.json */,
+				1833FA012FDAD9F73F10FA23 /* parameters.json */,
+				2E37213DFA787FC3606FDFC5 /* schema.graphql */,
+				0A9ABDAB34358117FBD494FD /* resolvers */,
+				322BE9E922E3B5898A26E914 /* stacks */,
+			);
+			path = build;
+			sourceTree = "<group>";
+		};
 		B6E34C5B01C2887E59AE2401 /* build */ = {
 			isa = PBXGroup;
 			children = (
 				7EE721A480098F7F77EA42AA /* root-cloudformation-stack.json */,
+				64E2DF30ABFCBEB2C6EC3A0F /* api */,
+				27300399ED3AEBF57FEDF158 /* auth */,
+				B201B298888F01DF34B75D0E /* awscloudformation */,
 			);
 			path = build;
 			sourceTree = "<group>";
@@ -443,7 +1215,10 @@
 			isa = PBXGroup;
 			children = (
 				05F962B3E02F5ABE3804AA39 /* amplify-meta.json */,
+				8D1E47A5109E53A35449D2AF /* backend-config.json */,
 				E31E51AC9A8C9D0F18F189F1 /* tags.json */,
+				C73E18E3E30A3E65DDAA2C88 /* api */,
+				5417B4F4436EA8B0BFF4CF69 /* auth */,
 				C54E28F843CFF315BFCAB0B3 /* awscloudformation */,
 			);
 			path = "#current-cloud-backend";
@@ -466,6 +1241,22 @@
 			path = awscloudformation;
 			sourceTree = "<group>";
 		};
+		C73E18E3E30A3E65DDAA2C88 /* api */ = {
+			isa = PBXGroup;
+			children = (
+				856920C805AD5CD2E4707C06 /* guardapp */,
+			);
+			path = api;
+			sourceTree = "<group>";
+		};
+		C92047521AE530E1AD00EC48 /* build */ = {
+			isa = PBXGroup;
+			children = (
+				D381510B0ABE95EFFB208F36 /* cloudformation-template.json */,
+			);
+			path = build;
+			sourceTree = "<group>";
+		};
 		DF2C7BBCDFBF667B8FA1E22D = {
 			isa = PBXGroup;
 			children = (
@@ -479,16 +1270,38 @@
 			isa = PBXGroup;
 			children = (
 				BC3B5D9AA0AF925855593D23 /* root-cloudformation-stack.json */,
+				56F41B85EDFE618E40CE2029 /* api */,
+				662A48C8EA297E928ED54E9C /* auth */,
+				E8BB22C101D714ACF89AEEB3 /* awscloudformation */,
 			);
 			path = build;
+			sourceTree = "<group>";
+		};
+		E8BB22C101D714ACF89AEEB3 /* awscloudformation */ = {
+			isa = PBXGroup;
+			children = (
+				A0F07BD9E5C60E94A85E1EA3 /* build */,
+			);
+			path = awscloudformation;
 			sourceTree = "<group>";
 		};
 		F590CE46B7284228F9D40F59 /* stacks */ = {
 			isa = PBXGroup;
 			children = (
+				48F6227037691BEE5BEB2B6A /* ConnectionStack.json */,
 				2297B173FFFE71C0EF32A2CD /* CustomResources.json */,
+				5869129EF896BC003099FADE /* Shift.json */,
+				978137CE9769B760CEBE9F40 /* User.json */,
 			);
 			path = stacks;
+			sourceTree = "<group>";
+		};
+		FEEF54B71DF7AF209E8FA74A /* build */ = {
+			isa = PBXGroup;
+			children = (
+				0215754F671FF7FC6E169835 /* root-cloudformation-stack.json */,
+			);
+			path = build;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -583,25 +1396,219 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB37D876B39BB07BB5A0FE8D /* ConnectionStack.json in Resources */,
+				DDF316A7CC14B004B7B2B918 /* ConnectionStack.json in Resources */,
+				D3C4927D40D332BFC253D435 /* CustomResources.json in Resources */,
+				C531161722C63BE451314E01 /* CustomResources.json in Resources */,
 				9AEA70FD96844E476BBDDFBE /* CustomResources.json in Resources */,
 				C2215BDE413574E550E85271 /* CustomResources.json in Resources */,
+				80B23498817CCEA9AA1380D5 /* Mutation.createShift.auth.1.req.vtl in Resources */,
+				18CED26559CFF261E42C245E /* Mutation.createShift.auth.1.req.vtl in Resources */,
+				13D538A62BB5B726ADE41FA6 /* Mutation.createShift.init.1.req.vtl in Resources */,
+				A87D983F8767DD85C749D118 /* Mutation.createShift.init.1.req.vtl in Resources */,
+				A7F252078252DBF6E3E2ACE3 /* Mutation.createShift.postAuth.1.req.vtl in Resources */,
+				7296F5B940594B623D7B274D /* Mutation.createShift.postAuth.1.req.vtl in Resources */,
+				524C98BF0BD007CDE8E6C08E /* Mutation.createShift.req.vtl in Resources */,
+				ACE6D13F732A73637EEB2D88 /* Mutation.createShift.req.vtl in Resources */,
+				560D84DEBECF24E97C09DDBF /* Mutation.createShift.res.vtl in Resources */,
+				DF8CD42A447780CEE8DCC9BE /* Mutation.createShift.res.vtl in Resources */,
+				D7DA5E1EDD7E6EC685F3872D /* Mutation.createUser.auth.1.req.vtl in Resources */,
+				57065D908F9520C625789F97 /* Mutation.createUser.auth.1.req.vtl in Resources */,
+				B4E250B6E0B87FFF648AF97B /* Mutation.createUser.init.1.req.vtl in Resources */,
+				BCA7EE8728FE71BE3DA5C6E9 /* Mutation.createUser.init.1.req.vtl in Resources */,
+				AA3EC8BE27EA50CB8D109566 /* Mutation.createUser.postAuth.1.req.vtl in Resources */,
+				C06401D8C195578DB6A613B9 /* Mutation.createUser.postAuth.1.req.vtl in Resources */,
+				9E3A3981FA2A34D560F6B516 /* Mutation.createUser.req.vtl in Resources */,
+				9B37DB665080E2AD564DA40D /* Mutation.createUser.req.vtl in Resources */,
+				A709803534FAA97508A42656 /* Mutation.createUser.res.vtl in Resources */,
+				255CEED54EB38DBB079327D8 /* Mutation.createUser.res.vtl in Resources */,
+				8487E07156E1ED43434D6D4D /* Mutation.deleteShift.auth.1.req.vtl in Resources */,
+				A1D69DB76084160FEB493448 /* Mutation.deleteShift.auth.1.req.vtl in Resources */,
+				AFDFE8DAADD01742528EEC63 /* Mutation.deleteShift.auth.1.res.vtl in Resources */,
+				6B549CC14391A24351057E98 /* Mutation.deleteShift.auth.1.res.vtl in Resources */,
+				01A2DCC7E12FED5DFC3AC758 /* Mutation.deleteShift.postAuth.1.req.vtl in Resources */,
+				24DFADF819F88C656246B699 /* Mutation.deleteShift.postAuth.1.req.vtl in Resources */,
+				A48DBEDF2FC06DEBAA9BBDEC /* Mutation.deleteShift.req.vtl in Resources */,
+				1605139B5721B0F2A243974D /* Mutation.deleteShift.req.vtl in Resources */,
+				6C740F01A2938B5B21AD934B /* Mutation.deleteShift.res.vtl in Resources */,
+				6B9382C924CBBC64FE966526 /* Mutation.deleteShift.res.vtl in Resources */,
+				9E962E215DE6A789DB259725 /* Mutation.deleteUser.auth.1.req.vtl in Resources */,
+				57B577C2D17B5E39040A7E3B /* Mutation.deleteUser.auth.1.req.vtl in Resources */,
+				E74819DA1DC4D0BB4C286843 /* Mutation.deleteUser.auth.1.res.vtl in Resources */,
+				2DF16EAE05149A2FB462F6F5 /* Mutation.deleteUser.auth.1.res.vtl in Resources */,
+				65E24A49AB89A26B0C55243F /* Mutation.deleteUser.postAuth.1.req.vtl in Resources */,
+				A4560E32EB0EBAD59FAC21A9 /* Mutation.deleteUser.postAuth.1.req.vtl in Resources */,
+				9DB7785C6CCD57A44E7AE613 /* Mutation.deleteUser.req.vtl in Resources */,
+				DE9866DA9DF7DF858CED83A0 /* Mutation.deleteUser.req.vtl in Resources */,
+				D64FC561B1259934C0518E5B /* Mutation.deleteUser.res.vtl in Resources */,
+				BF5068D8D188AE38847EE07C /* Mutation.deleteUser.res.vtl in Resources */,
+				9479BC855D602FCEFCCE8F35 /* Mutation.updateShift.auth.1.req.vtl in Resources */,
+				73E5B02832AAB51972349C90 /* Mutation.updateShift.auth.1.req.vtl in Resources */,
+				EA669E4BFC5C61DE26A65191 /* Mutation.updateShift.auth.1.res.vtl in Resources */,
+				32E5021875690FBA5AF1E3E8 /* Mutation.updateShift.auth.1.res.vtl in Resources */,
+				2D7BE8426DF4F3B5FB8A5159 /* Mutation.updateShift.init.1.req.vtl in Resources */,
+				1DBB59EF6BF416A9AF178624 /* Mutation.updateShift.init.1.req.vtl in Resources */,
+				74D12CC35AFBB89C2FA629D8 /* Mutation.updateShift.postAuth.1.req.vtl in Resources */,
+				5DF0CDB8076A83E724A53019 /* Mutation.updateShift.postAuth.1.req.vtl in Resources */,
+				A05FB73E84CC0E64C5A81102 /* Mutation.updateShift.req.vtl in Resources */,
+				165A68B6135B1D0447D2E4AC /* Mutation.updateShift.req.vtl in Resources */,
+				3B19A477874C86CA9ABA684B /* Mutation.updateShift.res.vtl in Resources */,
+				BD59BFDDDF907AF79FE711A2 /* Mutation.updateShift.res.vtl in Resources */,
+				3E9E08AE49C53401FD721B60 /* Mutation.updateUser.auth.1.req.vtl in Resources */,
+				F8B2E9D1889A57F33134319B /* Mutation.updateUser.auth.1.req.vtl in Resources */,
+				3CFD1CE50059288640C167C9 /* Mutation.updateUser.auth.1.res.vtl in Resources */,
+				F6D64BD0BE921F25F39663FC /* Mutation.updateUser.auth.1.res.vtl in Resources */,
+				E9C1445ABA65BB07FF7A05A5 /* Mutation.updateUser.init.1.req.vtl in Resources */,
+				D577A7A45F12599D6B7B056A /* Mutation.updateUser.init.1.req.vtl in Resources */,
+				0516369DF5A6A44C067FF2DA /* Mutation.updateUser.postAuth.1.req.vtl in Resources */,
+				304CA0923DBA0C0D7D86F64D /* Mutation.updateUser.postAuth.1.req.vtl in Resources */,
+				A5A522F138E9F232B40B7235 /* Mutation.updateUser.req.vtl in Resources */,
+				BC5D8BAF6E881747DFA12C16 /* Mutation.updateUser.req.vtl in Resources */,
+				22EAA4F5F649FCD174B7934A /* Mutation.updateUser.res.vtl in Resources */,
+				303740E0EFC7BE2EF5419E1A /* Mutation.updateUser.res.vtl in Resources */,
+				5D66546D881CDE680135CBE9 /* Query.getShift.auth.1.req.vtl in Resources */,
+				3FD253BEBFD34BC85B1F55F7 /* Query.getShift.auth.1.req.vtl in Resources */,
+				CE1C0FD3DB0CE381088BDA6A /* Query.getShift.postAuth.1.req.vtl in Resources */,
+				2CF02845C45C78EBD2D510FD /* Query.getShift.postAuth.1.req.vtl in Resources */,
+				8A4676EAE4C241AD04289EFA /* Query.getShift.req.vtl in Resources */,
+				E1AF737A211B423CFB341CCA /* Query.getShift.req.vtl in Resources */,
+				A4AED2BF61A540046953A888 /* Query.getShift.res.vtl in Resources */,
+				8DF427D937463A64E027B393 /* Query.getShift.res.vtl in Resources */,
+				1EBFF5A07FD4605C69AA58C5 /* Query.getUser.auth.1.req.vtl in Resources */,
+				993680AA96F171588E2FA1DB /* Query.getUser.auth.1.req.vtl in Resources */,
+				285EB0FCD3EA4CE96FA40A17 /* Query.getUser.postAuth.1.req.vtl in Resources */,
+				D1ED511689F00F92F0317F09 /* Query.getUser.postAuth.1.req.vtl in Resources */,
+				6FF39EDF3B3421F37588E527 /* Query.getUser.req.vtl in Resources */,
+				FFDFC6E84F697BFC5DD35796 /* Query.getUser.req.vtl in Resources */,
+				7530EF9E5E1A160C2F9D86A7 /* Query.getUser.res.vtl in Resources */,
+				8CAC8201924BD20EDEC03C17 /* Query.getUser.res.vtl in Resources */,
+				7E952AFD2E3425FFA05642EF /* Query.listShifts.auth.1.req.vtl in Resources */,
+				24CB18F49020AC4F16F5224F /* Query.listShifts.auth.1.req.vtl in Resources */,
+				6A6279780F3A958EB697403F /* Query.listShifts.postAuth.1.req.vtl in Resources */,
+				68A633944355DCEAE579F749 /* Query.listShifts.postAuth.1.req.vtl in Resources */,
+				7538B1FF62B92A5FAF13F87B /* Query.listShifts.req.vtl in Resources */,
+				21F3FE5254C186B3AA81F34C /* Query.listShifts.req.vtl in Resources */,
+				9EE6D3C09B4E0ECC2170600F /* Query.listShifts.res.vtl in Resources */,
+				BC8D014206DD6622CA921B03 /* Query.listShifts.res.vtl in Resources */,
+				CCA78229403BA76E7C254372 /* Query.listUsers.auth.1.req.vtl in Resources */,
+				574B2F7F5F2BA2E197073D29 /* Query.listUsers.auth.1.req.vtl in Resources */,
+				2D2DC784D72C38967DA5CC3E /* Query.listUsers.postAuth.1.req.vtl in Resources */,
+				C9FF6B17CC7CC7568CE0648F /* Query.listUsers.postAuth.1.req.vtl in Resources */,
+				F5E01C0B2F9D143285126B7D /* Query.listUsers.req.vtl in Resources */,
+				AEB519A5A9C04FE382797AFC /* Query.listUsers.req.vtl in Resources */,
+				FE5A639706B3EB30AC1FEF90 /* Query.listUsers.res.vtl in Resources */,
+				D8C89DD334DE95299B24BE8F /* Query.listUsers.res.vtl in Resources */,
+				0ECCEDFBEEEDBF6AAEA0F815 /* Query.shiftsByUserId.auth.1.req.vtl in Resources */,
+				1AFD7719E0677AE527A982D3 /* Query.shiftsByUserId.auth.1.req.vtl in Resources */,
+				4A2905890D181EBF4CB76C7F /* Query.shiftsByUserId.postAuth.1.res.vtl in Resources */,
+				943C9D72EE6DC41912485175 /* Query.shiftsByUserId.postAuth.1.res.vtl in Resources */,
+				BEAF187542E9C55F2ED7824F /* Query.shiftsByUserId.req.vtl in Resources */,
+				38855056D8CC091C9A21A767 /* Query.shiftsByUserId.req.vtl in Resources */,
+				DB4449B23E94E57617B0D335 /* Query.shiftsByUserId.res.vtl in Resources */,
+				66443A522E7F1894A6854A9A /* Query.shiftsByUserId.res.vtl in Resources */,
 				A28303B8761646AE3F6DDE64 /* README.md in Resources */,
+				2AC244ABE3D1913DAF52C83C /* README.md in Resources */,
 				2318E31A7363E39542686C78 /* README.md in Resources */,
 				8E5AE426D4D6E0D00C811717 /* README.md in Resources */,
+				185E53ED9233825C037B1A0B /* Shift.json in Resources */,
+				CEC887F6C38FE49FF969BD4C /* Shift.json in Resources */,
+				56623BCEF9829E840DF02A66 /* Shift.owner.req.vtl in Resources */,
+				97EF1AB5C83E0AAD9110738C /* Shift.owner.req.vtl in Resources */,
+				E170C73A61437D2DA7182F6B /* Shift.owner.res.vtl in Resources */,
+				76DF426C7244A780E4526C73 /* Shift.owner.res.vtl in Resources */,
+				1AF5F006CFC39E9D486E1ABB /* Shift.user.auth.1.req.vtl in Resources */,
+				7552DBD29EAAE50637FB4D2B /* Shift.user.auth.1.req.vtl in Resources */,
+				624242676EB8E2293DE0F746 /* Shift.user.req.vtl in Resources */,
+				E0CEF4E486FB3445EA84BCFE /* Shift.user.req.vtl in Resources */,
+				40FF4AC882903F30549E0DB5 /* Shift.user.res.vtl in Resources */,
+				7A5CFF6E05CC9D190271B741 /* Shift.user.res.vtl in Resources */,
+				04B0C48AC9D801D0B0CD1633 /* Subscription.onCreateShift.auth.1.req.vtl in Resources */,
+				E401D1B3241791351F3E1976 /* Subscription.onCreateShift.auth.1.req.vtl in Resources */,
+				29F2BEC13CECC9654E2AFAC1 /* Subscription.onCreateShift.postAuth.1.req.vtl in Resources */,
+				128373B0DCB0BA6E39AC329C /* Subscription.onCreateShift.postAuth.1.req.vtl in Resources */,
+				9BEC626D3FC00D665E46B381 /* Subscription.onCreateShift.req.vtl in Resources */,
+				978B0CE717E7FFCD3A791A37 /* Subscription.onCreateShift.req.vtl in Resources */,
+				0E4EBB33A24033ECC81CC216 /* Subscription.onCreateShift.res.vtl in Resources */,
+				61D6B6A6497845F0690D5A3F /* Subscription.onCreateShift.res.vtl in Resources */,
+				08D60FA10E5B068980AC1105 /* Subscription.onCreateUser.auth.1.req.vtl in Resources */,
+				7A5946A0B02FC8D51FADFF1F /* Subscription.onCreateUser.auth.1.req.vtl in Resources */,
+				CABFF27DB57F891C991AD3AE /* Subscription.onCreateUser.postAuth.1.req.vtl in Resources */,
+				CD1A4981D95AE84DA58DE07E /* Subscription.onCreateUser.postAuth.1.req.vtl in Resources */,
+				F8DE8CBFB63431F2DA9505E8 /* Subscription.onCreateUser.req.vtl in Resources */,
+				C39AB4989DFB800E91192AB3 /* Subscription.onCreateUser.req.vtl in Resources */,
+				809B86600767EA51D6860AFD /* Subscription.onCreateUser.res.vtl in Resources */,
+				48F662F1AEA4419D2923E70F /* Subscription.onCreateUser.res.vtl in Resources */,
+				5EE5A82630B2D27A737C84EC /* Subscription.onDeleteShift.auth.1.req.vtl in Resources */,
+				90A5DEBB11F5A264F73DE7F3 /* Subscription.onDeleteShift.auth.1.req.vtl in Resources */,
+				F5FFEB3B01568E86854CC2CC /* Subscription.onDeleteShift.postAuth.1.req.vtl in Resources */,
+				4A0227EDB614FA65C2971DE0 /* Subscription.onDeleteShift.postAuth.1.req.vtl in Resources */,
+				43E2A1C068039464E9512264 /* Subscription.onDeleteShift.req.vtl in Resources */,
+				6780E9BD0E70F66F9F27D253 /* Subscription.onDeleteShift.req.vtl in Resources */,
+				DF0D07D14DBB4186BD8FA813 /* Subscription.onDeleteShift.res.vtl in Resources */,
+				6DD88F3013AE7010030E739D /* Subscription.onDeleteShift.res.vtl in Resources */,
+				D74FD14E6D3BEC6E6F57B81D /* Subscription.onDeleteUser.auth.1.req.vtl in Resources */,
+				44349C4A8163B199EA2AC258 /* Subscription.onDeleteUser.auth.1.req.vtl in Resources */,
+				46F4BD5FDEB3635D27F266A8 /* Subscription.onDeleteUser.postAuth.1.req.vtl in Resources */,
+				9A903293163D4E46BD57B4F6 /* Subscription.onDeleteUser.postAuth.1.req.vtl in Resources */,
+				71E8A7A35FC84821F0D3E943 /* Subscription.onDeleteUser.req.vtl in Resources */,
+				21A66C476B2A8DA246E25F70 /* Subscription.onDeleteUser.req.vtl in Resources */,
+				4EC48312881395C86FAA1E2E /* Subscription.onDeleteUser.res.vtl in Resources */,
+				6E811AC2C239B334641B01A1 /* Subscription.onDeleteUser.res.vtl in Resources */,
+				99FC5E3F4746985BF84C34ED /* Subscription.onUpdateShift.auth.1.req.vtl in Resources */,
+				B6DADA97D183807AC27F4A10 /* Subscription.onUpdateShift.auth.1.req.vtl in Resources */,
+				A9241DFF767FC757A58E05FE /* Subscription.onUpdateShift.postAuth.1.req.vtl in Resources */,
+				D3B26AF0D5382C61FF7BF85F /* Subscription.onUpdateShift.postAuth.1.req.vtl in Resources */,
+				AF3229358353611F354D3021 /* Subscription.onUpdateShift.req.vtl in Resources */,
+				97166E4CF2563D134AA82EAA /* Subscription.onUpdateShift.req.vtl in Resources */,
+				7D6BBD54F59C2A94A51DFADC /* Subscription.onUpdateShift.res.vtl in Resources */,
+				5C098D8CF6C978C7BAA3064B /* Subscription.onUpdateShift.res.vtl in Resources */,
+				810AFFBFEFB540108794A7A7 /* Subscription.onUpdateUser.auth.1.req.vtl in Resources */,
+				0CE5FAA716F888F845D2A266 /* Subscription.onUpdateUser.auth.1.req.vtl in Resources */,
+				A04748996B37D3E696DDA822 /* Subscription.onUpdateUser.postAuth.1.req.vtl in Resources */,
+				503E97CA2E4707BF24288514 /* Subscription.onUpdateUser.postAuth.1.req.vtl in Resources */,
+				C2475DFF8B764A3F2BFD49D7 /* Subscription.onUpdateUser.req.vtl in Resources */,
+				51B331A6D00DE6E773C26B3E /* Subscription.onUpdateUser.req.vtl in Resources */,
+				A141C97634E79860401FA1D6 /* Subscription.onUpdateUser.res.vtl in Resources */,
+				08FB97A342AE08671EF2A53D /* Subscription.onUpdateUser.res.vtl in Resources */,
+				A119FB98E53FBE351D32D21C /* User.json in Resources */,
+				79D42444482A3E191BDBAF85 /* User.json in Resources */,
+				3BE38ED6DB9C26AC9BE1FBD2 /* User.owner.req.vtl in Resources */,
+				79481017867446A4639814C2 /* User.owner.req.vtl in Resources */,
+				28EFE9E221DECF15CBED08D5 /* User.owner.res.vtl in Resources */,
+				48D7BCBFEA99689AFF83C428 /* User.owner.res.vtl in Resources */,
+				621300DD7E7607FE57AF3EFB /* User.shifts.auth.1.req.vtl in Resources */,
+				4E19A41CF21D68659FDD7E5E /* User.shifts.auth.1.req.vtl in Resources */,
+				6BCB4B6F2A33CCCAC106B744 /* User.shifts.req.vtl in Resources */,
+				E04F6F5E545C2AB1AA6163F5 /* User.shifts.req.vtl in Resources */,
+				43B9F4F50D576ABD8059CA3B /* User.shifts.res.vtl in Resources */,
+				B603E7FE5DB53C63E9F45357 /* User.shifts.res.vtl in Resources */,
 				3AD0FFAB5BB1B48E1716CD36 /* amplify-dependent-resources-ref.d.ts in Resources */,
 				30464673472E1BE72A73849D /* amplify-meta.json in Resources */,
 				1EFEC51E14EAA576B638A78C /* amplify-meta.json in Resources */,
 				E9667C36824BE5195B68A33C /* amplifyconfiguration.json in Resources */,
 				113742A6802A22DD0E858F30 /* aws-exports.js in Resources */,
+				EAFC78391CE48FE67610ADD3 /* backend-config.json in Resources */,
 				DD667BC13D6748C381E6E6E1 /* backend-config.json in Resources */,
+				11CB9097269C5266AC0C3212 /* cli-inputs.json in Resources */,
+				50B1374297A835E6C52776B0 /* cli-inputs.json in Resources */,
 				F4D8A055C21E9978CC60AEA6 /* cli-inputs.json in Resources */,
 				277E84E13A35FD4C5F6D5EEF /* cli-inputs.json in Resources */,
 				F5E2B8190A04950482DA3655 /* cli.json in Resources */,
+				9BAFD23B583A4C3CCE2ACBE4 /* cloudformation-template.json in Resources */,
+				5D17F6259E29722924F51555 /* cloudformation-template.json in Resources */,
+				2E0FF430E83DA3E7B50344E8 /* cloudformation-template.json in Resources */,
 				AEA49AEB0CADE2F8313941F7 /* cloudformation-template.json in Resources */,
+				92F23071DE33B7FE3F1825D3 /* codegen.yml in Resources */,
 				F221A3E482D23F196938AB86 /* codegen.yml in Resources */,
+				9E70D8963E3A166440125751 /* guardapp799df51d-cloudformation-template.json in Resources */,
+				8D695DB863A4D999B7E23AD6 /* guardapp799df51d-cloudformation-template.json in Resources */,
 				1865C3DF4938BFF9D0780413 /* guardapp799df51d-cloudformation-template.json in Resources */,
+				E7F3B1B4C3A8D1B0B1453200 /* guardapp799df51d-cloudformation-template.json in Resources */,
 				B2305440D5B777FCB0742D83 /* local-aws-info.json in Resources */,
 				390EB0A694BD1E1F35320015 /* local-env-info.json in Resources */,
+				648591374E42D5D4AB1AF5B6 /* parameters.json in Resources */,
+				DBA5ED3D5E1DC00BEF0FEDB1 /* parameters.json in Resources */,
+				59FBF36DD1E9740982C74578 /* parameters.json in Resources */,
 				271AD8CEA9B0B8C41FA7696F /* parameters.json in Resources */,
 				2A12BB53BC409F9E2ADC7B5F /* parameters.json in Resources */,
 				DFF7C26E9B034F74143B4DAC /* parameters.json in Resources */,
@@ -609,12 +1616,17 @@
 				BEB5031CF1E3F89F8DEB0E4B /* pre-push.js.sample in Resources */,
 				C498CB81E314CB116A8D5D9C /* project-config.json in Resources */,
 				A5B1DA5ABB6DE1A8D474306C /* root-cloudformation-stack.json in Resources */,
+				1C1B1BFACBC238BBECC2385B /* root-cloudformation-stack.json in Resources */,
 				7C359531812CB6F452852C7D /* root-cloudformation-stack.json in Resources */,
+				B9821D192964E0BE3FA540EC /* root-cloudformation-stack.json in Resources */,
+				BEC09CE5CCB01D00EF325CC4 /* schema.graphql in Resources */,
+				9AEE8DE3D3B56213A7E3E556 /* schema.graphql in Resources */,
 				CDFF68B70D2D39E91167C5B3 /* schema.graphql in Resources */,
 				E5CB7F1C491DA610342FAA1F /* schema.graphql in Resources */,
 				69718584A358CD186611995B /* tags.json in Resources */,
 				FE95B1DD27670A1F83390B47 /* tags.json in Resources */,
 				3BB4B982A943C9DA8C187ABC /* team-provider-info.json in Resources */,
+				5E580F017E4A413C2B41C03E /* transform.conf.json in Resources */,
 				F69F4698C57E74A3F58E1C84 /* transform.conf.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1014,7 +2026,7 @@
 			repositoryURL = "https://github.com/aws-amplify/amplify-swift";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.0;
+				minimumVersion = 2.0.0;
 			};
 		};
 		6595AF85F3A38C6CD8FD7A2F /* XCRemoteSwiftPackageReference "amplify-swift" */ = {
@@ -1022,7 +2034,7 @@
 			repositoryURL = "https://github.com/aws-amplify/amplify-swift";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.0;
+				minimumVersion = 2.0.0;
 			};
 		};
 		70A64633FED2000457A93DE0 /* XCRemoteSwiftPackageReference "amplify-swift" */ = {
@@ -1030,7 +2042,7 @@
 			repositoryURL = "https://github.com/aws-amplify/amplify-swift";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.0;
+				minimumVersion = 2.0.0;
 			};
 		};
 		D394BA00D691C1901E0D7974 /* XCRemoteSwiftPackageReference "amplify-swift" */ = {
@@ -1038,7 +2050,7 @@
 			repositoryURL = "https://github.com/aws-amplify/amplify-swift";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.0;
+				minimumVersion = 2.0.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */

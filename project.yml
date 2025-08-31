@@ -75,13 +75,13 @@ targets:
 packages:
   Amplify:
     url: https://github.com/aws-amplify/amplify-swift
-    from: 1.0.0
+    from: 2.0.0
   AWSCognitoAuthPlugin:
     url: https://github.com/aws-amplify/amplify-swift
-    from: 1.0.0
+    from: 2.0.0
   AWSAPIPlugin:
     url: https://github.com/aws-amplify/amplify-swift
-    from: 1.0.0
+    from: 2.0.0
   AWSDataStorePlugin:
     url: https://github.com/aws-amplify/amplify-swift
-    from: 1.0.0
+    from: 2.0.0
