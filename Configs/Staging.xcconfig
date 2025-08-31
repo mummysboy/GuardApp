@@ -1,0 +1,2 @@
+BASE_URL = https://api.staging.example.com
+LOG_LEVEL = INFO

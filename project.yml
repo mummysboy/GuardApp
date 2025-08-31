@@ -1,0 +1,56 @@
+name: GuardApp
+options:
+  minimumXcodeGenVersion: 2.38.0
+  bundleIdPrefix: com.mummysboy
+configs:
+  Debug: debug
+  Staging: debug
+  Release: release
+
+settings:
+  base:
+    IPHONEOS_DEPLOYMENT_TARGET: 16.0
+    SWIFT_VERSION: 5.10
+    PRODUCT_BUNDLE_IDENTIFIER: com.mummysboy.GuardApp
+    CODE_SIGN_STYLE: Automatic
+    GENERATE_INFOPLIST_FILE: YES
+    CURRENT_PROJECT_VERSION: 1
+    MARKETING_VERSION: 0.1.0
+
+targets:
+  GuardApp:
+    type: application
+    platform: iOS
+    deploymentTarget: "16.0"
+    sources:
+      - path: Sources/GuardApp
+    settings:
+      base:
+        INFOPLIST_KEY_UIApplicationSceneManifest_Generation: YES
+        INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone: UIInterfaceOrientationPortrait
+        SWIFT_SWIFT3_OBJC_INFERENCE: Default
+        SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD: YES
+      configs:
+        Debug:
+          base:
+            SWIFT_ACTIVE_COMPILATION_CONDITIONS: DEBUG
+            PRODUCT_BUNDLE_IDENTIFIER: com.mummysboy.GuardApp.debug
+            GCC_PREPROCESSOR_DEFINITIONS: DEBUG=1
+        Staging:
+          base:
+            SWIFT_ACTIVE_COMPILATION_CONDITIONS: STAGING
+            PRODUCT_BUNDLE_IDENTIFIER: com.mummysboy.GuardApp.staging
+        Release:
+          base:
+            PRODUCT_BUNDLE_IDENTIFIER: com.mummysboy.GuardApp
+    scheme:
+      testTargets:
+        - GuardAppTests
+
+  GuardAppTests:
+    type: bundle.unit-test
+    platform: iOS
+    sources:
+      - path: Tests/GuardAppTests
+    dependencies:
+      - target: GuardApp

@@ -1,0 +1,649 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 63;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		24D8E13A474F183D024722C5 /* AdminTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D57FAE46D782CE1AACEDCC0 /* AdminTabView.swift */; };
+		34C273814DEA79E59F7B9688 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7717AC99150BDC46916BEC01 /* AuthService.swift */; };
+		366A76ECF901D7A19F05F878 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9C6F40CF042E9DDF7B0D849 /* APIClient.swift */; };
+		3B49E575064D07B1D54CE766 /* SessionStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03764D01622043CA86E02EBE /* SessionStore.swift */; };
+		3F31B21AD09FAF60CB913D31 /* AppMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FBBB4DBE8FA71CA715B9E0A /* AppMain.swift */; };
+		3FBC722A392B1A9FF5470D2D /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE673402C884425E4E76E44 /* LoginView.swift */; };
+		43A1E0DEFD90FEE1840B2416 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03403C891526FC14DA535281 /* DashboardView.swift */; };
+		68255C261B1F0CEA847A46FE /* BusinessTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B4D0C54008D1E8BF31B754 /* BusinessTabView.swift */; };
+		8518BEBF490FA6DAB6421B12 /* Idempotency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6675929BC83C45CCE8710778 /* Idempotency.swift */; };
+		90CDEC020F83F5A1B4FD8DCB /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FECAC3A44B42936A27294EC /* Models.swift */; };
+		A03533A62E64D257004C4706 /* ShiftService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03533A52E64D257004C4706 /* ShiftService.swift */; };
+		EBF3BB627601962B845DDF34 /* GuardAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D07CAD7FD66D6D8D8C9A3D1 /* GuardAppTests.swift */; };
+		F7F6E2670BFC196DCCD5045E /* WorkerTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEB0D6F63FA66071162BF55B /* WorkerTabView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EF41D10001E1D94D16CF9273 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2357BA778C18A77E20809B4B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 11437DB619E55C99B8B5DE1B;
+			remoteInfo = GuardApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		03403C891526FC14DA535281 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
+		03764D01622043CA86E02EBE /* SessionStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionStore.swift; sourceTree = "<group>"; };
+		2FBBB4DBE8FA71CA715B9E0A /* AppMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppMain.swift; sourceTree = "<group>"; };
+		3D07CAD7FD66D6D8D8C9A3D1 /* GuardAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuardAppTests.swift; sourceTree = "<group>"; };
+		4FE673402C884425E4E76E44 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		4FECAC3A44B42936A27294EC /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		56EEE683DE8A6327BE090645 /* GuardApp.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = GuardApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6675929BC83C45CCE8710778 /* Idempotency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Idempotency.swift; sourceTree = "<group>"; };
+		6D57FAE46D782CE1AACEDCC0 /* AdminTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminTabView.swift; sourceTree = "<group>"; };
+		7717AC99150BDC46916BEC01 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		9A3D234CE9C2C560107880D5 /* GuardAppTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = GuardAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A03533A52E64D257004C4706 /* ShiftService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShiftService.swift; sourceTree = "<group>"; };
+		C4B4D0C54008D1E8BF31B754 /* BusinessTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessTabView.swift; sourceTree = "<group>"; };
+		D9C6F40CF042E9DDF7B0D849 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		FEB0D6F63FA66071162BF55B /* WorkerTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkerTabView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		1628EF3EBCDDC447994E7526 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				7717AC99150BDC46916BEC01 /* AuthService.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		410FA6829EC3EBAEE3DB6B04 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				56EEE683DE8A6327BE090645 /* GuardApp.app */,
+				9A3D234CE9C2C560107880D5 /* GuardAppTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		46E16AA9404D929315D83C25 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				1628EF3EBCDDC447994E7526 /* Auth */,
+				A3C53D125E5BDB390D102187 /* Networking */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		4ED6785504C05A8F8972B890 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				6675929BC83C45CCE8710778 /* Idempotency.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		5A7EE867069D5E2231A52522 /* Worker */ = {
+			isa = PBXGroup;
+			children = (
+				FEB0D6F63FA66071162BF55B /* WorkerTabView.swift */,
+			);
+			path = Worker;
+			sourceTree = "<group>";
+		};
+		5E7C0ED9C5111BBA6051D441 /* Admin */ = {
+			isa = PBXGroup;
+			children = (
+				6D57FAE46D782CE1AACEDCC0 /* AdminTabView.swift */,
+			);
+			path = Admin;
+			sourceTree = "<group>";
+		};
+		6065C630337BBA8FFAD7B324 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				2FBBB4DBE8FA71CA715B9E0A /* AppMain.swift */,
+				03764D01622043CA86E02EBE /* SessionStore.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		659556DEE35DA9E84FEF80B9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				03403C891526FC14DA535281 /* DashboardView.swift */,
+				4FE673402C884425E4E76E44 /* LoginView.swift */,
+				5E7C0ED9C5111BBA6051D441 /* Admin */,
+				89F1D7AF615BE78655CDC134 /* Business */,
+				5A7EE867069D5E2231A52522 /* Worker */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		89F1D7AF615BE78655CDC134 /* Business */ = {
+			isa = PBXGroup;
+			children = (
+				C4B4D0C54008D1E8BF31B754 /* BusinessTabView.swift */,
+			);
+			path = Business;
+			sourceTree = "<group>";
+		};
+		A1D5119F3111EBCE730A19AE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4FECAC3A44B42936A27294EC /* Models.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A3C53D125E5BDB390D102187 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				D9C6F40CF042E9DDF7B0D849 /* APIClient.swift */,
+				A03533A52E64D257004C4706 /* ShiftService.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		B9816AED46F0E0B5113D8CDB /* GuardApp */ = {
+			isa = PBXGroup;
+			children = (
+				6065C630337BBA8FFAD7B324 /* App */,
+				A1D5119F3111EBCE730A19AE /* Models */,
+				46E16AA9404D929315D83C25 /* Services */,
+				4ED6785504C05A8F8972B890 /* Utils */,
+				659556DEE35DA9E84FEF80B9 /* Views */,
+			);
+			name = GuardApp;
+			path = Sources/GuardApp;
+			sourceTree = "<group>";
+		};
+		C434557140A1EB243144565D /* GuardAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				3D07CAD7FD66D6D8D8C9A3D1 /* GuardAppTests.swift */,
+			);
+			name = GuardAppTests;
+			path = Tests/GuardAppTests;
+			sourceTree = "<group>";
+		};
+		DF2C7BBCDFBF667B8FA1E22D = {
+			isa = PBXGroup;
+			children = (
+				B9816AED46F0E0B5113D8CDB /* GuardApp */,
+				C434557140A1EB243144565D /* GuardAppTests */,
+				410FA6829EC3EBAEE3DB6B04 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0AA36AA961F7C00A20AFD116 /* GuardAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F8748E55626F0A5F4003FCE8 /* Build configuration list for PBXNativeTarget "GuardAppTests" */;
+			buildPhases = (
+				9C4F06196669CE891F8C266F /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DEE0B56BC4B2CB5D089A7F34 /* PBXTargetDependency */,
+			);
+			name = GuardAppTests;
+			packageProductDependencies = (
+			);
+			productName = GuardAppTests;
+			productReference = 9A3D234CE9C2C560107880D5 /* GuardAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		11437DB619E55C99B8B5DE1B /* GuardApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C6A41D0607E7D031D1B0F664 /* Build configuration list for PBXNativeTarget "GuardApp" */;
+			buildPhases = (
+				4BFB6F228A0106503F1BC161 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GuardApp;
+			packageProductDependencies = (
+			);
+			productName = GuardApp;
+			productReference = 56EEE683DE8A6327BE090645 /* GuardApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2357BA778C18A77E20809B4B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					0AA36AA961F7C00A20AFD116 = {
+						ProvisioningStyle = Automatic;
+					};
+					11437DB619E55C99B8B5DE1B = {
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = ECC291C246469B40D8F988C0 /* Build configuration list for PBXProject "GuardApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = DF2C7BBCDFBF667B8FA1E22D;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				A0871C5C2E64FCC300E93F85 /* XCRemoteSwiftPackageReference "amplify-swift" */,
+			);
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				11437DB619E55C99B8B5DE1B /* GuardApp */,
+				0AA36AA961F7C00A20AFD116 /* GuardAppTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4BFB6F228A0106503F1BC161 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				366A76ECF901D7A19F05F878 /* APIClient.swift in Sources */,
+				24D8E13A474F183D024722C5 /* AdminTabView.swift in Sources */,
+				3F31B21AD09FAF60CB913D31 /* AppMain.swift in Sources */,
+				34C273814DEA79E59F7B9688 /* AuthService.swift in Sources */,
+				A03533A62E64D257004C4706 /* ShiftService.swift in Sources */,
+				68255C261B1F0CEA847A46FE /* BusinessTabView.swift in Sources */,
+				43A1E0DEFD90FEE1840B2416 /* DashboardView.swift in Sources */,
+				8518BEBF490FA6DAB6421B12 /* Idempotency.swift in Sources */,
+				3FBC722A392B1A9FF5470D2D /* LoginView.swift in Sources */,
+				90CDEC020F83F5A1B4FD8DCB /* Models.swift in Sources */,
+				3B49E575064D07B1D54CE766 /* SessionStore.swift in Sources */,
+				F7F6E2670BFC196DCCD5045E /* WorkerTabView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C4F06196669CE891F8C266F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBF3BB627601962B845DDF34 /* GuardAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DEE0B56BC4B2CB5D089A7F34 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 11437DB619E55C99B8B5DE1B /* GuardApp */;
+			targetProxy = EF41D10001E1D94D16CF9273 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		11AD1960616202F592DCE561 /* Staging */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 0.1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mummysboy.GuardApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.1;
+			};
+			name = Staging;
+		};
+		424CE1DAE935C1ECCD18BC5A /* Staging */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GuardApp.app/GuardApp";
+			};
+			name = Staging;
+		};
+		5D27EBCFB471042658C05EF6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mummysboy.GuardApp;
+				SDKROOT = iphoneos;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		79156E3514F57E0E333DCA00 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PREPROCESSOR_DEFINITIONS = "DEBUG=1";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mummysboy.GuardApp.debug;
+				SDKROOT = iphoneos;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		94EB09E41107AAB9A6F1BF73 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GuardApp.app/GuardApp";
+			};
+			name = Release;
+		};
+		9A53D5201D7375A58492F42A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 0.1.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mummysboy.GuardApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.1;
+			};
+			name = Release;
+		};
+		DDC8B1CD7CDA2B27EE0E0FC2 /* Staging */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mummysboy.GuardApp.staging;
+				SDKROOT = iphoneos;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = STAGING;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Staging;
+		};
+		E8619627920EDBBE7414C270 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 0.1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mummysboy.GuardApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.1;
+			};
+			name = Debug;
+		};
+		FC218623A0FEC305C68F06E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GuardApp.app/GuardApp";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C6A41D0607E7D031D1B0F664 /* Build configuration list for PBXNativeTarget "GuardApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79156E3514F57E0E333DCA00 /* Debug */,
+				5D27EBCFB471042658C05EF6 /* Release */,
+				DDC8B1CD7CDA2B27EE0E0FC2 /* Staging */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		ECC291C246469B40D8F988C0 /* Build configuration list for PBXProject "GuardApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8619627920EDBBE7414C270 /* Debug */,
+				9A53D5201D7375A58492F42A /* Release */,
+				11AD1960616202F592DCE561 /* Staging */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		F8748E55626F0A5F4003FCE8 /* Build configuration list for PBXNativeTarget "GuardAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC218623A0FEC305C68F06E4 /* Debug */,
+				94EB09E41107AAB9A6F1BF73 /* Release */,
+				424CE1DAE935C1ECCD18BC5A /* Staging */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A0871C5C2E64FCC300E93F85 /* XCRemoteSwiftPackageReference "amplify-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/aws-amplify/amplify-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.50.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+	};
+	rootObject = 2357BA778C18A77E20809B4B /* Project object */;
+}
