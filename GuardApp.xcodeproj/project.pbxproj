@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		01966601EC31BD375717515B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67AB574C06377305E2309C06 /* User.swift */; };
 		07495EECDCBA9ACAAF5FF6A0 /* AmplifyModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7461EFCA2AEABAC2F3E1F751 /* AmplifyModels.swift */; };
-		0C74FBC37B59B4F7123EAA59 /* index.js in Resources */ = {isa = PBXBuildFile; fileRef = 5EEB4609A8F7F81AD39CA798 /* index.js */; };
 		113742A6802A22DD0E858F30 /* aws-exports.js in Resources */ = {isa = PBXBuildFile; fileRef = B886418ADF9EA8E549AB3DF7 /* aws-exports.js */; };
 		1865C3DF4938BFF9D0780413 /* guardapp799df51d-cloudformation-template.json in Resources */ = {isa = PBXBuildFile; fileRef = EF37ED64C69053DCDA2697D3 /* guardapp799df51d-cloudformation-template.json */; };
 		1EFEC51E14EAA576B638A78C /* amplify-meta.json in Resources */ = {isa = PBXBuildFile; fileRef = A2F623E1A536A4ACD7A063FD /* amplify-meta.json */; };
@@ -19,7 +18,6 @@
 		277E84E13A35FD4C5F6D5EEF /* cli-inputs.json in Resources */ = {isa = PBXBuildFile; fileRef = 17C007E9F62B72CD8F97EAAD /* cli-inputs.json */; };
 		2A12BB53BC409F9E2ADC7B5F /* parameters.json in Resources */ = {isa = PBXBuildFile; fileRef = 31745B651C2BF41AF6C1D363 /* parameters.json */; };
 		30464673472E1BE72A73849D /* amplify-meta.json in Resources */ = {isa = PBXBuildFile; fileRef = 05F962B3E02F5ABE3804AA39 /* amplify-meta.json */; };
-		30AE7DC3185FF964A56AC1F9 /* schema.js in Resources */ = {isa = PBXBuildFile; fileRef = 0BCECA858CFA611F6BC944CB /* schema.js */; };
 		34C273814DEA79E59F7B9688 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7717AC99150BDC46916BEC01 /* AuthService.swift */; };
 		366A76ECF901D7A19F05F878 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9C6F40CF042E9DDF7B0D849 /* APIClient.swift */; };
 		390EB0A694BD1E1F35320015 /* local-env-info.json in Resources */ = {isa = PBXBuildFile; fileRef = 77D599AD997F827824A7710B /* local-env-info.json */; };
@@ -33,11 +31,9 @@
 		68255C261B1F0CEA847A46FE /* BusinessTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B4D0C54008D1E8BF31B754 /* BusinessTabView.swift */; };
 		6944261F04FE8A8A6B1678CA /* User+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2FCF9FF972B894F729669E /* User+Schema.swift */; };
 		69718584A358CD186611995B /* tags.json in Resources */ = {isa = PBXBuildFile; fileRef = E31E51AC9A8C9D0F18F189F1 /* tags.json */; };
-		698898F20186200E8B35F8BD /* index.d.ts in Resources */ = {isa = PBXBuildFile; fileRef = 693BBBAD93D7BA3BE563101C /* index.d.ts */; };
 		6E56FCC5B1DEEE03DDA8128C /* AWSCognitoAuthPlugin in Frameworks */ = {isa = PBXBuildFile; productRef = FF55800D5667D1D349D4806E /* AWSCognitoAuthPlugin */; };
 		6E9127E627D4FFF97AA27C5A /* Formatters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C839FA99A9B6AA224BF1F7 /* Formatters.swift */; };
 		7B08B69C9FAA627EE4FD2AA2 /* ShiftState.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC245E47C5BDED84F357EA15 /* ShiftState.swift */; };
-		7C0C6627411744439860E6A8 /* schema.d.ts in Resources */ = {isa = PBXBuildFile; fileRef = 4C620A57D300BC08F08168E9 /* schema.d.ts */; };
 		7C359531812CB6F452852C7D /* root-cloudformation-stack.json in Resources */ = {isa = PBXBuildFile; fileRef = 7EE721A480098F7F77EA42AA /* root-cloudformation-stack.json */; };
 		7F8764C2934C681FB3379560 /* AWSAPIPlugin in Frameworks */ = {isa = PBXBuildFile; productRef = B38CBD1970A3CEFB5D934B9B /* AWSAPIPlugin */; };
 		80EE70BD23BEBDB6FF1AD2B8 /* AWSDataStorePlugin in Frameworks */ = {isa = PBXBuildFile; productRef = 7478EDA993BA34863A02D15F /* AWSDataStorePlugin */; };
@@ -86,7 +82,6 @@
 		03764D01622043CA86E02EBE /* SessionStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionStore.swift; sourceTree = "<group>"; };
 		05F962B3E02F5ABE3804AA39 /* amplify-meta.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "amplify-meta.json"; sourceTree = "<group>"; };
 		0947A509B7179E3020618444 /* Shift+Schema.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Shift+Schema.swift"; sourceTree = "<group>"; };
-		0BCECA858CFA611F6BC944CB /* schema.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = schema.js; sourceTree = "<group>"; };
 		16BF1D4DAD31A22D34014534 /* parameters.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = parameters.json; sourceTree = "<group>"; };
 		17C007E9F62B72CD8F97EAAD /* cli-inputs.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "cli-inputs.json"; sourceTree = "<group>"; };
 		1A8C07FE3BE7C27BB3015DFC /* local-aws-info.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "local-aws-info.json"; sourceTree = "<group>"; };
@@ -102,17 +97,14 @@
 		38D5B114F9FDFFE7B0D363BB /* cli.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = cli.json; sourceTree = "<group>"; };
 		3D07CAD7FD66D6D8D8C9A3D1 /* GuardAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuardAppTests.swift; sourceTree = "<group>"; };
 		49EBFE8BF0D2FC60D6B0452F /* amplifyconfiguration.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = amplifyconfiguration.json; sourceTree = "<group>"; };
-		4C620A57D300BC08F08168E9 /* schema.d.ts */ = {isa = PBXFileReference; path = schema.d.ts; sourceTree = "<group>"; };
 		4FE673402C884425E4E76E44 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		4FECAC3A44B42936A27294EC /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		53B5B5422A4D6E4C5B5A5CE0 /* backend-config.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "backend-config.json"; sourceTree = "<group>"; };
 		56EEE683DE8A6327BE090645 /* GuardApp.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = GuardApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B85466E44DDBEC9133861F2 /* cli-inputs.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "cli-inputs.json"; sourceTree = "<group>"; };
 		5D8FDB42BD6189799553EC25 /* tags.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = tags.json; sourceTree = "<group>"; };
-		5EEB4609A8F7F81AD39CA798 /* index.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = index.js; sourceTree = "<group>"; };
 		6675929BC83C45CCE8710778 /* Idempotency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Idempotency.swift; sourceTree = "<group>"; };
 		67AB574C06377305E2309C06 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		693BBBAD93D7BA3BE563101C /* index.d.ts */ = {isa = PBXFileReference; path = index.d.ts; sourceTree = "<group>"; };
 		6D57FAE46D782CE1AACEDCC0 /* AdminTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminTabView.swift; sourceTree = "<group>"; };
 		7461EFCA2AEABAC2F3E1F751 /* AmplifyModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmplifyModels.swift; sourceTree = "<group>"; };
 		7653A53D7B7CE16F1B685B54 /* pre-push.js.sample */ = {isa = PBXFileReference; path = "pre-push.js.sample"; sourceTree = "<group>"; };
@@ -185,11 +177,7 @@
 			isa = PBXGroup;
 			children = (
 				7461EFCA2AEABAC2F3E1F751 /* AmplifyModels.swift */,
-				693BBBAD93D7BA3BE563101C /* index.d.ts */,
-				5EEB4609A8F7F81AD39CA798 /* index.js */,
 				299BCC6B3D7477BB73540598 /* Role.swift */,
-				4C620A57D300BC08F08168E9 /* schema.d.ts */,
-				0BCECA858CFA611F6BC944CB /* schema.js */,
 				8F034FD47D3321E7CDFDFF47 /* Shift.swift */,
 				0947A509B7179E3020618444 /* Shift+Schema.swift */,
 				EC245E47C5BDED84F357EA15 /* ShiftState.swift */,
@@ -612,8 +600,6 @@
 				AEA49AEB0CADE2F8313941F7 /* cloudformation-template.json in Resources */,
 				F221A3E482D23F196938AB86 /* codegen.yml in Resources */,
 				1865C3DF4938BFF9D0780413 /* guardapp799df51d-cloudformation-template.json in Resources */,
-				698898F20186200E8B35F8BD /* index.d.ts in Resources */,
-				0C74FBC37B59B4F7123EAA59 /* index.js in Resources */,
 				B2305440D5B777FCB0742D83 /* local-aws-info.json in Resources */,
 				390EB0A694BD1E1F35320015 /* local-env-info.json in Resources */,
 				271AD8CEA9B0B8C41FA7696F /* parameters.json in Resources */,
@@ -624,10 +610,8 @@
 				C498CB81E314CB116A8D5D9C /* project-config.json in Resources */,
 				A5B1DA5ABB6DE1A8D474306C /* root-cloudformation-stack.json in Resources */,
 				7C359531812CB6F452852C7D /* root-cloudformation-stack.json in Resources */,
-				7C0C6627411744439860E6A8 /* schema.d.ts in Resources */,
 				CDFF68B70D2D39E91167C5B3 /* schema.graphql in Resources */,
 				E5CB7F1C491DA610342FAA1F /* schema.graphql in Resources */,
-				30AE7DC3185FF964A56AC1F9 /* schema.js in Resources */,
 				69718584A358CD186611995B /* tags.json in Resources */,
 				FE95B1DD27670A1F83390B47 /* tags.json in Resources */,
 				3BB4B982A943C9DA8C187ABC /* team-provider-info.json in Resources */,

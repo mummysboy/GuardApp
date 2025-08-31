@@ -24,7 +24,18 @@ targets:
     deploymentTarget: "16.0"
     sources:
       - path: Sources/GuardApp
+        exclude:
+          - "src/models/*.js"
+          - "src/models/*.d.ts"
+          - "src/models/index.*"
+          - "src/models/schema.*"
       - path: Sources/GuardApp/src/models
+        createIntermediateGroups: true
+        exclude:
+          - "*.js"
+          - "*.d.ts"
+          - "index.*"
+          - "schema.*"
     dependencies:
       - package: Amplify
       - package: AWSCognitoAuthPlugin
