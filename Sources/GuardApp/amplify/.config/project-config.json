@@ -1,17 +1,8 @@
 {
-  "whyContinueWithGen1": "I am a current Gen 1 user",
+  "whyContinueWithGen1": "Prefer not to answer",
   "projectName": "GuardApp",
   "version": "3.1",
-  "frontend": "javascript",
-  "javascript": {
-    "framework": "none",
-    "config": {
-      "SourceDir": "src",
-      "DistributionDir": "dist",
-      "BuildCommand": "npm run-script build",
-      "StartCommand": "npm run-script start"
-    }
-  },
+  "frontend": "ios",
   "providers": [
     "awscloudformation"
   ]

@@ -1,0 +1,16 @@
+projects:
+  guardapp:
+    schemaPath: amplify/backend/api/guardapp/build/schema.graphql
+    includes:
+      - graphql/**/*.graphql
+    excludes:
+      - ./amplify/**
+      - API.swift
+    extensions:
+      amplify:
+        codeGenTarget: swift
+        generatedFileName: API.swift
+        docsFilePath: graphql
+        region: us-west-1
+        apiId: null
+        maxDepth: 2

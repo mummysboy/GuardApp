@@ -1,6 +1,6 @@
 import Foundation
 
-struct Environment {
+struct AppEnvironment {
     static var baseURL: URL = {
         if let urlStr = ProcessInfo.processInfo.environment["BASE_URL"], let url = URL(string: urlStr) {
             return url
@@ -25,7 +25,7 @@ final class DefaultAPIClient: APIClient {
     private var auth: AuthTokenProvider { DefaultAuthService.shared }
 
     func get<T: Decodable>(_ path: String, query: [URLQueryItem]?) async throws -> T {
-        var comps = URLComponents(url: Environment.baseURL.appendingPathComponent(path), resolvingAgainstBaseURL: false)!
+        var comps = URLComponents(url: AppEnvironment.baseURL.appendingPathComponent(path), resolvingAgainstBaseURL: false)!
         comps.queryItems = query
         var req = URLRequest(url: comps.url!)
         req.httpMethod = "GET"
@@ -36,7 +36,7 @@ final class DefaultAPIClient: APIClient {
     }
 
     func post<T: Decodable, U: Encodable>(_ path: String, body: U, idempotencyKey: String? = nil) async throws -> T {
-        var req = URLRequest(url: Environment.baseURL.appendingPathComponent(path))
+        var req = URLRequest(url: AppEnvironment.baseURL.appendingPathComponent(path))
         req.httpMethod = "POST"
         req.setValue("application/json", forHTTPHeaderField: "Content-Type")
         if let key = idempotencyKey { req.setValue(key, forHTTPHeaderField: "Idempotency-Key") }

@@ -9,21 +9,27 @@ import AWSDataStorePlugin
 struct GuardAppApp: App {
     @StateObject private var session = SessionStore()
     
-    init() {
-        Task {
-            await setupAmplify()
-        }
-    }
-
     func setupAmplify() async {
         do {
-            try await Amplify.add(plugin: AWSAPIPlugin())
-            try await Amplify.add(plugin: AWSCognitoAuthPlugin())
-            try await Amplify.add(plugin: AWSDataStorePlugin(modelRegistration: AmplifyModels()))
-            try await Amplify.configure()
-            print("Amplify configured")
+            print("Setting up Amplify...")
+            
+            // Add plugins
+            try Amplify.add(plugin: AWSAPIPlugin())
+            print("✓ AWSAPIPlugin added")
+            try Amplify.add(plugin: AWSCognitoAuthPlugin())
+            print("✓ AWSCognitoAuthPlugin added")
+            try Amplify.add(plugin: AWSDataStorePlugin(modelRegistration: AmplifyModels()))
+            print("✓ AWSDataStorePlugin added")
+            
+            // Use the default Amplify.configure() method which will automatically find amplifyconfiguration.json
+            try Amplify.configure()
+            print("✅ Amplify configured successfully!")
+            
         } catch {
-            print("Failed to initialize Amplify: \(error)")
+            print("❌ Failed to initialize Amplify: \(error)")
+            print("Error details: \(error.localizedDescription)")
+            // Continue with app initialization even if Amplify fails
+            print("⚠️ App will run in offline mode")
         }
     }
 
@@ -31,6 +37,9 @@ struct GuardAppApp: App {
         WindowGroup {
             RootView()
                 .environmentObject(session)
+                .task {
+                    await setupAmplify()
+                }
         }
     }
 }

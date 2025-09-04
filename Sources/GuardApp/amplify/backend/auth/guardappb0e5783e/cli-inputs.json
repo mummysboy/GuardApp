@@ -1,10 +1,10 @@
 {
   "version": "1",
   "cognitoConfig": {
-    "identityPoolName": "guardapp799df51d_identitypool_799df51d",
+    "identityPoolName": "guardappb0e5783e_identitypool_b0e5783e",
     "allowUnauthenticatedIdentities": false,
-    "resourceNameTruncated": "guarda799df51d",
-    "userPoolName": "guardapp799df51d_userpool_799df51d",
+    "resourceNameTruncated": "guardab0e5783e",
+    "userPoolName": "guardappb0e5783e_userpool_b0e5783e",
     "autoVerifiedAttributes": [
       "email"
     ],
@@ -31,15 +31,12 @@
     "userpoolClientReadAttributes": [
       "email"
     ],
-    "userpoolClientLambdaRole": "guarda799df51d_userpoolclient_lambda_role",
+    "userpoolClientLambdaRole": "guardab0e5783e_userpoolclient_lambda_role",
     "userpoolClientSetAttributes": false,
-    "sharedId": "799df51d",
-    "resourceName": "guardapp799df51d",
+    "sharedId": "b0e5783e",
+    "resourceName": "guardappb0e5783e",
     "authSelections": "identityPoolAndUserPool",
     "useDefault": "default",
-    "usernameAttributes": [
-      "email, phone_number"
-    ],
     "userPoolGroupList": [],
     "serviceName": "Cognito",
     "usernameCaseSensitive": false,

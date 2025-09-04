@@ -1,4 +1,0 @@
-models:
-  target: ios
-  directory: ../../src/models
-  language: swift

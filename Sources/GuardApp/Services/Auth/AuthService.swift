@@ -30,7 +30,7 @@ final class DefaultAuthService: AuthService {
 
     func login(username: String, password: String) async throws -> UserClaims {
         // TODO: replace with real API call and token exchange
-    let mockClaims = UserClaims(userId: "u_123", tenantId: "t_abc", role: .admin, issuedAt: Date(), expiresAt: Date().addingTimeInterval(3600))
+        let mockClaims = UserClaims(userId: "u_123", tenantId: "t_abc", role: .admin, issuedAt: Date(), expiresAt: Date().addingTimeInterval(3600))
         let mockToken = "mock.jwt.token"
         currentAccessToken = mockToken
         keychain.set(mockToken, forKey: "access_token")
@@ -43,6 +43,12 @@ final class DefaultAuthService: AuthService {
         keychain.delete("access_token")
         keychain.delete("claims")
     }
+}
+
+enum AuthError: Error {
+    case invalidCredentials
+    case networkError
+    case unknown
 }
 
 final class Keychain {

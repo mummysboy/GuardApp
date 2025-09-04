@@ -11,7 +11,6 @@ final class SessionStore: ObservableObject {
     @Published private(set) var state: State = .loading
     private let auth: AuthService = DefaultAuthService.shared
 
-
     var claims: UserClaims? {
         if case .authenticated(let c) = state { return c } else { return nil }
     }
@@ -19,10 +18,13 @@ final class SessionStore: ObservableObject {
     @MainActor
     func bootstrap() async {
         do {
-            // Force logout on app launch for testing: clear any old session
-            try? await auth.logout()
-            state = .unauthenticated
+            if let claims = try await auth.restoreSession() {
+                state = .authenticated(claims)
+            } else {
+                state = .unauthenticated
+            }
         } catch {
+            print("Failed to restore session: \(error)")
             state = .unauthenticated
         }
     }
@@ -33,14 +35,19 @@ final class SessionStore: ObservableObject {
             let claims = try await auth.login(username: username, password: password)
             state = .authenticated(claims)
         } catch {
-            // TODO: handle error state
+            print("Login failed: \(error)")
+            // Keep the user in unauthenticated state on login failure
             state = .unauthenticated
         }
     }
 
     @MainActor
     func logout() async {
-        try? await auth.logout()
+        do {
+            try await auth.logout()
+        } catch {
+            print("Logout error: \(error)")
+        }
         state = .unauthenticated
     }
 }

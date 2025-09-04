@@ -1,4 +1,5 @@
 import Foundation
+import Amplify
 
 struct Page { let limit: Int = 20; let cursor: String? = nil }
 
@@ -30,18 +31,18 @@ final class MockShiftService: ShiftService {
 enum MockData {
     static let openShifts: [Shift] = [
         .init(id: "s1", tenantId: "t_abc", title: "Front Desk (Lobby A)", location: "SF – 101 Main St",
-              startAt: Date().addingTimeInterval(3600), endAt: Date().addingTimeInterval(3600*5),
-              rate: 28, state: .open),
+              startAt: Temporal.DateTime(Date().addingTimeInterval(3600)), endAt: Temporal.DateTime(Date().addingTimeInterval(3600*5)),
+              rate: 28, state: .open, user: nil, createdAt: Temporal.DateTime.now(), updatedAt: Temporal.DateTime.now()),
         .init(id: "s2", tenantId: "t_abc", title: "Event Security – Gala", location: "SF – Pier 27",
-              startAt: Date().addingTimeInterval(3600*24), endAt: Date().addingTimeInterval(3600*28),
-              rate: 35, state: .open),
+              startAt: Temporal.DateTime(Date().addingTimeInterval(3600*24)), endAt: Temporal.DateTime(Date().addingTimeInterval(3600*28)),
+              rate: 35, state: .open, user: nil, createdAt: Temporal.DateTime.now(), updatedAt: Temporal.DateTime.now()),
     ]
     static let myShifts: [Shift] = [
         .init(id: "m1", tenantId: "t_abc", title: "Night Shift – Warehouse", location: "Oakland",
-              startAt: Date().addingTimeInterval(-3600*8), endAt: Date().addingTimeInterval(-3600*4),
-              rate: 30, state: .completed),
+              startAt: Temporal.DateTime(Date().addingTimeInterval(-3600*8)), endAt: Temporal.DateTime(Date().addingTimeInterval(-3600*4)),
+              rate: 30, state: .completed, user: nil, createdAt: Temporal.DateTime.now(), updatedAt: Temporal.DateTime.now()),
         .init(id: "m2", tenantId: "t_abc", title: "Retail – Saturday", location: "SF – Union Square",
-              startAt: Date().addingTimeInterval(3600*48), endAt: Date().addingTimeInterval(3600*56),
-              rate: 29, state: .assigned),
+              startAt: Temporal.DateTime(Date().addingTimeInterval(3600*48)), endAt: Temporal.DateTime(Date().addingTimeInterval(3600*56)),
+              rate: 29, state: .assigned, user: nil, createdAt: Temporal.DateTime.now(), updatedAt: Temporal.DateTime.now()),
     ]
 }

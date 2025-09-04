@@ -29,6 +29,8 @@ targets:
           - "src/models/*.d.ts"
           - "src/models/index.*"
           - "src/models/schema.*"
+          - "amplify/**"
+        createIntermediateGroups: true
       - path: Sources/GuardApp/src/models
         createIntermediateGroups: true
         exclude:
@@ -36,6 +38,9 @@ targets:
           - "*.d.ts"
           - "index.*"
           - "schema.*"
+    resources:
+      - path: Sources/GuardApp/src/amplifyconfiguration.json
+        createIntermediateGroups: true
     dependencies:
       - package: Amplify
       - package: AWSCognitoAuthPlugin
@@ -47,6 +52,8 @@ targets:
         INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone: UIInterfaceOrientationPortrait
         SWIFT_SWIFT3_OBJC_INFERENCE: Default
         SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD: YES
+        INFOPLIST_KEY_CFBundleVersion: $(CURRENT_PROJECT_VERSION)
+        INFOPLIST_KEY_CFBundleShortVersionString: $(MARKETING_VERSION)
       configs:
         Debug:
           base:
