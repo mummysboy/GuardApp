@@ -32,6 +32,7 @@
 		EBF3BB627601962B845DDF34 /* GuardAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D07CAD7FD66D6D8D8C9A3D1 /* GuardAppTests.swift */; };
 		EEB9E0E0D89021F97FFC946F /* Amplify in Frameworks */ = {isa = PBXBuildFile; productRef = 549D380BDEA2E64182C3DB3E /* Amplify */; };
 		EF531944E750B488E31F09F3 /* Formatters.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA43E004B6B850E10672D30 /* Formatters.swift */; };
+		F5D94726FE9B3A68374CC299 /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = F5CDA9D56876CD88D244802F /* awsconfiguration.json */; };
 		F69A8AF5820A16F82786B11C /* Role.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00074DE08662D0C68B1B74F /* Role.swift */; };
 		F788F5DFE694B8A245BD45F4 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5B6C2383B15C30B30B9620 /* Models.swift */; };
 		FEDCB4558CFA5B1D76FC49D7 /* aws-exports.js in Resources */ = {isa = PBXBuildFile; fileRef = 3A3438751A5471F948E5560F /* aws-exports.js */; };
@@ -74,6 +75,7 @@
 		D25BBCCF8CAEAB41DE2EE5E0 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 		E00074DE08662D0C68B1B74F /* Role.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Role.swift; sourceTree = "<group>"; };
 		F4EF15295820C949755AA08B /* amplifyconfiguration.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = amplifyconfiguration.json; sourceTree = "<group>"; };
+		F5CDA9D56876CD88D244802F /* awsconfiguration.json */ = {isa = PBXFileReference; explicitFileType = text.json; lastKnownFileType = text.json; name = awsconfiguration.json; path = awsconfiguration.json; sourceTree = "<group>"; };
 		F8161482E10E858964139420 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		F9874E79C8B9BB927EBEB214 /* .gitignore */ = {isa = PBXFileReference; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -114,6 +116,13 @@
 				F5701DC6BABC27C65665CBB7 /* Views */,
 			);
 			path = GuardApp;
+			sourceTree = "<group>";
+		};
+		2F23CBEBBD52F91AF60DFB36 /* AmplifyModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = AmplifyModels;
 			sourceTree = "<group>";
 		};
 		3921456522127C09E70D7B41 /* Admin */ = {
@@ -178,6 +187,14 @@
 			path = Services;
 			sourceTree = "<group>";
 		};
+		99A10C87E575528BD98D9256 /* AmplifyConfig */ = {
+			isa = PBXGroup;
+			children = (
+				F5CDA9D56876CD88D244802F /* awsconfiguration.json */,
+			);
+			name = AmplifyConfig;
+			sourceTree = "<group>";
+		};
 		C342FBABE43FED04A464C891 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -215,6 +232,8 @@
 				C434557140A1EB243144565D /* GuardAppTests */,
 				1CA4265F29D0D27D0106EDF9 /* Sources */,
 				410FA6829EC3EBAEE3DB6B04 /* Products */,
+				99A10C87E575528BD98D9256 /* AmplifyConfig */,
+				2F23CBEBBD52F91AF60DFB36 /* AmplifyModels */,
 			);
 			sourceTree = "<group>";
 		};
@@ -350,6 +369,7 @@
 			files = (
 				CFC7BDF5FE998B559FCF83CD /* amplifyconfiguration.json in Resources */,
 				FEDCB4558CFA5B1D76FC49D7 /* aws-exports.js in Resources */,
+				F5D94726FE9B3A68374CC299 /* awsconfiguration.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

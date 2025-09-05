@@ -1,0 +1,133 @@
+# this is an auto generated file. This will be overwritten
+
+mutation CreateUser(
+  $input: CreateUserInput!
+  $condition: ModelUserConditionInput
+) {
+  createUser(input: $input, condition: $condition) {
+    id
+    tenantId
+    role
+    email
+    firstName
+    lastName
+    phone
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+    __typename
+  }
+}
+
+mutation UpdateUser(
+  $input: UpdateUserInput!
+  $condition: ModelUserConditionInput
+) {
+  updateUser(input: $input, condition: $condition) {
+    id
+    tenantId
+    role
+    email
+    firstName
+    lastName
+    phone
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+    __typename
+  }
+}
+
+mutation DeleteUser(
+  $input: DeleteUserInput!
+  $condition: ModelUserConditionInput
+) {
+  deleteUser(input: $input, condition: $condition) {
+    id
+    tenantId
+    role
+    email
+    firstName
+    lastName
+    phone
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+    __typename
+  }
+}
+
+mutation CreateShift(
+  $input: CreateShiftInput!
+  $condition: ModelShiftConditionInput
+) {
+  createShift(input: $input, condition: $condition) {
+    id
+    tenantId
+    title
+    location
+    startAt
+    endAt
+    rate
+    state
+    userId
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+    __typename
+  }
+}
+
+mutation UpdateShift(
+  $input: UpdateShiftInput!
+  $condition: ModelShiftConditionInput
+) {
+  updateShift(input: $input, condition: $condition) {
+    id
+    tenantId
+    title
+    location
+    startAt
+    endAt
+    rate
+    state
+    userId
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+    __typename
+  }
+}
+
+mutation DeleteShift(
+  $input: DeleteShiftInput!
+  $condition: ModelShiftConditionInput
+) {
+  deleteShift(input: $input, condition: $condition) {
+    id
+    tenantId
+    title
+    location
+    startAt
+    endAt
+    rate
+    state
+    userId
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+    __typename
+  }
+}

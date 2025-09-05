@@ -7,9 +7,9 @@ struct DashboardView: View {
         switch claims.role {
         case .admin:
             AdminTabView(claims: claims)
-        case .businessOwner, .businessStaff:
+        case .supervisor:
             BusinessTabView(claims: claims)
-        case .worker:
+        case .securityGuard:
             WorkerTabView(claims: claims)
         }
     }

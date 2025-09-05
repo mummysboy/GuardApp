@@ -15,18 +15,32 @@ struct AdminTabView: View {
     var body: some View {
         TabView {
             AdminHomeView()
-                .tabItem { Label("Home", systemImage: "shield") }
+                .tabItem { 
+                    Label("Command", systemImage: "shield.fill") 
+                }
             UserManagementView()
-                .tabItem { Label("Users", systemImage: "person.2") }
+                .tabItem { 
+                    Label("Personnel", systemImage: "person.3.fill") 
+                }
             TenantsView()
-                .tabItem { Label("Tenants", systemImage: "building.2") }
+                .tabItem { 
+                    Label("Territories", systemImage: "building.2.fill") 
+                }
             ReportsView()
-                .tabItem { Label("Reports", systemImage: "chart.bar") }
+                .tabItem { 
+                    Label("Intelligence", systemImage: "chart.bar.fill") 
+                }
             AuditsView()
-                .tabItem { Label("Audits", systemImage: "doc.text.magnifyingglass") }
+                .tabItem { 
+                    Label("Surveillance", systemImage: "eye.fill") 
+                }
             SettingsView()
-                .tabItem { Label("Settings", systemImage: "gearshape") }
+                .tabItem { 
+                    Label("Control", systemImage: "gearshape.fill") 
+                }
         }
+        .accentColor(.red)
+        .preferredColorScheme(.dark)
     }
 }
 
@@ -35,123 +49,197 @@ struct AdminHomeView: View {
     
     var body: some View {
         NavigationView {
-            ScrollView {
-                VStack(spacing: 24) {
-                    // Header Section
-                    VStack(spacing: 8) {
-                        Text("Admin Dashboard")
-                            .font(.largeTitle)
-                            .fontWeight(.bold)
-                        
-                        Text("Welcome back! Here's what's happening with your system.")
-                            .font(.subheadline)
-                            .foregroundColor(.secondary)
-                            .multilineTextAlignment(.center)
-                    }
-                    .padding(.top)
-                    
-                    // Statistics Cards
-                    LazyVGrid(columns: [
-                        GridItem(.flexible()),
-                        GridItem(.flexible())
-                    ], spacing: 16) {
-                        StatCard(
-                            title: "Total Users",
-                            value: "\(viewModel.totalUsers)",
-                            icon: "person.2.fill",
-                            color: .blue
+            ZStack {
+                // Dark background with subtle pattern
+                Color.black
+                    .ignoresSafeArea()
+                
+                ScrollView {
+                    VStack(spacing: 32) {
+                        // Command Center Header
+                        VStack(spacing: 12) {
+                            HStack {
+                                Image(systemName: "shield.fill")
+                                    .font(.system(size: 24))
+                                    .foregroundColor(.red)
+                                
+                                VStack(alignment: .leading, spacing: 2) {
+                                    Text("COMMAND")
+                                        .font(.title2)
+                                        .fontWeight(.black)
+                                        .foregroundColor(.white)
+                                    
+                                    Text("SECURITY OPS")
+                                        .font(.caption2)
+                                        .fontWeight(.bold)
+                                        .foregroundColor(.red)
+                                        .tracking(1)
+                                }
+                                
+                                Spacer()
+                                
+                                // Status indicator
+                                HStack(spacing: 4) {
+                                    Circle()
+                                        .fill(.green)
+                                        .frame(width: 8, height: 8)
+                                    Text("ONLINE")
+                                        .font(.caption2)
+                                        .fontWeight(.bold)
+                                        .foregroundColor(.green)
+                                }
+                            }
+                            
+                            Text("ALL SYSTEMS SECURE")
+                                .font(.caption)
+                                .fontWeight(.semibold)
+                                .foregroundColor(.white.opacity(0.8))
+                                .multilineTextAlignment(.center)
+                        }
+                        .padding(.horizontal, 16)
+                        .padding(.vertical, 16)
+                        .background(
+                            RoundedRectangle(cornerRadius: 16)
+                                .fill(
+                                    LinearGradient(
+                                        colors: [Color.black, Color.gray.opacity(0.3)],
+                                        startPoint: .topLeading,
+                                        endPoint: .bottomTrailing
+                                    )
+                                )
+                                .overlay(
+                                    RoundedRectangle(cornerRadius: 16)
+                                        .stroke(Color.red.opacity(0.5), lineWidth: 2)
+                                )
                         )
                         
-                        StatCard(
-                            title: "Active Shifts",
-                            value: "\(viewModel.activeShifts)",
-                            icon: "clock.fill",
-                            color: .green
-                        )
-                        
-                        StatCard(
-                            title: "Tenants",
-                            value: "\(viewModel.totalTenants)",
-                            icon: "building.2.fill",
-                            color: .orange
-                        )
-                        
-                        StatCard(
-                            title: "Pending Requests",
-                            value: "\(viewModel.pendingRequests)",
-                            icon: "exclamationmark.triangle.fill",
-                            color: .red
-                        )
-                    }
-                    
-                    // Quick Actions
-                    VStack(alignment: .leading, spacing: 16) {
-                        Text("Quick Actions")
-                            .font(.headline)
-                            .fontWeight(.semibold)
-                        
+                        // Threat Level Cards
                         LazyVGrid(columns: [
                             GridItem(.flexible()),
                             GridItem(.flexible())
                         ], spacing: 12) {
-                            QuickActionCard(
-                                title: "Add User",
-                                subtitle: "Create new user account",
-                                icon: "person.badge.plus",
-                                color: .blue
-                            ) {
-                                // Action will be handled by parent view
-                            }
+                            ThreatLevelCard(
+                                title: "PERSONNEL",
+                                value: "\(viewModel.totalUsers)",
+                                icon: "person.3.fill",
+                                threatLevel: .low,
+                                subtitle: "ACTIVE"
+                            )
                             
-                            QuickActionCard(
-                                title: "View Reports",
-                                subtitle: "System analytics",
-                                icon: "chart.bar.fill",
-                                color: .green
-                            ) {
-                                // Action will be handled by parent view
-                            }
+                            ThreatLevelCard(
+                                title: "MISSIONS",
+                                value: "\(viewModel.activeShifts)",
+                                icon: "clock.fill",
+                                threatLevel: .medium,
+                                subtitle: "ACTIVE"
+                            )
                             
-                            QuickActionCard(
-                                title: "System Settings",
-                                subtitle: "Configure preferences",
-                                icon: "gearshape.fill",
-                                color: .gray
-                            ) {
-                                // Action will be handled by parent view
-                            }
+                            ThreatLevelCard(
+                                title: "TERRITORIES",
+                                value: "\(viewModel.totalTenants)",
+                                icon: "building.2.fill",
+                                threatLevel: .low,
+                                subtitle: "SECTORS"
+                            )
                             
-                            QuickActionCard(
-                                title: "Audit Log",
-                                subtitle: "View system logs",
-                                icon: "doc.text.fill",
-                                color: .purple
-                            ) {
-                                // Action will be handled by parent view
-                            }
+                            ThreatLevelCard(
+                                title: "ALERTS",
+                                value: "\(viewModel.pendingRequests)",
+                                icon: "exclamationmark.triangle.fill",
+                                threatLevel: .high,
+                                subtitle: "PENDING"
+                            )
                         }
-                    }
-                    
-                    // Recent Activity
-                    VStack(alignment: .leading, spacing: 16) {
-                        Text("Recent Activity")
-                            .font(.headline)
-                            .fontWeight(.semibold)
                         
-                        VStack(spacing: 12) {
-                            ForEach(viewModel.recentActivities.prefix(5), id: \.id) { activity in
-                                ActivityRow(activity: activity)
+                        // Tactical Operations
+                        VStack(alignment: .leading, spacing: 16) {
+                            HStack {
+                                Image(systemName: "bolt.fill")
+                                    .foregroundColor(.yellow)
+                                    .font(.system(size: 16))
+                                Text("TACTICAL OPS")
+                                    .font(.subheadline)
+                                    .fontWeight(.black)
+                                    .foregroundColor(.white)
+                                Spacer()
+                            }
+                            
+                            LazyVGrid(columns: [
+                                GridItem(.flexible()),
+                                GridItem(.flexible())
+                            ], spacing: 12) {
+                                TacticalActionCard(
+                                    title: "DEPLOY",
+                                    subtitle: "New operative",
+                                    icon: "person.badge.plus",
+                                    color: .red
+                                ) {
+                                    // Action
+                                }
+                                
+                                TacticalActionCard(
+                                    title: "INTEL",
+                                    subtitle: "Reports",
+                                    icon: "chart.bar.fill",
+                                    color: .blue
+                                ) {
+                                    // Action
+                                }
+                                
+                                TacticalActionCard(
+                                    title: "CONTROL",
+                                    subtitle: "Settings",
+                                    icon: "gearshape.fill",
+                                    color: .gray
+                                ) {
+                                    // Action
+                                }
+                                
+                                TacticalActionCard(
+                                    title: "SURVEIL",
+                                    subtitle: "Monitor",
+                                    icon: "eye.fill",
+                                    color: .purple
+                                ) {
+                                    // Action
+                                }
                             }
                         }
-                        .background(Color(.systemBackground))
-                        .cornerRadius(12)
-                        .shadow(color: .black.opacity(0.05), radius: 2, x: 0, y: 1)
+                        
+                        // Mission Briefings
+                        VStack(alignment: .leading, spacing: 16) {
+                            HStack {
+                                Image(systemName: "doc.text.fill")
+                                    .foregroundColor(.orange)
+                                    .font(.system(size: 16))
+                                Text("MISSION BRIEFS")
+                                    .font(.subheadline)
+                                    .fontWeight(.black)
+                                    .foregroundColor(.white)
+                                Spacer()
+                            }
+                            
+                            VStack(spacing: 12) {
+                                ForEach(viewModel.recentActivities.prefix(5), id: \.id) { activity in
+                                    MissionBriefingRow(activity: activity)
+                                }
+                            }
+                            .background(
+                                RoundedRectangle(cornerRadius: 12)
+                                    .fill(Color.gray.opacity(0.1))
+                                    .overlay(
+                                        RoundedRectangle(cornerRadius: 12)
+                                            .stroke(Color.gray.opacity(0.3), lineWidth: 1)
+                                    )
+                            )
+                        }
                     }
+                    .padding(.horizontal, 16)
+                    .padding(.bottom, 16)
                 }
-                .padding()
             }
-            .navigationTitle("Admin Home")
-            .navigationBarTitleDisplayMode(.large)
+            .navigationTitle("")
+            .navigationBarHidden(true)
             .refreshable {
                 await viewModel.loadDashboardData()
             }
@@ -164,40 +252,92 @@ struct AdminHomeView: View {
 
 // MARK: - Supporting Views
 
-struct StatCard: View {
+enum ThreatLevel {
+    case low, medium, high, critical
+    
+    var color: Color {
+        switch self {
+        case .low: return .green
+        case .medium: return .yellow
+        case .high: return .orange
+        case .critical: return .red
+        }
+    }
+    
+    var borderColor: Color {
+        switch self {
+        case .low: return .green.opacity(0.5)
+        case .medium: return .yellow.opacity(0.5)
+        case .high: return .orange.opacity(0.5)
+        case .critical: return .red.opacity(0.8)
+        }
+    }
+}
+
+struct ThreatLevelCard: View {
     let title: String
     let value: String
     let icon: String
-    let color: Color
+    let threatLevel: ThreatLevel
+    let subtitle: String
     
     var body: some View {
         VStack(alignment: .leading, spacing: 12) {
             HStack {
                 Image(systemName: icon)
-                    .font(.title2)
-                    .foregroundColor(color)
+                    .font(.title3)
+                    .foregroundColor(threatLevel.color)
+                
                 Spacer()
+                
+                // Threat level indicator
+                Circle()
+                    .fill(threatLevel.color)
+                    .frame(width: 8, height: 8)
+                    .overlay(
+                        Circle()
+                            .stroke(threatLevel.color, lineWidth: 1)
+                            .scaleEffect(1.3)
+                            .opacity(0.3)
+                    )
             }
             
             VStack(alignment: .leading, spacing: 4) {
                 Text(value)
-                    .font(.title)
-                    .fontWeight(.bold)
-                    .foregroundColor(.primary)
+                    .font(.system(size: 24, weight: .black, design: .monospaced))
+                    .foregroundColor(.white)
                 
                 Text(title)
-                    .font(.caption)
-                    .foregroundColor(.secondary)
+                    .font(.caption2)
+                    .fontWeight(.bold)
+                    .foregroundColor(threatLevel.color)
+                    .tracking(0.5)
+                
+                Text(subtitle)
+                    .font(.caption2)
+                    .foregroundColor(.white.opacity(0.6))
+                    .tracking(0.3)
             }
         }
-        .padding()
-        .background(Color(.systemBackground))
-        .cornerRadius(12)
-        .shadow(color: .black.opacity(0.05), radius: 2, x: 0, y: 1)
+        .padding(12)
+        .background(
+            RoundedRectangle(cornerRadius: 12)
+                .fill(
+                    LinearGradient(
+                        colors: [Color.black, Color.gray.opacity(0.2)],
+                        startPoint: .topLeading,
+                        endPoint: .bottomTrailing
+                    )
+                )
+                .overlay(
+                    RoundedRectangle(cornerRadius: 12)
+                        .stroke(threatLevel.borderColor, lineWidth: 1)
+                )
+        )
     }
 }
 
-struct QuickActionCard: View {
+struct TacticalActionCard: View {
     let title: String
     let subtitle: String
     let icon: String
@@ -212,61 +352,83 @@ struct QuickActionCard: View {
                         .font(.title3)
                         .foregroundColor(color)
                     Spacer()
+                    
+                    Image(systemName: "arrow.right")
+                        .font(.caption2)
+                        .foregroundColor(.white.opacity(0.6))
                 }
                 
                 VStack(alignment: .leading, spacing: 4) {
                     Text(title)
-                        .font(.headline)
-                        .fontWeight(.semibold)
-                        .foregroundColor(.primary)
+                        .font(.subheadline)
+                        .fontWeight(.black)
+                        .foregroundColor(.white)
+                        .tracking(0.3)
                     
                     Text(subtitle)
-                        .font(.caption)
-                        .foregroundColor(.secondary)
+                        .font(.caption2)
+                        .foregroundColor(.white.opacity(0.7))
+                        .tracking(0.2)
                 }
             }
-            .padding()
-            .background(Color(.systemBackground))
-            .cornerRadius(12)
-            .shadow(color: .black.opacity(0.05), radius: 2, x: 0, y: 1)
+            .padding(12)
+            .background(
+                RoundedRectangle(cornerRadius: 10)
+                    .fill(
+                        LinearGradient(
+                            colors: [Color.black, Color.gray.opacity(0.3)],
+                            startPoint: .topLeading,
+                            endPoint: .bottomTrailing
+                        )
+                    )
+                    .overlay(
+                        RoundedRectangle(cornerRadius: 10)
+                            .stroke(color.opacity(0.3), lineWidth: 1)
+                    )
+            )
         }
         .buttonStyle(PlainButtonStyle())
     }
 }
 
-struct ActivityRow: View {
+struct MissionBriefingRow: View {
     let activity: ActivityItem
     
     var body: some View {
         HStack(spacing: 12) {
-            Circle()
-                .fill(activity.color.opacity(0.2))
-                .frame(width: 32, height: 32)
-                .overlay(
-                    Image(systemName: activity.icon)
-                        .font(.caption)
-                        .foregroundColor(activity.color)
-                )
+            // Status indicator
+            RoundedRectangle(cornerRadius: 3)
+                .fill(activity.color)
+                .frame(width: 3, height: 32)
             
-            VStack(alignment: .leading, spacing: 2) {
-                Text(activity.title)
-                    .font(.subheadline)
-                    .fontWeight(.medium)
-                    .foregroundColor(.primary)
+            VStack(alignment: .leading, spacing: 4) {
+                HStack {
+                    Image(systemName: activity.icon)
+                        .font(.caption2)
+                        .foregroundColor(activity.color)
+                    
+                    Text(activity.title)
+                        .font(.caption)
+                        .fontWeight(.bold)
+                        .foregroundColor(.white)
+                        .lineLimit(1)
+                    
+                    Spacer()
+                    
+                    Text(activity.timeAgo)
+                        .font(.caption2)
+                        .foregroundColor(.white.opacity(0.6))
+                        .tracking(0.3)
+                }
                 
                 Text(activity.description)
-                    .font(.caption)
-                    .foregroundColor(.secondary)
+                    .font(.caption2)
+                    .foregroundColor(.white.opacity(0.8))
+                    .lineLimit(2)
             }
-            
-            Spacer()
-            
-            Text(activity.timeAgo)
-                .font(.caption2)
-                .foregroundColor(.secondary)
         }
-        .padding(.horizontal, 16)
-        .padding(.vertical, 12)
+        .padding(.horizontal, 12)
+        .padding(.vertical, 8)
     }
 }
 
@@ -303,7 +465,7 @@ class AdminHomeViewModel: ObservableObject {
         // Load shifts count
         do {
             let shifts = try await Amplify.DataStore.query(Shift.self)
-            activeShifts = shifts.filter { $0.state == .open || $0.state == .assigned }.count
+            activeShifts = shifts.filter { $0.state == .pending || $0.state == .assigned }.count
         } catch {
             print("Failed to load shifts: \(error)")
         }
@@ -327,39 +489,39 @@ class AdminHomeViewModel: ObservableObject {
     private func loadRecentActivities() {
         recentActivities = [
             ActivityItem(
-                title: "New user registered",
-                description: "Jane Doe joined as a Guard",
+                title: "DEPLOYED",
+                description: "Agent Jane Doe to Sector Alpha",
                 icon: "person.badge.plus",
                 color: .green,
-                timeAgo: "2 minutes ago"
+                timeAgo: "2M"
             ),
             ActivityItem(
-                title: "Shift completed",
-                description: "Security shift at Downtown Mall",
-                icon: "checkmark.circle",
+                title: "COMPLETED",
+                description: "Downtown Mall - SECURE",
+                icon: "checkmark.shield",
                 color: .blue,
-                timeAgo: "15 minutes ago"
+                timeAgo: "15M"
             ),
             ActivityItem(
-                title: "Payment processed",
-                description: "$150.00 paid to Guard ID #1234",
-                icon: "dollarsign.circle",
+                title: "PAYMENT",
+                description: "Credits to Op #1234",
+                icon: "creditcard.fill",
                 color: .green,
-                timeAgo: "1 hour ago"
+                timeAgo: "1H"
             ),
             ActivityItem(
-                title: "System maintenance",
-                description: "Database backup completed",
-                icon: "gearshape",
+                title: "MAINTENANCE",
+                description: "Database backup complete",
+                icon: "gearshape.fill",
                 color: .orange,
-                timeAgo: "2 hours ago"
+                timeAgo: "2H"
             ),
             ActivityItem(
-                title: "New tenant added",
-                description: "ABC Security Services joined",
-                icon: "building.2",
+                title: "EXPANSION",
+                description: "New surveillance zone",
+                icon: "building.2.fill",
                 color: .purple,
-                timeAgo: "3 hours ago"
+                timeAgo: "3H"
             )
         ]
     }
@@ -373,65 +535,117 @@ struct UserManagementView: View {
     
     var body: some View {
         NavigationView {
-            VStack(spacing: 0) {
-                // Search Bar
-                SearchBar(text: $searchText, placeholder: "Search users...")
-                    .padding(.horizontal)
-                    .padding(.top)
+            ZStack {
+                Color.black.ignoresSafeArea()
                 
-                // Filter Picker
-                Picker("Filter", selection: $selectedFilter) {
-                    ForEach(UserFilter.allCases, id: \.self) { filter in
-                        Text(filter.rawValue).tag(filter)
-                    }
-                }
-                .pickerStyle(SegmentedPickerStyle())
-                .padding()
-                
-                // User List
-                if viewModel.isLoading {
-                    Spacer()
-                    ProgressView("Loading users...")
-                    Spacer()
-                } else {
-                    List {
-                        ForEach(filteredAndSearchedUsers, id: \.id) { user in
-                            UserRowView(user: user) {
-                                viewModel.deleteUser(user)
+                VStack(spacing: 0) {
+                    // Tactical Header
+                    VStack(spacing: 12) {
+                        HStack {
+                            Image(systemName: "person.3.fill")
+                                .font(.title3)
+                                .foregroundColor(.red)
+                            
+                            Text("PERSONNEL")
+                                .font(.title3)
+                                .fontWeight(.black)
+                                .foregroundColor(.white)
+                            
+                            Spacer()
+                            
+                            Button(action: { showingAddUser = true }) {
+                                Image(systemName: "plus.circle.fill")
+                                    .font(.title3)
+                                    .foregroundColor(.red)
                             }
                         }
+                        
+                        // Search Bar
+                        HStack {
+                            Image(systemName: "magnifyingglass")
+                                .foregroundColor(.gray)
+                                .font(.caption)
+                            
+                            TextField("Search operatives...", text: $searchText)
+                                .textFieldStyle(PlainTextFieldStyle())
+                                .foregroundColor(.white)
+                                .font(.caption)
+                        }
+                        .padding(.horizontal, 12)
+                        .padding(.vertical, 8)
+                        .background(
+                            RoundedRectangle(cornerRadius: 8)
+                                .fill(Color.gray.opacity(0.2))
+                                .overlay(
+                                    RoundedRectangle(cornerRadius: 8)
+                                        .stroke(Color.gray.opacity(0.5), lineWidth: 1)
+                                )
+                        )
+                        
+                        // Filter Picker
+                        Picker("Filter", selection: $selectedFilter) {
+                            ForEach(UserFilter.allCases, id: \.self) { filter in
+                                Text(filter.rawValue).tag(filter)
+                            }
+                        }
+                        .pickerStyle(SegmentedPickerStyle())
+                        .background(Color.gray.opacity(0.2))
                     }
-                    .refreshable {
-                        await viewModel.loadUsers()
-                    }
-                    .overlay(
-                        Group {
-                            if filteredAndSearchedUsers.isEmpty {
-                                VStack(spacing: 16) {
-                                    Image(systemName: "person.2.slash")
-                                        .font(.system(size: 48))
-                                        .foregroundColor(.secondary)
-                                    Text("No users found")
-                                        .font(.headline)
-                                        .foregroundColor(.secondary)
-                                    Text("Try adjusting your search or filters")
-                                        .font(.subheadline)
-                                        .foregroundColor(.secondary)
+                    .padding(.horizontal, 16)
+                    .padding(.vertical, 12)
+                    
+                    // Personnel List
+                    if viewModel.isLoading {
+                        Spacer()
+                        VStack(spacing: 16) {
+                            ProgressView()
+                                .progressViewStyle(CircularProgressViewStyle(tint: .red))
+                            Text("LOADING PERSONNEL DATA...")
+                                .font(.caption)
+                                .fontWeight(.bold)
+                                .foregroundColor(.white.opacity(0.7))
+                                .tracking(1)
+                        }
+                        Spacer()
+                    } else {
+                        List {
+                            ForEach(filteredAndSearchedUsers, id: \.id) { user in
+                                OperativeRowView(user: user) {
+                                    viewModel.deleteUser(user)
                                 }
-                                .padding()
                             }
                         }
-                    )
-                }
-            }
-            .navigationTitle("User Management")
-            .toolbar {
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    Button(action: { showingAddUser = true }) {
-                        Image(systemName: "plus")
+                        .listStyle(PlainListStyle())
+                        .background(Color.clear)
+                        .refreshable {
+                            await viewModel.loadUsers()
+                        }
+                        .overlay(
+                            Group {
+                                if filteredAndSearchedUsers.isEmpty {
+                                    VStack(spacing: 20) {
+                                        Image(systemName: "person.3.slash")
+                                            .font(.system(size: 64))
+                                            .foregroundColor(.gray.opacity(0.5))
+                                        Text("NO OPERATIVES FOUND")
+                                            .font(.headline)
+                                            .fontWeight(.bold)
+                                            .foregroundColor(.white.opacity(0.7))
+                                            .tracking(1)
+                                        Text("Adjust search parameters or deploy new personnel")
+                                            .font(.subheadline)
+                                            .foregroundColor(.white.opacity(0.5))
+                                            .multilineTextAlignment(.center)
+                                    }
+                                    .padding()
+                                }
+                            }
+                        )
                     }
                 }
             }
+            .navigationTitle("")
+            .navigationBarHidden(true)
             .sheet(isPresented: $showingAddUser) {
                 AddUserView { user in
                     viewModel.addUser(user)
@@ -439,7 +653,7 @@ struct UserManagementView: View {
                 }
             }
             .alert("Error", isPresented: .constant(viewModel.errorMessage != nil)) {
-                Button("OK") {
+                Button("ACKNOWLEDGED") {
                     viewModel.errorMessage = nil
                 }
             } message: {
@@ -487,7 +701,7 @@ struct SearchBar: View {
     }
 }
 
-struct UserRowView: View {
+struct OperativeRowView: View {
     let user: User
     let onDelete: () -> Void
     @State private var showingDeleteAlert = false
@@ -495,67 +709,104 @@ struct UserRowView: View {
     
     var body: some View {
         HStack(spacing: 12) {
-            // User Avatar
-            Circle()
-                .fill(roleColor.opacity(0.2))
-                .frame(width: 50, height: 50)
-                .overlay(
+            // Operative Badge
+            ZStack {
+                RoundedRectangle(cornerRadius: 8)
+                    .fill(roleColor.opacity(0.2))
+                    .frame(width: 48, height: 48)
+                    .overlay(
+                        RoundedRectangle(cornerRadius: 8)
+                            .stroke(roleColor, lineWidth: 1)
+                    )
+                
+                VStack(spacing: 1) {
                     Text(userInitials)
-                        .font(.headline)
-                        .fontWeight(.semibold)
+                        .font(.caption)
+                        .fontWeight(.black)
                         .foregroundColor(roleColor)
-                )
-            // User Info
+                    
+                    Text(roleAbbreviation)
+                        .font(.caption2)
+                        .fontWeight(.bold)
+                        .foregroundColor(roleColor)
+                        .tracking(0.5)
+                }
+            }
+            
+            // Operative Info
             VStack(alignment: .leading, spacing: 4) {
                 HStack {
                     Text(userDisplayName)
-                        .font(.headline)
+                        .font(.subheadline)
+                        .fontWeight(.bold)
+                        .foregroundColor(.white)
                         .lineLimit(1)
+                    
                     Spacer()
-                    Text(user.role.rawValue)
-                        .font(.caption)
-                        .padding(.horizontal, 8)
+                    
+                    // Status indicator
+                    Circle()
+                        .fill(.green)
+                        .frame(width: 6, height: 6)
+                }
+                
+                Text(user.email)
+                    .font(.caption)
+                    .foregroundColor(.white.opacity(0.7))
+                    .lineLimit(1)
+                
+                HStack {
+                    Text("SECTOR: \(user.tenantId)")
+                        .font(.caption2)
+                        .fontWeight(.bold)
+                        .foregroundColor(.white.opacity(0.6))
+                        .tracking(0.3)
+                    
+                    Spacer()
+                    
+                    Text(roleTitle)
+                        .font(.caption2)
+                        .fontWeight(.bold)
+                        .foregroundColor(roleColor)
+                        .padding(.horizontal, 6)
                         .padding(.vertical, 2)
                         .background(roleColor.opacity(0.2))
-                        .foregroundColor(roleColor)
                         .cornerRadius(4)
                 }
-                Text(user.email)
-                    .font(.subheadline)
-                    .foregroundColor(.secondary)
-                    .lineLimit(1)
-                if let phone = user.phone, !phone.isEmpty {
-                    Text(phone)
-                        .font(.caption)
-                        .foregroundColor(.secondary)
-                        .lineLimit(1)
-                }
-                Text("Tenant: \(user.tenantId)")
-                    .font(.caption2)
-                    .foregroundColor(.secondary)
-                    .lineLimit(1)
             }
-            Spacer()
+            
             // Action Buttons
             HStack(spacing: 8) {
                 Button(action: { showingEditSheet = true }) {
-                    Image(systemName: "pencil")
+                    Image(systemName: "pencil.circle.fill")
+                        .font(.title2)
                         .foregroundColor(.blue)
                 }
+                
                 Button(action: { showingDeleteAlert = true }) {
-                    Image(systemName: "trash")
+                    Image(systemName: "trash.circle.fill")
+                        .font(.title2)
                         .foregroundColor(.red)
                 }
             }
         }
-        .padding(.vertical, 4)
-        .alert("Delete User", isPresented: $showingDeleteAlert) {
-            Button("Cancel", role: .cancel) { }
-            Button("Delete", role: .destructive) {
+        .padding(.horizontal, 12)
+        .padding(.vertical, 8)
+        .background(
+            RoundedRectangle(cornerRadius: 8)
+                .fill(Color.gray.opacity(0.1))
+                .overlay(
+                    RoundedRectangle(cornerRadius: 8)
+                        .stroke(Color.gray.opacity(0.3), lineWidth: 1)
+                )
+        )
+        .alert("TERMINATE OPERATIVE", isPresented: $showingDeleteAlert) {
+            Button("CANCEL", role: .cancel) { }
+            Button("TERMINATE", role: .destructive) {
                 onDelete()
             }
         } message: {
-            Text("Are you sure you want to delete \(userDisplayName)? This action cannot be undone.")
+            Text("Are you sure you want to terminate \(userDisplayName)? This action cannot be undone.")
         }
         .sheet(isPresented: $showingEditSheet) {
             EditUserView(user: user)
@@ -586,12 +837,27 @@ struct UserRowView: View {
         }
     }
     
+    private var roleAbbreviation: String {
+        switch user.role {
+        case .admin: return "CMD"
+        case .supervisor: return "SUP"
+        case .securityGuard: return "OP"
+        }
+    }
+    
+    private var roleTitle: String {
+        switch user.role {
+        case .admin: return "COMMANDER"
+        case .supervisor: return "SUPERVISOR"
+        case .securityGuard: return "OPERATIVE"
+        }
+    }
+    
     private var roleColor: Color {
         switch user.role {
         case .admin: return .red
-        case .businessOwner: return .blue
-        case .businessStaff: return .green
-        case .worker: return .orange
+        case .supervisor: return .blue
+        case .securityGuard: return .orange
         }
     }
 }
@@ -639,9 +905,8 @@ struct EditUserView: View {
                 
                 Section("Role & Organization") {
                     Picker("Role", selection: $selectedRole) {
-                        Text("Guard").tag(Role.worker)
-                        Text("Client Staff").tag(Role.businessStaff)
-                        Text("Client Owner").tag(Role.businessOwner)
+                        Text("Guard").tag(Role.securityGuard)
+                        Text("Supervisor").tag(Role.supervisor)
                         Text("Admin").tag(Role.admin)
                     }
                     .pickerStyle(MenuPickerStyle())
@@ -671,7 +936,9 @@ struct EditUserView: View {
                                 lastName: lastName.isEmpty ? nil : lastName,
                                 phone: phone.isEmpty ? nil : phone,
                                 createdAt: user.createdAt,
-                                updatedAt: Temporal.DateTime.now()
+                                updatedAt: Temporal.DateTime.now(),
+                                _version: user._version,
+                                _lastChangedAt: Int(Date().timeIntervalSince1970)
                             )
                             viewModel.updateUser(updatedUser)
                             dismiss()
@@ -728,7 +995,7 @@ struct AddUserView: View {
     @State private var lastName = ""
     @State private var email = ""
     @State private var phone = ""
-    @State private var selectedRole: Role = .worker
+    @State private var selectedRole: Role = .securityGuard
     @State private var tenantId = ""
     @State private var showingValidationAlert = false
     @State private var validationMessage = ""
@@ -752,8 +1019,9 @@ struct AddUserView: View {
                 
                 Section("Role & Organization") {
                     Picker("Role", selection: $selectedRole) {
-                        Text("Guard").tag(Role.worker)
-                        Text("Client").tag(Role.businessOwner)
+                        Text("Guard").tag(Role.securityGuard)
+                        Text("Supervisor").tag(Role.supervisor)
+                        Text("Admin").tag(Role.admin)
                     }
                     .pickerStyle(MenuPickerStyle())
                     
@@ -769,10 +1037,7 @@ struct AddUserView: View {
                         Text("• Guard: Security personnel who can be assigned to shifts")
                             .font(.caption)
                             .foregroundColor(.secondary)
-                        Text("• Client Staff: Employees of client organizations who can manage shifts")
-                            .font(.caption)
-                            .foregroundColor(.secondary)
-                        Text("• Client Owner: Owners of client organizations with full access")
+                        Text("• Supervisor: Managers who can oversee guards and shifts")
                             .font(.caption)
                             .foregroundColor(.secondary)
                         Text("• Admin: System administrators with full access")
@@ -802,7 +1067,9 @@ struct AddUserView: View {
                                 lastName: lastName.isEmpty ? nil : lastName,
                                 phone: phone.isEmpty ? nil : phone,
                                 createdAt: Temporal.DateTime.now(),
-                                updatedAt: Temporal.DateTime.now()
+                                updatedAt: Temporal.DateTime.now(),
+                                _version: 1,
+                                _lastChangedAt: Int(Date().timeIntervalSince1970)
                             )
                             onSave(newUser)
                         } else {

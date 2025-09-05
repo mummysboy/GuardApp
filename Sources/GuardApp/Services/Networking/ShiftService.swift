@@ -32,17 +32,21 @@ enum MockData {
     static let openShifts: [Shift] = [
         .init(id: "s1", tenantId: "t_abc", title: "Front Desk (Lobby A)", location: "SF – 101 Main St",
               startAt: Temporal.DateTime(Date().addingTimeInterval(3600)), endAt: Temporal.DateTime(Date().addingTimeInterval(3600*5)),
-              rate: 28, state: .open, user: nil, createdAt: Temporal.DateTime.now(), updatedAt: Temporal.DateTime.now()),
+              rate: 28, state: .pending, userId: "", createdAt: Temporal.DateTime.now(), updatedAt: Temporal.DateTime.now(),
+              _version: 1, _lastChangedAt: Int(Date().timeIntervalSince1970)),
         .init(id: "s2", tenantId: "t_abc", title: "Event Security – Gala", location: "SF – Pier 27",
               startAt: Temporal.DateTime(Date().addingTimeInterval(3600*24)), endAt: Temporal.DateTime(Date().addingTimeInterval(3600*28)),
-              rate: 35, state: .open, user: nil, createdAt: Temporal.DateTime.now(), updatedAt: Temporal.DateTime.now()),
+              rate: 35, state: .pending, userId: "", createdAt: Temporal.DateTime.now(), updatedAt: Temporal.DateTime.now(),
+              _version: 1, _lastChangedAt: Int(Date().timeIntervalSince1970)),
     ]
     static let myShifts: [Shift] = [
         .init(id: "m1", tenantId: "t_abc", title: "Night Shift – Warehouse", location: "Oakland",
               startAt: Temporal.DateTime(Date().addingTimeInterval(-3600*8)), endAt: Temporal.DateTime(Date().addingTimeInterval(-3600*4)),
-              rate: 30, state: .completed, user: nil, createdAt: Temporal.DateTime.now(), updatedAt: Temporal.DateTime.now()),
+              rate: 30, state: .completed, userId: "user1", createdAt: Temporal.DateTime.now(), updatedAt: Temporal.DateTime.now(),
+              _version: 1, _lastChangedAt: Int(Date().timeIntervalSince1970)),
         .init(id: "m2", tenantId: "t_abc", title: "Retail – Saturday", location: "SF – Union Square",
               startAt: Temporal.DateTime(Date().addingTimeInterval(3600*48)), endAt: Temporal.DateTime(Date().addingTimeInterval(3600*56)),
-              rate: 29, state: .assigned, user: nil, createdAt: Temporal.DateTime.now(), updatedAt: Temporal.DateTime.now()),
+              rate: 29, state: .assigned, userId: "user1", createdAt: Temporal.DateTime.now(), updatedAt: Temporal.DateTime.now(),
+              _version: 1, _lastChangedAt: Int(Date().timeIntervalSince1970)),
     ]
 }

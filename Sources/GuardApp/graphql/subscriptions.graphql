@@ -1,0 +1,115 @@
+# this is an auto generated file. This will be overwritten
+
+subscription OnCreateUser($filter: ModelSubscriptionUserFilterInput) {
+  onCreateUser(filter: $filter) {
+    id
+    tenantId
+    role
+    email
+    firstName
+    lastName
+    phone
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+    __typename
+  }
+}
+
+subscription OnUpdateUser($filter: ModelSubscriptionUserFilterInput) {
+  onUpdateUser(filter: $filter) {
+    id
+    tenantId
+    role
+    email
+    firstName
+    lastName
+    phone
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+    __typename
+  }
+}
+
+subscription OnDeleteUser($filter: ModelSubscriptionUserFilterInput) {
+  onDeleteUser(filter: $filter) {
+    id
+    tenantId
+    role
+    email
+    firstName
+    lastName
+    phone
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+    __typename
+  }
+}
+
+subscription OnCreateShift($filter: ModelSubscriptionShiftFilterInput) {
+  onCreateShift(filter: $filter) {
+    id
+    tenantId
+    title
+    location
+    startAt
+    endAt
+    rate
+    state
+    userId
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+    __typename
+  }
+}
+
+subscription OnUpdateShift($filter: ModelSubscriptionShiftFilterInput) {
+  onUpdateShift(filter: $filter) {
+    id
+    tenantId
+    title
+    location
+    startAt
+    endAt
+    rate
+    state
+    userId
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+    __typename
+  }
+}
+
+subscription OnDeleteShift($filter: ModelSubscriptionShiftFilterInput) {
+  onDeleteShift(filter: $filter) {
+    id
+    tenantId
+    title
+    location
+    startAt
+    endAt
+    rate
+    state
+    userId
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+    __typename
+  }
+}

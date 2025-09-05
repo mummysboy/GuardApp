@@ -1,0 +1,15 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-guardapp-dev-1969a-authRole",
+      "UnauthRoleArn": "arn:aws:iam::851725394837:role/amplify-guardapp-dev-1969a-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::851725394837:role/amplify-guardapp-dev-1969a-authRole",
+      "Region": "us-west-1",
+      "DeploymentBucketName": "amplify-guardapp-dev-1969a-deployment",
+      "UnauthRoleName": "amplify-guardapp-dev-1969a-unauthRole",
+      "StackName": "amplify-guardapp-dev-1969a",
+      "StackId": "arn:aws:cloudformation:us-west-1:851725394837:stack/amplify-guardapp-dev-1969a/d2afdf00-86b1-11f0-8776-06016b967d2f",
+      "AmplifyAppId": "dc52zdsmwei2n"
+    }
+  }
+}

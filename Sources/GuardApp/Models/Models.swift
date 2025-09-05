@@ -13,7 +13,7 @@ enum LegacyRole: String, Codable, CaseIterable {
 struct UserClaims: Codable, Equatable, Sendable {
     let userId: String
     let tenantId: String
-    let role: LegacyRole
+    let role: Role
     let issuedAt: Date
     let expiresAt: Date
 }
